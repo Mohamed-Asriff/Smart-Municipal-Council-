@@ -1,0 +1,1001 @@
+complaint_id,complaint_text,category,priority,location,ward_number,timestamp,department,status,citizen_language,has_image,duplicate_flag
+C0001,Water leakage near Sainthamaruthu 12 school flooding the pavement,Water,Medium,Sainthamaruthu 12,20,7/26/2026 14:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0002,Water main valve leaking near Kalmunaikudi 06 intersection,Water,High,Kalmunaikudi 06,14,6/24/2026 11:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0003,Electric meter box left open near Kalmunaikudi 05,Electrical,Low,Kalmunaikudi 05,14,7/18/2026 05:00,Street Lighting Unit,In Progress,English,No,TRUE
+C0004,Standing water in drain breeding mosquitoes near Kalmunai 03,Drainage,High,Kalmunai 03,12,6/6/2026 21:00,Public Works Division,Pending,English,No,FALSE
+C0005,Water meter reading appears incorrect for Kalmunaikudi 01 household,Water,Low,Kalmunaikudi 01,12,7/29/2026 13:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0006,Requesting rate remission for vacant property in Kalmunaikudi 14,Billing,Low,Kalmunaikudi 14,17,5/19/2026 16:00,Assessment Department,In Progress,English,No,FALSE
+C0007,Water leakage near Sainthamaruthu 07 school flooding the pavement,Water,Low,Sainthamaruthu 07,21,5/10/2026 19:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0008,Overcharged on trade license renewal fee for shop in Kalmunaikudi 08,Billing,Medium,Kalmunaikudi 08,15,5/26/2026 22:00,Assessment Department,Pending,English,Yes,FALSE
+C0009,Water main valve leaking near Sainthamaruthu 05 intersection,Water,Low,Sainthamaruthu 05,21,7/29/2026 20:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0010,Transformer making loud noise near Sainthamaruthu 14 residential zone,Electrical,Medium,Sainthamaruthu 14,23,5/26/2026 23:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0011,Low water pressure reported by residents in Sainthamaruthu 01,Water,Medium,Sainthamaruthu 01,18,7/28/2026 19:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0012,"Jetty in poor condition near Natpiddimunai 01, unsafe for boarding",Boat,Medium,Natpiddimunai 01,9,6/11/2026 14:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0013,Late payment surcharge applied incorrectly on Natpiddymunai 05 property rates,Billing,High,Natpiddymunai 05,7,7/23/2026 14:00,Assessment Department,Pending,English,Yes,FALSE
+C0014,No water supply in Sainthamaruthu 05 area for two days,Water,Medium,Sainthamaruthu 05,21,6/27/2026 20:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0015,Storm damage to boat shelter near Natpiddimunai 01 needs assessment,Boat,High,Natpiddimunai 01,9,7/6/2026 04:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0016,Road caved in slightly near Maruthamunai 06 after water damage,Road,High,Maruthamunai 06,5,7/9/2026 20:00,Public Works Division,Pending,English,Yes,FALSE
+C0017,Speed bump damaged near Sainthamaruthu 13 residential entrance,Road,Low,Sainthamaruthu 13,22,7/2/2026 00:00,Public Works Division,Resolved,English,No,FALSE
+C0018,Street light flickering continuously near Kalmunaikudi 02 station,Electrical,Low,Kalmunaikudi 02,13,5/1/2026 01:00,Street Lighting Unit,Pending,English,No,FALSE
+C0019,Damaged walking path in Periyaneelavanai 02 public garden,Public,Medium,Periyaneelavanai 02,2,5/24/2026 05:00,Public Assistance Department,Pending,English,No,FALSE
+C0020,Bad smell from uncollected garbage near Sainthamaruthu 01 residential area,Waste,Medium,Sainthamaruthu 01,18,7/13/2026 20:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0021,Drainage system overflowing near Sainthamaruthu 07 residential lane,Drainage,High,Sainthamaruthu 07,21,6/11/2026 01:00,Public Works Division,Pending,English,Yes,FALSE
+C0022,Electric meter box left open near Sainthamaruthu 13,Electrical,Medium,Sainthamaruthu 13,22,7/3/2026 02:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0023,Damaged walking path in Kalmunaikudi 12 public garden,Public,Low,Kalmunaikudi 12,16,6/23/2026 18:00,Public Assistance Department,Pending,English,Yes,TRUE
+C0024,Broken street light cover near Natpiddymunai 05 park,Electrical,Medium,Natpiddymunai 05,7,5/4/2026 01:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0025,"Park swing broken near Kalmunaikudi 11, unsafe for children",Public,Low,Kalmunaikudi 11,16,7/30/2026 19:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0026,Boat license renewal fee dispute for vessel based in Sainthamaruthu 15,Boat,Low,Sainthamaruthu 15,22,6/4/2026 09:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0027,Property valuation for assessment tax in Kalmunaikudi 08 needs review,Billing,Medium,Kalmunaikudi 08,15,5/6/2026 21:00,Assessment Department,Pending,English,No,FALSE
+C0028,Late payment surcharge applied incorrectly on Sainthamaruthu 16 property rates,Billing,High,Sainthamaruthu 16,23,6/10/2026 23:00,Assessment Department,Pending,English,Yes,FALSE
+C0029,Foul smell from blocked drain near Kalmunaikudi 08 market,Drainage,Low,Kalmunaikudi 08,15,6/23/2026 10:00,Public Works Division,Resolved,English,Yes,FALSE
+C0030,Water leakage near Sainthamaruthu 06 school flooding the pavement,Water,Medium,Sainthamaruthu 06,19,7/22/2026 09:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0031,Street light flickering continuously near Kalmunaikudi 05 station,Electrical,Low,Kalmunaikudi 05,14,6/6/2026 19:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0032,Illegal dumping of construction waste near Natpiddimunai 01,Waste,Medium,Natpiddimunai 01,9,7/10/2026 22:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0033,"Jetty in poor condition near Natpiddymunai 03, unsafe for boarding",Boat,High,Natpiddymunai 03,7,7/12/2026 14:00,Boat Services Unit,Resolved,English,No,FALSE
+C0034,Broken public bench near Maruthamunai 02 park needs replacement,Public,Low,Maruthamunai 02,3,6/19/2026 07:00,Public Assistance Department,Pending,English,No,FALSE
+C0035,No water supply in Maruthamunai 03 area for two days,Water,High,Maruthamunai 03,4,7/26/2026 10:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0036,Broken street light cover near Sainthamaruthu 03 park,Electrical,Medium,Sainthamaruthu 03,18,5/31/2026 17:00,Street Lighting Unit,Pending,English,No,FALSE
+C0037,Missing road signage near Sainthamaruthu 07 intersection,Road,Medium,Sainthamaruthu 07,21,5/30/2026 03:00,Public Works Division,Pending,English,Yes,FALSE
+C0038,No lighting at Sainthamaruthu 13 boat launch area at night,Boat,Medium,Sainthamaruthu 13,22,5/10/2026 16:00,Boat Services Unit,Pending,English,No,FALSE
+C0039,Irregular water supply schedule affecting Natpiddymunai 04 residents,Water,Low,Natpiddymunai 04,7,5/24/2026 17:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0040,Public notice board missing near Natpiddymunai 01 bus stand,Public,Low,Natpiddymunai 01,7,7/18/2026 08:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0041,Recycling bin missing near Kalmunai 01 community center,Waste,Low,Kalmunai 01,11,7/26/2026 09:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0042,Irregular water supply schedule affecting Pandiruppu 02 residents,Water,Low,Pandiruppu 02,10,7/1/2026 13:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0043,Speed bump damaged near Kalmunaikudi 10 residential entrance,Road,Low,Kalmunaikudi 10,16,7/20/2026 12:00,Public Works Division,Resolved,English,Yes,FALSE
+C0044,Large pothole on main road near Periyaneelavanai 01 causing accidents,Road,High,Periyaneelavanai 01,1,6/12/2026 21:00,Public Works Division,Pending,English,No,FALSE
+C0045,Stamp duty payment receipt not issued for transaction in Periyaneelavanai 01,Billing,Medium,Periyaneelavanai 01,1,5/4/2026 11:00,Assessment Department,Resolved,English,No,FALSE
+C0046,Vandalized public signage near Kalmunaikudi 14 market,Public,Medium,Kalmunaikudi 14,17,7/17/2026 07:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0047,Overflowing bin attracting stray animals near Natpiddymunai 04 school,Waste,High,Natpiddymunai 04,7,7/24/2026 22:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0048,Business license fee dispute for trade stall in Sainthamaruthu 12,Billing,Low,Sainthamaruthu 12,20,7/18/2026 17:00,Assessment Department,Resolved,English,No,FALSE
+C0049,Standing water in drain breeding mosquitoes near Periyaneelavanai 02,Drainage,Medium,Periyaneelavanai 02,2,7/5/2026 00:00,Public Works Division,Resolved,English,No,FALSE
+C0050,Damaged electrical pole leaning near Natpiddymunai 01 road,Electrical,High,Natpiddymunai 01,7,5/22/2026 14:00,Street Lighting Unit,Pending,English,No,FALSE
+C0051,Flickering street lights making Kalmunaikudi 01 road unsafe at night,Electrical,Medium,Kalmunaikudi 01,12,5/19/2026 18:00,Street Lighting Unit,In Progress,English,Yes,TRUE
+C0052,Late payment surcharge applied incorrectly on Natpiddimunai 02 property rates,Billing,High,Natpiddimunai 02,9,6/8/2026 19:00,Assessment Department,Resolved,English,Yes,FALSE
+C0053,Broken public bench near Maruthamunai 06 park needs replacement,Public,Low,Maruthamunai 06,5,5/4/2026 17:00,Public Assistance Department,Pending,English,No,FALSE
+C0054,Water main valve leaking near Kalmunaikudi 06 intersection,Water,Medium,Kalmunaikudi 06,14,5/12/2026 05:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0055,Business license fee dispute for trade stall in Natpiddymunai 03,Billing,Medium,Natpiddymunai 03,7,6/22/2026 06:00,Assessment Department,In Progress,English,Yes,FALSE
+C0056,Transformer making loud noise near Kalmunaikudi 06 residential zone,Electrical,High,Kalmunaikudi 06,14,7/22/2026 08:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0057,Contaminated water supply reported near Kalmunaikudi 11,Water,High,Kalmunaikudi 11,16,5/13/2026 08:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0058,Street light pole knocked down near Sainthamaruthu 07,Electrical,High,Sainthamaruthu 07,21,5/30/2026 05:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0059,Stamp duty payment receipt not issued for transaction in Periyaneelavanai 01,Billing,Low,Periyaneelavanai 01,1,6/1/2026 06:00,Assessment Department,Pending,English,No,FALSE
+C0060,Request for new mooring space near Kalmunaikudi 07 fishing harbor,Boat,Low,Kalmunaikudi 07,14,7/11/2026 10:00,Boat Services Unit,Pending,English,No,FALSE
+C0061,Open drain without cover poses safety risk near Natpiddimunai 03,Drainage,High,Natpiddimunai 03,9,7/12/2026 22:00,Public Works Division,In Progress,English,Yes,FALSE
+C0062,Damaged electrical pole leaning near Natpiddymunai 05 road,Electrical,High,Natpiddymunai 05,7,6/29/2026 08:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0063,Water tank overflow reported near Kalmunaikudi 05 apartment complex,Water,Medium,Kalmunaikudi 05,14,6/8/2026 19:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0064,Street light flickering continuously near Sainthamaruthu 06 station,Electrical,Low,Sainthamaruthu 06,19,7/15/2026 13:00,Street Lighting Unit,Resolved,English,No,FALSE
+C0065,Certificate of ownership request delayed for property in Natpiddymunai 02,Billing,Low,Natpiddymunai 02,7,7/29/2026 01:00,Assessment Department,In Progress,English,Yes,FALSE
+C0066,Water tank overflow reported near Pandiruppu 01 apartment complex,Water,Medium,Pandiruppu 01,6,7/13/2026 07:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0067,Boat service counter closed during working hours at Sainthamaruthu 17,Boat,Medium,Sainthamaruthu 17,23,7/27/2026 02:00,Boat Services Unit,Pending,English,No,FALSE
+C0068,Drain cover missing near Kalmunaikudi 07 pedestrian crossing,Drainage,High,Kalmunaikudi 07,14,6/20/2026 14:00,Public Works Division,Pending,English,No,FALSE
+C0069,Boat license renewal fee dispute for vessel based in Natpiddimunai 02,Boat,Low,Natpiddimunai 02,9,7/26/2026 16:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0070,No water supply in Pandiruppu 02 area for two days,Water,Medium,Pandiruppu 02,10,6/9/2026 13:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0071,Public water fountain not working near Kalmunaikudi 08 park,Public,Low,Kalmunaikudi 08,15,6/26/2026 17:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0072,"Waste bin lid broken, causing littering near Kalmunaikudi 03",Waste,Low,Kalmunaikudi 03,13,7/26/2026 13:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0073,Stamp duty payment receipt not issued for transaction in Sainthamaruthu 12,Billing,Low,Sainthamaruthu 12,20,5/27/2026 11:00,Assessment Department,In Progress,English,No,FALSE
+C0074,Discount for early rate settlement not applied for Periyaneelavanai 02 property,Billing,Low,Periyaneelavanai 02,2,7/21/2026 14:00,Assessment Department,In Progress,English,No,FALSE
+C0075,"Jetty in poor condition near Sainthamaruthu 04, unsafe for boarding",Boat,High,Sainthamaruthu 04,19,5/9/2026 03:00,Boat Services Unit,Resolved,English,No,FALSE
+C0076,Have not received assessment tax bill for Kalmunaikudi 08 property this quarter,Billing,Low,Kalmunaikudi 08,15,6/2/2026 18:00,Assessment Department,Pending,English,Yes,FALSE
+C0077,Overcharged on trade license renewal fee for shop in Sainthamaruthu 13,Billing,Medium,Sainthamaruthu 13,22,7/12/2026 17:00,Assessment Department,Pending,English,No,FALSE
+C0078,Overflowing bin attracting stray animals near Natpiddymunai 05 school,Waste,High,Natpiddymunai 05,7,5/25/2026 00:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0079,Street light not working near Sainthamaruthu 04 junction for a week,Electrical,Low,Sainthamaruthu 04,19,5/22/2026 03:00,Street Lighting Unit,Pending,English,No,FALSE
+C0080,Damaged boat landing point near Sainthamaruthu 14 needs urgent repair,Boat,High,Sainthamaruthu 14,23,7/15/2026 12:00,Boat Services Unit,In Progress,English,No,FALSE
+C0081,Foul smell from blocked drain near Maruthamunai 05 market,Drainage,Medium,Maruthamunai 05,5,6/6/2026 10:00,Public Works Division,Resolved,English,No,FALSE
+C0082,Certificate of ownership request delayed for property in Maruthamunai 03,Billing,Low,Maruthamunai 03,4,5/30/2026 06:00,Assessment Department,In Progress,English,Yes,FALSE
+C0083,Water main valve leaking near Sainthamaruthu 15 intersection,Water,High,Sainthamaruthu 15,22,7/2/2026 20:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0084,Broken public bench near Kalmunaikudi 05 park needs replacement,Public,Low,Kalmunaikudi 05,14,7/20/2026 11:00,Public Assistance Department,Pending,English,No,FALSE
+C0085,"Jetty in poor condition near Kalmunaikudi 06, unsafe for boarding",Boat,Medium,Kalmunaikudi 06,14,7/29/2026 06:00,Boat Services Unit,Pending,English,No,FALSE
+C0086,Request for new mooring space near Kalmunaikudi 06 fishing harbor,Boat,Low,Kalmunaikudi 06,14,7/30/2026 17:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0087,Contaminated water supply reported near Kalmunaikudi 07,Water,Medium,Kalmunaikudi 07,14,5/3/2026 18:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0088,No lighting at Natpiddymunai 02 boat launch area at night,Boat,Medium,Natpiddymunai 02,7,6/27/2026 21:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0089,Speed bump damaged near Periyaneelavanai 01 residential entrance,Road,Low,Periyaneelavanai 01,1,6/23/2026 21:00,Public Works Division,Pending,English,Yes,FALSE
+C0090,Flickering street lights making Sainthamaruthu 06 road unsafe at night,Electrical,Medium,Sainthamaruthu 06,19,6/9/2026 06:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0091,Damaged electrical pole leaning near Sainthamaruthu 07 road,Electrical,High,Sainthamaruthu 07,21,7/12/2026 10:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0092,Litter accumulating in Sainthamaruthu 09 public park,Public,Low,Sainthamaruthu 09,21,5/31/2026 15:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0093,Irregular water supply schedule affecting Sainthamaruthu 13 residents,Water,Low,Sainthamaruthu 13,22,6/27/2026 05:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0094,Road crack widening near Natpiddymunai 03 junction after recent rain,Road,Medium,Natpiddymunai 03,7,5/13/2026 06:00,Public Works Division,Pending,English,Yes,FALSE
+C0095,Large pothole on main road near Maruthamunai 02 causing accidents,Road,High,Maruthamunai 02,3,6/17/2026 15:00,Public Works Division,In Progress,English,Yes,FALSE
+C0096,Water leakage near Sainthamaruthu 01 school flooding the pavement,Water,Medium,Sainthamaruthu 01,18,5/25/2026 12:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0097,Fishing boat registration delayed at Sainthamaruthu 17 office,Boat,Medium,Sainthamaruthu 17,23,5/15/2026 17:00,Boat Services Unit,Pending,English,No,FALSE
+C0098,Cracked drain pipe near Kalmunai 01 needs repair,Drainage,Medium,Kalmunai 01,11,6/27/2026 21:00,Public Works Division,Pending,English,No,FALSE
+C0099,Electric meter box left open near Kalmunaikudi 03,Electrical,Medium,Kalmunaikudi 03,13,5/30/2026 15:00,Street Lighting Unit,Pending,English,No,FALSE
+C0100,"Waste bin lid broken, causing littering near Sainthamaruthu 12",Waste,Medium,Sainthamaruthu 12,20,5/8/2026 21:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0101,Blocked culvert causing water stagnation near Natpiddymunai 02,Drainage,Medium,Natpiddymunai 02,7,6/15/2026 14:00,Public Works Division,Pending,English,Yes,FALSE
+C0102,Large pothole on main road near Natpiddymunai 05 causing accidents,Road,High,Natpiddymunai 05,7,5/23/2026 15:00,Public Works Division,Pending,English,No,FALSE
+C0103,Road divider knocked down near Sainthamaruthu 07 roundabout,Road,Medium,Sainthamaruthu 07,21,5/15/2026 11:00,Public Works Division,Pending,English,Yes,FALSE
+C0104,Damaged road surface near Maruthamunai 03 making travel difficult,Road,High,Maruthamunai 03,4,7/29/2026 10:00,Public Works Division,In Progress,English,No,FALSE
+C0105,Broken pavement tiles near Maruthamunai 06 making walking unsafe,Road,Low,Maruthamunai 06,5,6/22/2026 10:00,Public Works Division,Pending,English,Yes,FALSE
+C0106,Request for new mooring space near Maruthamunai 04 fishing harbor,Boat,Low,Maruthamunai 04,4,5/3/2026 12:00,Boat Services Unit,Resolved,English,No,FALSE
+C0107,Low water pressure reported by residents in Sainthamaruthu 08,Water,Medium,Sainthamaruthu 08,20,7/5/2026 06:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0108,Road divider knocked down near Maruthamunai 01 roundabout,Road,Medium,Maruthamunai 01,3,5/28/2026 00:00,Public Works Division,Pending,English,Yes,FALSE
+C0109,Cracked drain pipe near Kalmunaikudi 06 needs repair,Drainage,Low,Kalmunaikudi 06,14,6/2/2026 08:00,Public Works Division,Pending,English,Yes,FALSE
+C0110,"Park swing broken near Natpiddymunai 01, unsafe for children",Public,Medium,Natpiddymunai 01,7,7/18/2026 23:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0111,Garbage bags left uncollected on Maruthamunai 04 street corner,Waste,Low,Maruthamunai 04,4,6/19/2026 23:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0112,Recycling bin missing near Kalmunaikudi 08 community center,Waste,Low,Kalmunaikudi 08,15,6/30/2026 17:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0113,Boat mooring point damaged near Natpiddymunai 04 harbor,Boat,Medium,Natpiddymunai 04,7,6/17/2026 01:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0114,Water leakage near Sainthamaruthu 05 school flooding the pavement,Water,Medium,Sainthamaruthu 05,21,6/23/2026 14:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0115,Requesting rate remission for vacant property in Natpiddymunai 05,Billing,Low,Natpiddymunai 05,7,7/20/2026 19:00,Assessment Department,Resolved,English,Yes,FALSE
+C0116,Drain cover missing near Sainthamaruthu 10 pedestrian crossing,Drainage,High,Sainthamaruthu 10,20,6/15/2026 20:00,Public Works Division,In Progress,English,Yes,FALSE
+C0117,Flickering street lights making Kalmunaikudi 14 road unsafe at night,Electrical,High,Kalmunaikudi 14,17,5/14/2026 06:00,Street Lighting Unit,Pending,English,No,FALSE
+C0118,Contaminated water supply reported near Sainthamaruthu 14,Water,High,Sainthamaruthu 14,23,7/19/2026 16:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0119,Waste collection truck has not visited Sainthamaruthu 11 this week,Waste,Medium,Sainthamaruthu 11,22,5/15/2026 10:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0120,Storm damage to boat shelter near Kalmunaikudi 09 needs assessment,Boat,High,Kalmunaikudi 09,15,6/1/2026 05:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0121,Power outage reported frequently in Sainthamaruthu 01 area,Electrical,Medium,Sainthamaruthu 01,18,6/15/2026 22:00,Street Lighting Unit,Resolved,English,Yes,FALSE
+C0122,Property valuation for assessment tax in Sainthamaruthu 07 needs review,Billing,Medium,Sainthamaruthu 07,21,5/13/2026 06:00,Assessment Department,In Progress,English,Yes,FALSE
+C0123,"Park swing broken near Kalmunaikudi 07, unsafe for children",Public,High,Kalmunaikudi 07,14,7/24/2026 13:00,Public Assistance Department,Resolved,English,Yes,FALSE
+C0124,Open drain without cover poses safety risk near Kalmunaikudi 09,Drainage,High,Kalmunaikudi 09,15,5/8/2026 19:00,Public Works Division,Pending,English,No,FALSE
+C0125,Public water fountain not working near Kalmunaikudi 03 park,Public,Low,Kalmunaikudi 03,13,6/22/2026 12:00,Public Assistance Department,In Progress,English,No,FALSE
+C0126,"Waste bin lid broken, causing littering near Maruthamunai 03",Waste,Low,Maruthamunai 03,4,5/9/2026 18:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0127,Requesting rate remission for vacant property in Sainthamaruthu 13,Billing,Low,Sainthamaruthu 13,22,7/27/2026 17:00,Assessment Department,Resolved,English,Yes,FALSE
+C0128,Garbage overflowing near Kalmunai 02 market for the past three days,Waste,High,Kalmunai 02,12,6/21/2026 13:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0129,Business license fee dispute for trade stall in Sainthamaruthu 08,Billing,Medium,Sainthamaruthu 08,20,6/30/2026 04:00,Assessment Department,Pending,English,Yes,FALSE
+C0130,Flickering street lights making Sainthamaruthu 02 road unsafe at night,Electrical,High,Sainthamaruthu 02,19,5/1/2026 21:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0131,Damaged boat landing point near Sainthamaruthu 08 needs urgent repair,Boat,High,Sainthamaruthu 08,20,5/30/2026 01:00,Boat Services Unit,Pending,English,No,FALSE
+C0132,Overcharged on trade license renewal fee for shop in Kalmunaikudi 08,Billing,Medium,Kalmunaikudi 08,15,5/24/2026 00:00,Assessment Department,Pending,English,Yes,FALSE
+C0133,Business license fee dispute for trade stall in Kalmunaikudi 01,Billing,Medium,Kalmunaikudi 01,12,7/3/2026 21:00,Assessment Department,Resolved,English,Yes,FALSE
+C0134,Overcharged on trade license renewal fee for shop in Periyaneelavanai 01,Billing,Medium,Periyaneelavanai 01,1,6/28/2026 21:00,Assessment Department,In Progress,English,No,TRUE
+C0135,Damaged boat landing point near Sainthamaruthu 14 needs urgent repair,Boat,High,Sainthamaruthu 14,23,6/30/2026 06:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0136,Damaged road surface near Sainthamaruthu 05 making travel difficult,Road,High,Sainthamaruthu 05,21,5/4/2026 05:00,Public Works Division,In Progress,English,Yes,FALSE
+C0137,Public restroom near Maruthamunai 04 in poor hygienic condition,Public,Medium,Maruthamunai 04,4,7/16/2026 08:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0138,Public water fountain not working near Kalmunaikudi 11 park,Public,Low,Kalmunaikudi 11,16,6/16/2026 18:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0139,Road caved in slightly near Sainthamaruthu 16 after water damage,Road,Medium,Sainthamaruthu 16,23,7/23/2026 12:00,Public Works Division,Resolved,English,Yes,FALSE
+C0140,Stamp duty payment receipt not issued for transaction in Kalmunaikudi 02,Billing,Medium,Kalmunaikudi 02,13,6/5/2026 18:00,Assessment Department,Pending,English,Yes,FALSE
+C0141,Road divider knocked down near Kalmunaikudi 03 roundabout,Road,Medium,Kalmunaikudi 03,13,5/3/2026 10:00,Public Works Division,Resolved,English,Yes,FALSE
+C0142,Vandalized public signage near Natpiddymunai 05 market,Public,Low,Natpiddymunai 05,7,7/3/2026 00:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0143,Requesting rate remission for vacant property in Pandiruppu 01,Billing,Medium,Pandiruppu 01,6,5/23/2026 19:00,Assessment Department,Pending,English,No,FALSE
+C0144,Standing water in drain breeding mosquitoes near Kalmunaikudi 08,Drainage,High,Kalmunaikudi 08,15,6/27/2026 00:00,Public Works Division,Resolved,English,No,FALSE
+C0145,Standing water in drain breeding mosquitoes near Sainthamaruthu 06,Drainage,Medium,Sainthamaruthu 06,19,5/4/2026 04:00,Public Works Division,Pending,English,Yes,FALSE
+C0146,Playground equipment damaged near Kalmunaikudi 07 community park,Public,Medium,Kalmunaikudi 07,14,6/5/2026 15:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0147,Broken public bench near Kalmunaikudi 04 park needs replacement,Public,Low,Kalmunaikudi 04,13,5/9/2026 21:00,Public Assistance Department,Resolved,English,No,FALSE
+C0148,Broken street light cover near Periyaneelavanai 02 park,Electrical,Medium,Periyaneelavanai 02,2,5/20/2026 22:00,Street Lighting Unit,Pending,English,No,FALSE
+C0149,Irregular water supply schedule affecting Natpiddymunai 04 residents,Water,Low,Natpiddymunai 04,7,7/16/2026 13:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0150,Waste collection truck has not visited Pandiruppu 02 this week,Waste,Medium,Pandiruppu 02,10,7/24/2026 02:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0151,Garbage bin damaged and waste scattered near Periyaneelavanai 01 bus stand,Waste,Medium,Periyaneelavanai 01,1,5/26/2026 18:00,Waste Collection & Recycling Unit,In Progress,English,No,TRUE
+C0152,Garbage bin damaged and waste scattered near Sainthamaruthu 12 bus stand,Waste,Medium,Sainthamaruthu 12,20,6/5/2026 03:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0153,Water tank overflow reported near Kalmunaikudi 11 apartment complex,Water,Low,Kalmunaikudi 11,16,7/3/2026 23:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0154,Broken pavement tiles near Sainthamaruthu 06 making walking unsafe,Road,Low,Sainthamaruthu 06,19,7/6/2026 14:00,Public Works Division,Pending,English,Yes,FALSE
+C0155,Water tank overflow reported near Sainthamaruthu 10 apartment complex,Water,Medium,Sainthamaruthu 10,20,5/7/2026 09:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0156,Foul smell from blocked drain near Sainthamaruthu 04 market,Drainage,Medium,Sainthamaruthu 04,19,6/21/2026 12:00,Public Works Division,Pending,English,Yes,FALSE
+C0157,Broken pavement tiles near Kalmunaikudi 11 making walking unsafe,Road,Low,Kalmunaikudi 11,16,7/3/2026 04:00,Public Works Division,Pending,English,No,FALSE
+C0158,Street light pole knocked down near Kalmunaikudi 07,Electrical,High,Kalmunaikudi 07,14,7/10/2026 20:00,Street Lighting Unit,Pending,English,No,FALSE
+C0159,Water meter reading appears incorrect for Kalmunaikudi 06 household,Water,Low,Kalmunaikudi 06,14,6/16/2026 01:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0160,"Water pipe burst near Maruthamunai 04 hospital, water gushing onto road",Water,Medium,Maruthamunai 04,4,6/24/2026 00:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0161,"Waste bin lid broken, causing littering near Kalmunaikudi 14",Waste,Low,Kalmunaikudi 14,17,7/31/2026 08:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0162,Assessment tax amount for my Natpiddimunai 03 property seems incorrectly calculated,Billing,Medium,Natpiddimunai 03,9,7/3/2026 18:00,Assessment Department,Pending,English,No,FALSE
+C0163,Boat license renewal fee dispute for vessel based in Maruthamunai 05,Boat,Low,Maruthamunai 05,5,5/22/2026 22:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0164,Stamp duty payment receipt not issued for transaction in Sainthamaruthu 14,Billing,Low,Sainthamaruthu 14,23,7/30/2026 04:00,Assessment Department,In Progress,English,No,TRUE
+C0165,Large pothole on main road near Natpiddymunai 02 causing accidents,Road,High,Natpiddymunai 02,7,5/18/2026 14:00,Public Works Division,In Progress,English,No,FALSE
+C0166,Cracked drain pipe near Sainthamaruthu 07 needs repair,Drainage,Low,Sainthamaruthu 07,21,7/12/2026 10:00,Public Works Division,Pending,English,No,TRUE
+C0167,Street light pole knocked down near Kalmunaikudi 05,Electrical,High,Kalmunaikudi 05,14,7/31/2026 09:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0168,Water leakage near Pandiruppu 02 school flooding the pavement,Water,Low,Pandiruppu 02,10,7/4/2026 06:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0169,Discount for early rate settlement not applied for Sainthamaruthu 03 property,Billing,Low,Sainthamaruthu 03,18,6/11/2026 17:00,Assessment Department,Pending,English,No,FALSE
+C0170,Contaminated water supply reported near Sainthamaruthu 08,Water,High,Sainthamaruthu 08,20,6/8/2026 09:00,National Water Supply & Drainage Board,Pending,English,No,TRUE
+C0171,Garbage overflowing near Natpiddymunai 04 market for the past three days,Waste,High,Natpiddymunai 04,7,6/1/2026 20:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0172,Water leakage near Kalmunaikudi 10 school flooding the pavement,Water,Medium,Kalmunaikudi 10,16,6/18/2026 13:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0173,"Park swing broken near Kalmunaikudi 04, unsafe for children",Public,Medium,Kalmunaikudi 04,13,7/23/2026 16:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0174,Vandalized public signage near Kalmunaikudi 06 market,Public,Low,Kalmunaikudi 06,14,5/3/2026 00:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0175,Public restroom near Sainthamaruthu 16 in poor hygienic condition,Public,Medium,Sainthamaruthu 16,23,6/12/2026 09:00,Public Assistance Department,Pending,English,No,FALSE
+C0176,Low water pressure reported by residents in Kalmunaikudi 06,Water,Medium,Kalmunaikudi 06,14,6/2/2026 23:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0177,Transformer making loud noise near Sainthamaruthu 14 residential zone,Electrical,Low,Sainthamaruthu 14,23,7/27/2026 22:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0178,Litter accumulating in Sainthamaruthu 11 public park,Public,Low,Sainthamaruthu 11,22,5/25/2026 20:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0179,Street light flickering continuously near Sainthamaruthu 03 station,Electrical,Low,Sainthamaruthu 03,18,6/30/2026 23:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0180,Request for new mooring space near Sainthamaruthu 13 fishing harbor,Boat,Low,Sainthamaruthu 13,22,7/2/2026 10:00,Boat Services Unit,In Progress,English,No,FALSE
+C0181,Litter accumulating in Pandiruppu 02 public park,Public,Low,Pandiruppu 02,10,6/27/2026 10:00,Public Assistance Department,Pending,English,No,FALSE
+C0182,Overflowing bin attracting stray animals near Kalmunaikudi 11 school,Waste,Medium,Kalmunaikudi 11,16,5/28/2026 20:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0183,"Water pipe burst near Sainthamaruthu 04 hospital, water gushing onto road",Water,High,Sainthamaruthu 04,19,7/11/2026 17:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0184,Garbage bags left uncollected on Sainthamaruthu 16 street corner,Waste,Low,Sainthamaruthu 16,23,5/7/2026 00:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0185,Fishing boat registration delayed at Sainthamaruthu 16 office,Boat,Low,Sainthamaruthu 16,23,5/17/2026 18:00,Boat Services Unit,Pending,English,No,FALSE
+C0186,Bad smell from uncollected garbage near Sainthamaruthu 10 residential area,Waste,Medium,Sainthamaruthu 10,20,6/6/2026 04:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0187,Faded zebra crossing markings near Kalmunaikudi 05 school,Road,Low,Kalmunaikudi 05,14,6/2/2026 11:00,Public Works Division,In Progress,English,Yes,FALSE
+C0188,Water meter reading appears incorrect for Maruthamunai 05 household,Water,Low,Maruthamunai 05,5,7/27/2026 23:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0189,Storm drain clogged with debris near Maruthamunai 04 junction,Drainage,Medium,Maruthamunai 04,4,7/7/2026 19:00,Public Works Division,Pending,English,Yes,FALSE
+C0190,Have not received assessment tax bill for Sainthamaruthu 03 property this quarter,Billing,Medium,Sainthamaruthu 03,18,6/1/2026 21:00,Assessment Department,Pending,English,No,FALSE
+C0191,Slow drainage causing minor waterlogging near Maruthamunai 04,Drainage,Low,Maruthamunai 04,4,5/18/2026 12:00,Public Works Division,Pending,English,Yes,FALSE
+C0192,Transformer making loud noise near Sainthamaruthu 14 residential zone,Electrical,Medium,Sainthamaruthu 14,23,7/21/2026 23:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0193,Irregular water supply schedule affecting Sainthamaruthu 14 residents,Water,Low,Sainthamaruthu 14,23,7/25/2026 02:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0194,Cracked drain pipe near Kalmunaikudi 03 needs repair,Drainage,Low,Kalmunaikudi 03,13,7/27/2026 15:00,Public Works Division,Pending,English,No,FALSE
+C0195,Drain cover missing near Maruthamunai 01 pedestrian crossing,Drainage,High,Maruthamunai 01,3,5/28/2026 15:00,Public Works Division,In Progress,English,Yes,FALSE
+C0196,Boat license renewal fee dispute for vessel based in Kalmunaikudi 13,Boat,Low,Kalmunaikudi 13,17,5/19/2026 20:00,Boat Services Unit,Resolved,English,No,FALSE
+C0197,Vandalized public signage near Kalmunaikudi 07 market,Public,Low,Kalmunaikudi 07,14,5/16/2026 17:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0198,Broken street light cover near Pandiruppu 01 park,Electrical,Low,Pandiruppu 01,6,7/30/2026 17:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0199,Irregular water supply schedule affecting Maruthamunai 06 residents,Water,Low,Maruthamunai 06,5,5/15/2026 07:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0200,Requesting rate remission for vacant property in Natpiddymunai 05,Billing,Low,Natpiddymunai 05,7,6/8/2026 11:00,Assessment Department,Resolved,English,No,FALSE
+C0201,Playground equipment damaged near Kalmunaikudi 03 community park,Public,Medium,Kalmunaikudi 03,13,7/21/2026 11:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0202,Public restroom near Pandiruppu 01 in poor hygienic condition,Public,High,Pandiruppu 01,6,7/13/2026 16:00,Public Assistance Department,Resolved,English,Yes,FALSE
+C0203,Request for new mooring space near Sainthamaruthu 04 fishing harbor,Boat,Medium,Sainthamaruthu 04,19,6/23/2026 06:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0204,Requesting rate remission for vacant property in Sainthamaruthu 14,Billing,Low,Sainthamaruthu 14,23,7/17/2026 01:00,Assessment Department,Pending,English,Yes,FALSE
+C0205,Fishing boat registration delayed at Maruthamunai 06 office,Boat,Low,Maruthamunai 06,5,6/25/2026 19:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0206,Street light flickering continuously near Natpiddimunai 03 station,Electrical,Low,Natpiddimunai 03,9,7/4/2026 12:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0207,Irregular water supply schedule affecting Kalmunaikudi 02 residents,Water,Medium,Kalmunaikudi 02,13,6/23/2026 19:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0208,Illegal dumping of construction waste near Kalmunaikudi 09,Waste,High,Kalmunaikudi 09,15,6/4/2026 16:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0209,Water meter reading appears incorrect for Chenaikudiyiruppu 01 household,Water,Low,Chenaikudiyiruppu 01,8,6/2/2026 06:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0210,"Drain blocked after heavy rain near Kalmunaikudi 01, causing flooding",Drainage,High,Kalmunaikudi 01,12,6/15/2026 02:00,Public Works Division,In Progress,English,Yes,FALSE
+C0211,"Jetty in poor condition near Sainthamaruthu 16, unsafe for boarding",Boat,Medium,Sainthamaruthu 16,23,5/20/2026 13:00,Boat Services Unit,In Progress,English,No,TRUE
+C0212,Bad smell from uncollected garbage near Maruthamunai 01 residential area,Waste,Medium,Maruthamunai 01,3,6/15/2026 23:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0213,Large pothole on main road near Sainthamaruthu 13 causing accidents,Road,High,Sainthamaruthu 13,22,7/3/2026 15:00,Public Works Division,Pending,English,No,TRUE
+C0214,Public notice board missing near Maruthamunai 06 bus stand,Public,Low,Maruthamunai 06,5,6/7/2026 12:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0215,Public restroom near Kalmunaikudi 10 in poor hygienic condition,Public,Medium,Kalmunaikudi 10,16,5/9/2026 00:00,Public Assistance Department,Pending,English,No,FALSE
+C0216,Requesting rate remission for vacant property in Kalmunaikudi 06,Billing,Low,Kalmunaikudi 06,14,5/8/2026 18:00,Assessment Department,In Progress,English,Yes,FALSE
+C0217,Public notice board missing near Kalmunai 01 bus stand,Public,Low,Kalmunai 01,11,6/13/2026 09:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0218,Overflowing bin attracting stray animals near Sainthamaruthu 04 school,Waste,High,Sainthamaruthu 04,19,5/8/2026 06:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0219,Late payment surcharge applied incorrectly on Kalmunaikudi 11 property rates,Billing,High,Kalmunaikudi 11,16,6/28/2026 23:00,Assessment Department,In Progress,English,No,FALSE
+C0220,Boat mooring point damaged near Pandiruppu 01 harbor,Boat,High,Pandiruppu 01,6,6/25/2026 01:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0221,"Waste bin lid broken, causing littering near Pandiruppu 02",Waste,Low,Pandiruppu 02,10,6/25/2026 17:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0222,Slow drainage causing minor waterlogging near Kalmunaikudi 02,Drainage,Low,Kalmunaikudi 02,13,7/11/2026 10:00,Public Works Division,In Progress,English,Yes,FALSE
+C0223,Drain cover missing near Kalmunaikudi 12 pedestrian crossing,Drainage,High,Kalmunaikudi 12,16,6/13/2026 07:00,Public Works Division,In Progress,English,Yes,FALSE
+C0224,Broken street light cover near Natpiddimunai 03 park,Electrical,Low,Natpiddimunai 03,9,5/8/2026 04:00,Street Lighting Unit,Resolved,English,Yes,FALSE
+C0225,"Jetty in poor condition near Sainthamaruthu 10, unsafe for boarding",Boat,High,Sainthamaruthu 10,20,6/1/2026 00:00,Boat Services Unit,Pending,English,No,FALSE
+C0226,"Park swing broken near Kalmunaikudi 14, unsafe for children",Public,Medium,Kalmunaikudi 14,17,7/30/2026 00:00,Public Assistance Department,Resolved,English,No,FALSE
+C0227,Storm drain clogged with debris near Kalmunaikudi 11 junction,Drainage,Low,Kalmunaikudi 11,16,6/17/2026 23:00,Public Works Division,Resolved,English,No,FALSE
+C0228,Overflowing bin attracting stray animals near Kalmunaikudi 14 school,Waste,High,Kalmunaikudi 14,17,7/25/2026 20:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0229,"Water pipe burst near Kalmunai 01 hospital, water gushing onto road",Water,High,Kalmunai 01,11,6/9/2026 18:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0230,No water supply in Kalmunai 02 area for two days,Water,High,Kalmunai 02,12,7/25/2026 05:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0231,Drainage system overflowing near Kalmunaikudi 06 residential lane,Drainage,High,Kalmunaikudi 06,14,5/30/2026 12:00,Public Works Division,Resolved,English,No,FALSE
+C0232,Drainage system overflowing near Kalmunai 02 residential lane,Drainage,High,Kalmunai 02,12,5/28/2026 13:00,Public Works Division,Pending,English,No,FALSE
+C0233,Contaminated water supply reported near Natpiddymunai 03,Water,High,Natpiddymunai 03,7,6/21/2026 19:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0234,Irregular water supply schedule affecting Sainthamaruthu 06 residents,Water,Low,Sainthamaruthu 06,19,7/9/2026 23:00,National Water Supply & Drainage Board,Resolved,English,Yes,FALSE
+C0235,Vandalized public signage near Maruthamunai 01 market,Public,Low,Maruthamunai 01,3,6/25/2026 23:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0236,Missing road signage near Sainthamaruthu 14 intersection,Road,Medium,Sainthamaruthu 14,23,6/22/2026 23:00,Public Works Division,In Progress,English,Yes,FALSE
+C0237,Uneven road surface near Kalmunaikudi 09 causing vehicle damage,Road,Low,Kalmunaikudi 09,15,7/6/2026 20:00,Public Works Division,In Progress,English,Yes,FALSE
+C0238,Garbage bin damaged and waste scattered near Kalmunaikudi 07 bus stand,Waste,Medium,Kalmunaikudi 07,14,7/23/2026 15:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0239,Litter accumulating in Kalmunaikudi 04 public park,Public,Medium,Kalmunaikudi 04,13,6/15/2026 06:00,Public Assistance Department,Pending,English,No,FALSE
+C0240,Contaminated water supply reported near Kalmunaikudi 07,Water,Medium,Kalmunaikudi 07,14,6/29/2026 17:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0241,Certificate of ownership request delayed for property in Natpiddymunai 01,Billing,Low,Natpiddymunai 01,7,5/16/2026 11:00,Assessment Department,Resolved,English,No,FALSE
+C0242,Storm damage to boat shelter near Kalmunaikudi 08 needs assessment,Boat,High,Kalmunaikudi 08,15,6/19/2026 01:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0243,Boat license renewal fee dispute for vessel based in Natpiddymunai 04,Boat,Low,Natpiddymunai 04,7,7/21/2026 19:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0244,Damaged boat landing point near Kalmunaikudi 13 needs urgent repair,Boat,Medium,Kalmunaikudi 13,17,6/5/2026 12:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0245,Late payment surcharge applied incorrectly on Maruthamunai 01 property rates,Billing,High,Maruthamunai 01,3,5/8/2026 03:00,Assessment Department,In Progress,English,Yes,FALSE
+C0246,Stamp duty payment receipt not issued for transaction in Kalmunaikudi 07,Billing,Low,Kalmunaikudi 07,14,5/12/2026 12:00,Assessment Department,Pending,English,No,FALSE
+C0247,Open drain without cover poses safety risk near Kalmunaikudi 04,Drainage,High,Kalmunaikudi 04,13,5/15/2026 00:00,Public Works Division,Resolved,English,No,FALSE
+C0248,Broken street light cover near Kalmunaikudi 11 park,Electrical,Low,Kalmunaikudi 11,16,7/18/2026 01:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0249,Storm damage to boat shelter near Kalmunaikudi 08 needs assessment,Boat,Medium,Kalmunaikudi 08,15,5/31/2026 22:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0250,Standing water in drain breeding mosquitoes near Sainthamaruthu 04,Drainage,High,Sainthamaruthu 04,19,6/21/2026 16:00,Public Works Division,Pending,English,Yes,FALSE
+C0251,Boat service counter closed during working hours at Kalmunai 01,Boat,Medium,Kalmunai 01,11,6/10/2026 10:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0252,Large pothole on main road near Sainthamaruthu 03 causing accidents,Road,High,Sainthamaruthu 03,18,6/26/2026 01:00,Public Works Division,Resolved,English,No,FALSE
+C0253,Street light not working near Sainthamaruthu 02 junction for a week,Electrical,Medium,Sainthamaruthu 02,19,6/6/2026 21:00,Street Lighting Unit,Pending,English,No,FALSE
+C0254,Blocked culvert causing water stagnation near Maruthamunai 01,Drainage,Medium,Maruthamunai 01,3,6/10/2026 15:00,Public Works Division,In Progress,English,Yes,FALSE
+C0255,Standing water in drain breeding mosquitoes near Sainthamaruthu 09,Drainage,Medium,Sainthamaruthu 09,21,7/22/2026 08:00,Public Works Division,Pending,English,No,FALSE
+C0256,Garbage bin damaged and waste scattered near Kalmunaikudi 12 bus stand,Waste,Low,Kalmunaikudi 12,16,5/31/2026 11:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0257,Drain cover missing near Kalmunaikudi 13 pedestrian crossing,Drainage,High,Kalmunaikudi 13,17,7/2/2026 11:00,Public Works Division,Pending,English,No,FALSE
+C0258,Road divider knocked down near Kalmunaikudi 09 roundabout,Road,Low,Kalmunaikudi 09,15,5/29/2026 21:00,Public Works Division,Pending,English,No,FALSE
+C0259,Missing road signage near Sainthamaruthu 09 intersection,Road,Medium,Sainthamaruthu 09,21,7/17/2026 05:00,Public Works Division,Pending,English,Yes,FALSE
+C0260,Uneven road surface near Maruthamunai 06 causing vehicle damage,Road,Medium,Maruthamunai 06,5,6/3/2026 12:00,Public Works Division,Pending,English,No,FALSE
+C0261,Foul smell from blocked drain near Maruthamunai 01 market,Drainage,Medium,Maruthamunai 01,3,5/25/2026 21:00,Public Works Division,In Progress,English,Yes,FALSE
+C0262,Boat license renewal fee dispute for vessel based in Natpiddymunai 03,Boat,Low,Natpiddymunai 03,7,5/11/2026 14:00,Boat Services Unit,Pending,English,No,FALSE
+C0263,Power outage reported frequently in Maruthamunai 02 area,Electrical,Medium,Maruthamunai 02,3,6/10/2026 03:00,Street Lighting Unit,Pending,English,No,FALSE
+C0264,Damaged walking path in Maruthamunai 05 public garden,Public,Low,Maruthamunai 05,5,5/16/2026 08:00,Public Assistance Department,Pending,English,No,FALSE
+C0265,Discount for early rate settlement not applied for Kalmunaikudi 09 property,Billing,Low,Kalmunaikudi 09,15,5/6/2026 17:00,Assessment Department,In Progress,English,Yes,FALSE
+C0266,Water main valve leaking near Natpiddymunai 05 intersection,Water,Medium,Natpiddymunai 05,7,5/17/2026 23:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0267,Have not received assessment tax bill for Maruthamunai 01 property this quarter,Billing,Medium,Maruthamunai 01,3,7/24/2026 16:00,Assessment Department,Pending,English,Yes,FALSE
+C0268,Large pothole on main road near Periyaneelavanai 01 causing accidents,Road,High,Periyaneelavanai 01,1,6/14/2026 02:00,Public Works Division,In Progress,English,No,FALSE
+C0269,"Jetty in poor condition near Kalmunaikudi 11, unsafe for boarding",Boat,High,Kalmunaikudi 11,16,6/14/2026 13:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0270,Damaged road surface near Periyaneelavanai 01 making travel difficult,Road,Medium,Periyaneelavanai 01,1,5/18/2026 00:00,Public Works Division,In Progress,English,No,FALSE
+C0271,Property valuation for assessment tax in Kalmunaikudi 11 needs review,Billing,Medium,Kalmunaikudi 11,16,6/16/2026 08:00,Assessment Department,Pending,English,Yes,FALSE
+C0272,Playground equipment damaged near Periyaneelavanai 01 community park,Public,Medium,Periyaneelavanai 01,1,5/30/2026 07:00,Public Assistance Department,Pending,English,No,FALSE
+C0273,Waste collection truck has not visited Sainthamaruthu 06 this week,Waste,Medium,Sainthamaruthu 06,19,5/16/2026 12:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0274,Stamp duty payment receipt not issued for transaction in Sainthamaruthu 10,Billing,Low,Sainthamaruthu 10,20,6/5/2026 16:00,Assessment Department,In Progress,English,No,FALSE
+C0275,Power outage reported frequently in Pandiruppu 01 area,Electrical,Medium,Pandiruppu 01,6,7/8/2026 03:00,Street Lighting Unit,Pending,English,No,FALSE
+C0276,Storm damage to boat shelter near Sainthamaruthu 16 needs assessment,Boat,High,Sainthamaruthu 16,23,7/24/2026 18:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0277,Irregular water supply schedule affecting Kalmunaikudi 07 residents,Water,Low,Kalmunaikudi 07,14,7/20/2026 11:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0278,Broken street light cover near Kalmunaikudi 13 park,Electrical,Medium,Kalmunaikudi 13,17,5/20/2026 22:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0279,Fishing boat registration delayed at Kalmunaikudi 11 office,Boat,Low,Kalmunaikudi 11,16,6/24/2026 18:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0280,Recycling bin missing near Kalmunaikudi 08 community center,Waste,Low,Kalmunaikudi 08,15,5/1/2026 07:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0281,Broken street light cover near Maruthamunai 03 park,Electrical,Medium,Maruthamunai 03,4,7/30/2026 17:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0282,Water tank overflow reported near Maruthamunai 01 apartment complex,Water,Medium,Maruthamunai 01,3,7/10/2026 19:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0283,Late payment surcharge applied incorrectly on Kalmunaikudi 03 property rates,Billing,High,Kalmunaikudi 03,13,7/4/2026 06:00,Assessment Department,Resolved,English,Yes,FALSE
+C0284,Storm drain clogged with debris near Maruthamunai 06 junction,Drainage,Low,Maruthamunai 06,5,5/22/2026 14:00,Public Works Division,Pending,English,Yes,FALSE
+C0285,Garbage overflowing near Kalmunai 01 market for the past three days,Waste,High,Kalmunai 01,11,5/23/2026 07:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0286,Flickering street lights making Kalmunaikudi 01 road unsafe at night,Electrical,Low,Kalmunaikudi 01,12,5/4/2026 03:00,Street Lighting Unit,Pending,English,No,FALSE
+C0287,Business license fee dispute for trade stall in Sainthamaruthu 14,Billing,Medium,Sainthamaruthu 14,23,6/27/2026 15:00,Assessment Department,Resolved,English,Yes,FALSE
+C0288,Garbage bags left uncollected on Sainthamaruthu 03 street corner,Waste,Low,Sainthamaruthu 03,18,6/12/2026 14:00,Waste Collection & Recycling Unit,Resolved,English,Yes,TRUE
+C0289,Electric meter box left open near Natpiddymunai 04,Electrical,Medium,Natpiddymunai 04,7,5/23/2026 17:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0290,Vandalized public signage near Sainthamaruthu 03 market,Public,Low,Sainthamaruthu 03,18,7/4/2026 02:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0291,Street light pole knocked down near Kalmunai 01,Electrical,High,Kalmunai 01,11,5/18/2026 00:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0292,Stamp duty payment receipt not issued for transaction in Kalmunaikudi 10,Billing,Medium,Kalmunaikudi 10,16,6/20/2026 22:00,Assessment Department,Pending,English,No,FALSE
+C0293,Broken fence around Kalmunaikudi 05 public playground,Public,High,Kalmunaikudi 05,14,7/22/2026 11:00,Public Assistance Department,Pending,English,No,FALSE
+C0294,Damaged electrical pole leaning near Sainthamaruthu 10 road,Electrical,Medium,Sainthamaruthu 10,20,6/10/2026 10:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0295,Standing water in drain breeding mosquitoes near Chenaikudiyiruppu 01,Drainage,High,Chenaikudiyiruppu 01,8,6/6/2026 00:00,Public Works Division,Pending,English,Yes,FALSE
+C0296,Irregular water supply schedule affecting Sainthamaruthu 11 residents,Water,Low,Sainthamaruthu 11,22,5/4/2026 20:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0297,Low water pressure reported by residents in Sainthamaruthu 16,Water,Medium,Sainthamaruthu 16,23,7/24/2026 10:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0298,Public notice board missing near Periyaneelavanai 01 bus stand,Public,Low,Periyaneelavanai 01,1,7/13/2026 05:00,Public Assistance Department,Pending,English,No,FALSE
+C0299,Boat license renewal fee dispute for vessel based in Sainthamaruthu 09,Boat,Low,Sainthamaruthu 09,21,7/15/2026 07:00,Boat Services Unit,Pending,English,No,FALSE
+C0300,Faded zebra crossing markings near Kalmunaikudi 08 school,Road,Low,Kalmunaikudi 08,15,6/18/2026 06:00,Public Works Division,Pending,English,Yes,FALSE
+C0301,Fishing boat registration delayed at Sainthamaruthu 16 office,Boat,Low,Sainthamaruthu 16,23,6/5/2026 23:00,Boat Services Unit,Pending,English,No,FALSE
+C0302,Broken fence around Maruthamunai 01 public playground,Public,Medium,Maruthamunai 01,3,7/30/2026 18:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0303,Overcharged on trade license renewal fee for shop in Pandiruppu 02,Billing,Low,Pandiruppu 02,10,6/23/2026 11:00,Assessment Department,Pending,English,No,FALSE
+C0304,Public notice board missing near Sainthamaruthu 13 bus stand,Public,Low,Sainthamaruthu 13,22,5/17/2026 08:00,Public Assistance Department,Resolved,English,No,FALSE
+C0305,Public restroom near Pandiruppu 01 in poor hygienic condition,Public,Medium,Pandiruppu 01,6,7/2/2026 07:00,Public Assistance Department,Pending,English,No,FALSE
+C0306,Recycling bin missing near Maruthamunai 01 community center,Waste,Low,Maruthamunai 01,3,5/1/2026 14:00,Waste Collection & Recycling Unit,Pending,English,No,TRUE
+C0307,Have not received assessment tax bill for Sainthamaruthu 05 property this quarter,Billing,Low,Sainthamaruthu 05,21,6/6/2026 05:00,Assessment Department,In Progress,English,Yes,FALSE
+C0308,"Waste bin lid broken, causing littering near Sainthamaruthu 05",Waste,Low,Sainthamaruthu 05,21,5/1/2026 15:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0309,Assessment tax amount for my Periyaneelavanai 02 property seems incorrectly calculated,Billing,Medium,Periyaneelavanai 02,2,7/18/2026 22:00,Assessment Department,Pending,English,No,TRUE
+C0310,Have not received assessment tax bill for Maruthamunai 05 property this quarter,Billing,Medium,Maruthamunai 05,5,5/25/2026 12:00,Assessment Department,Pending,English,Yes,FALSE
+C0311,Public notice board missing near Sainthamaruthu 15 bus stand,Public,Low,Sainthamaruthu 15,22,7/7/2026 16:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0312,Damaged electrical pole leaning near Sainthamaruthu 08 road,Electrical,High,Sainthamaruthu 08,20,5/4/2026 01:00,Street Lighting Unit,Pending,English,No,FALSE
+C0313,Leaking water pipe wasting water near Kalmunaikudi 03 junction,Water,Medium,Kalmunaikudi 03,13,5/9/2026 00:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0314,Boat parking area overcrowded near Sainthamaruthu 06 harbor,Boat,Low,Sainthamaruthu 06,19,6/21/2026 06:00,Boat Services Unit,In Progress,English,No,FALSE
+C0315,Bad smell from uncollected garbage near Natpiddymunai 04 residential area,Waste,Medium,Natpiddymunai 04,7,7/29/2026 17:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0316,Contaminated water supply reported near Kalmunaikudi 13,Water,High,Kalmunaikudi 13,17,5/21/2026 02:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0317,Standing water in drain breeding mosquitoes near Maruthamunai 03,Drainage,High,Maruthamunai 03,4,7/5/2026 17:00,Public Works Division,In Progress,English,No,FALSE
+C0318,Broken fence around Sainthamaruthu 13 public playground,Public,Medium,Sainthamaruthu 13,22,7/12/2026 09:00,Public Assistance Department,In Progress,English,No,FALSE
+C0319,Broken public bench near Maruthamunai 05 park needs replacement,Public,Low,Maruthamunai 05,5,6/27/2026 19:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0320,Late payment surcharge applied incorrectly on Periyaneelavanai 02 property rates,Billing,High,Periyaneelavanai 02,2,6/23/2026 16:00,Assessment Department,In Progress,English,Yes,FALSE
+C0321,Property valuation for assessment tax in Natpiddymunai 02 needs review,Billing,Medium,Natpiddymunai 02,7,7/17/2026 11:00,Assessment Department,In Progress,English,Yes,FALSE
+C0322,Exposed electrical wiring near Maruthamunai 04 poses safety hazard,Electrical,High,Maruthamunai 04,4,6/7/2026 19:00,Street Lighting Unit,Pending,English,No,FALSE
+C0323,Litter accumulating in Maruthamunai 05 public park,Public,Medium,Maruthamunai 05,5,5/10/2026 22:00,Public Assistance Department,Resolved,English,Yes,FALSE
+C0324,Open drain without cover poses safety risk near Natpiddymunai 02,Drainage,High,Natpiddymunai 02,7,5/9/2026 16:00,Public Works Division,In Progress,English,Yes,FALSE
+C0325,Public water fountain not working near Maruthamunai 04 park,Public,Low,Maruthamunai 04,4,6/10/2026 04:00,Public Assistance Department,In Progress,English,No,TRUE
+C0326,Requesting rate remission for vacant property in Sainthamaruthu 11,Billing,Low,Sainthamaruthu 11,22,5/17/2026 11:00,Assessment Department,Resolved,English,No,FALSE
+C0327,Have not received assessment tax bill for Pandiruppu 01 property this quarter,Billing,Medium,Pandiruppu 01,6,5/27/2026 19:00,Assessment Department,Pending,English,Yes,FALSE
+C0328,Overcharged on trade license renewal fee for shop in Kalmunaikudi 09,Billing,Medium,Kalmunaikudi 09,15,6/18/2026 03:00,Assessment Department,Pending,English,No,FALSE
+C0329,Flickering street lights making Maruthamunai 05 road unsafe at night,Electrical,High,Maruthamunai 05,5,6/6/2026 21:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0330,Damaged walking path in Kalmunai 03 public garden,Public,Low,Kalmunai 03,12,5/30/2026 04:00,Public Assistance Department,In Progress,English,No,FALSE
+C0331,Vandalized public signage near Sainthamaruthu 09 market,Public,Low,Sainthamaruthu 09,21,5/29/2026 07:00,Public Assistance Department,Pending,English,No,FALSE
+C0332,Boat service counter closed during working hours at Sainthamaruthu 15,Boat,Low,Sainthamaruthu 15,22,5/12/2026 01:00,Boat Services Unit,Pending,English,No,FALSE
+C0333,Broken street light cover near Kalmunaikudi 13 park,Electrical,Low,Kalmunaikudi 13,17,7/31/2026 13:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0334,Flickering street lights making Sainthamaruthu 16 road unsafe at night,Electrical,Medium,Sainthamaruthu 16,23,6/9/2026 17:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0335,"Jetty in poor condition near Sainthamaruthu 05, unsafe for boarding",Boat,High,Sainthamaruthu 05,21,6/6/2026 14:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0336,Water tank overflow reported near Sainthamaruthu 03 apartment complex,Water,Medium,Sainthamaruthu 03,18,7/7/2026 03:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0337,Stamp duty payment receipt not issued for transaction in Maruthamunai 01,Billing,Low,Maruthamunai 01,3,7/1/2026 23:00,Assessment Department,Pending,English,No,FALSE
+C0338,"Water pipe burst near Sainthamaruthu 14 hospital, water gushing onto road",Water,Medium,Sainthamaruthu 14,23,6/24/2026 16:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0339,Late payment surcharge applied incorrectly on Sainthamaruthu 15 property rates,Billing,High,Sainthamaruthu 15,22,6/20/2026 08:00,Assessment Department,Pending,English,Yes,FALSE
+C0340,Flickering street lights making Kalmunaikudi 02 road unsafe at night,Electrical,Medium,Kalmunaikudi 02,13,6/3/2026 11:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0341,Garbage bags left uncollected on Maruthamunai 05 street corner,Waste,Low,Maruthamunai 05,5,7/10/2026 21:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0342,Storm drain clogged with debris near Kalmunai 01 junction,Drainage,Medium,Kalmunai 01,11,5/10/2026 11:00,Public Works Division,In Progress,English,Yes,FALSE
+C0343,Request for new mooring space near Kalmunai 02 fishing harbor,Boat,Medium,Kalmunai 02,12,6/3/2026 07:00,Boat Services Unit,Pending,English,No,TRUE
+C0344,No water supply in Sainthamaruthu 12 area for two days,Water,Medium,Sainthamaruthu 12,20,6/14/2026 20:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0345,Street light pole knocked down near Sainthamaruthu 05,Electrical,Medium,Sainthamaruthu 05,21,6/29/2026 14:00,Street Lighting Unit,In Progress,English,Yes,TRUE
+C0346,Flickering street lights making Sainthamaruthu 02 road unsafe at night,Electrical,Medium,Sainthamaruthu 02,19,7/8/2026 07:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0347,Water main valve leaking near Maruthamunai 05 intersection,Water,Medium,Maruthamunai 05,5,5/12/2026 01:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0348,Broken pavement tiles near Kalmunaikudi 12 making walking unsafe,Road,Low,Kalmunaikudi 12,16,5/12/2026 02:00,Public Works Division,Pending,English,Yes,FALSE
+C0349,Litter accumulating in Kalmunaikudi 08 public park,Public,Low,Kalmunaikudi 08,15,6/29/2026 15:00,Public Assistance Department,In Progress,English,No,FALSE
+C0350,No water supply in Kalmunai 02 area for two days,Water,Medium,Kalmunai 02,12,6/19/2026 14:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0351,Property valuation for assessment tax in Sainthamaruthu 03 needs review,Billing,High,Sainthamaruthu 03,18,7/7/2026 07:00,Assessment Department,Pending,English,Yes,FALSE
+C0352,Slow drainage causing minor waterlogging near Natpiddymunai 01,Drainage,Low,Natpiddymunai 01,7,5/6/2026 04:00,Public Works Division,Pending,English,Yes,FALSE
+C0353,Broken public bench near Kalmunaikudi 10 park needs replacement,Public,Medium,Kalmunaikudi 10,16,6/18/2026 01:00,Public Assistance Department,In Progress,English,No,FALSE
+C0354,Discount for early rate settlement not applied for Kalmunaikudi 05 property,Billing,Low,Kalmunaikudi 05,14,7/17/2026 06:00,Assessment Department,Pending,English,Yes,FALSE
+C0355,Damaged electrical pole leaning near Maruthamunai 01 road,Electrical,High,Maruthamunai 01,3,7/12/2026 02:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0356,Storm damage to boat shelter near Kalmunaikudi 11 needs assessment,Boat,Medium,Kalmunaikudi 11,16,6/5/2026 14:00,Boat Services Unit,Pending,English,No,FALSE
+C0357,Garbage bags left uncollected on Kalmunaikudi 13 street corner,Waste,Low,Kalmunaikudi 13,17,5/25/2026 00:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0358,Large pothole on main road near Kalmunaikudi 07 causing accidents,Road,High,Kalmunaikudi 07,14,5/12/2026 09:00,Public Works Division,Resolved,English,Yes,FALSE
+C0359,Power outage reported frequently in Sainthamaruthu 16 area,Electrical,Medium,Sainthamaruthu 16,23,6/11/2026 13:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0360,Cracked drain pipe near Pandiruppu 01 needs repair,Drainage,Low,Pandiruppu 01,6,6/21/2026 16:00,Public Works Division,In Progress,English,No,FALSE
+C0361,Road divider knocked down near Kalmunaikudi 13 roundabout,Road,Low,Kalmunaikudi 13,17,7/23/2026 07:00,Public Works Division,Resolved,English,Yes,FALSE
+C0362,No water supply in Sainthamaruthu 13 area for two days,Water,High,Sainthamaruthu 13,22,5/13/2026 07:00,National Water Supply & Drainage Board,Resolved,English,No,FALSE
+C0363,Blocked culvert causing water stagnation near Pandiruppu 02,Drainage,Medium,Pandiruppu 02,10,6/17/2026 12:00,Public Works Division,In Progress,English,No,FALSE
+C0364,Cracked drain pipe near Sainthamaruthu 05 needs repair,Drainage,Low,Sainthamaruthu 05,21,7/25/2026 10:00,Public Works Division,Pending,English,Yes,FALSE
+C0365,Leaking water pipe wasting water near Kalmunaikudi 11 junction,Water,Medium,Kalmunaikudi 11,16,6/17/2026 09:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0366,Vandalized public signage near Periyaneelavanai 01 market,Public,Low,Periyaneelavanai 01,1,7/1/2026 15:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0367,"Park swing broken near Sainthamaruthu 15, unsafe for children",Public,Medium,Sainthamaruthu 15,22,5/27/2026 01:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0368,Public notice board missing near Kalmunai 03 bus stand,Public,Low,Kalmunai 03,12,7/26/2026 19:00,Public Assistance Department,Pending,English,No,FALSE
+C0369,Garbage overflowing near Maruthamunai 05 market for the past three days,Waste,High,Maruthamunai 05,5,5/16/2026 08:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0370,Request for new mooring space near Periyaneelavanai 01 fishing harbor,Boat,Low,Periyaneelavanai 01,1,7/25/2026 15:00,Boat Services Unit,Pending,English,No,FALSE
+C0371,Damaged road surface near Natpiddimunai 02 making travel difficult,Road,High,Natpiddimunai 02,9,7/3/2026 00:00,Public Works Division,Pending,English,Yes,FALSE
+C0372,"Drain blocked after heavy rain near Kalmunaikudi 04, causing flooding",Drainage,High,Kalmunaikudi 04,13,5/9/2026 20:00,Public Works Division,In Progress,English,No,FALSE
+C0373,Water leakage near Natpiddymunai 04 school flooding the pavement,Water,Medium,Natpiddymunai 04,7,5/1/2026 21:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0374,Overflowing bin attracting stray animals near Sainthamaruthu 17 school,Waste,Medium,Sainthamaruthu 17,23,5/23/2026 05:00,Waste Collection & Recycling Unit,Resolved,English,No,FALSE
+C0375,Requesting rate remission for vacant property in Sainthamaruthu 11,Billing,Low,Sainthamaruthu 11,22,6/7/2026 03:00,Assessment Department,Pending,English,Yes,FALSE
+C0376,Drainage system overflowing near Maruthamunai 03 residential lane,Drainage,High,Maruthamunai 03,4,7/10/2026 03:00,Public Works Division,Pending,English,No,FALSE
+C0377,Street light flickering continuously near Kalmunaikudi 05 station,Electrical,Low,Kalmunaikudi 05,14,5/14/2026 14:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0378,Water main valve leaking near Sainthamaruthu 11 intersection,Water,Medium,Sainthamaruthu 11,22,5/27/2026 21:00,National Water Supply & Drainage Board,Resolved,English,Yes,FALSE
+C0379,Low water pressure reported by residents in Kalmunaikudi 14,Water,Medium,Kalmunaikudi 14,17,5/3/2026 14:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0380,Missing road signage near Kalmunaikudi 12 intersection,Road,Medium,Kalmunaikudi 12,16,7/16/2026 02:00,Public Works Division,Pending,English,Yes,FALSE
+C0381,Flickering street lights making Kalmunaikudi 03 road unsafe at night,Electrical,High,Kalmunaikudi 03,13,5/2/2026 04:00,Street Lighting Unit,Pending,English,No,FALSE
+C0382,Litter accumulating in Pandiruppu 01 public park,Public,Low,Pandiruppu 01,6,5/17/2026 18:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0383,Fishing boat registration delayed at Periyaneelavanai 02 office,Boat,Low,Periyaneelavanai 02,2,7/16/2026 15:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0384,Stamp duty payment receipt not issued for transaction in Natpiddimunai 03,Billing,Low,Natpiddimunai 03,9,5/9/2026 00:00,Assessment Department,Pending,English,Yes,FALSE
+C0385,Foul smell from blocked drain near Maruthamunai 04 market,Drainage,Medium,Maruthamunai 04,4,6/22/2026 01:00,Public Works Division,Pending,English,Yes,FALSE
+C0386,Broken fence around Sainthamaruthu 02 public playground,Public,Medium,Sainthamaruthu 02,19,7/7/2026 20:00,Public Assistance Department,In Progress,English,No,FALSE
+C0387,Certificate of ownership request delayed for property in Maruthamunai 02,Billing,Low,Maruthamunai 02,3,5/6/2026 08:00,Assessment Department,Resolved,English,Yes,FALSE
+C0388,Damaged road surface near Maruthamunai 06 making travel difficult,Road,High,Maruthamunai 06,5,6/3/2026 15:00,Public Works Division,Pending,English,Yes,FALSE
+C0389,Damaged road surface near Kalmunaikudi 02 making travel difficult,Road,High,Kalmunaikudi 02,13,7/14/2026 21:00,Public Works Division,In Progress,English,Yes,FALSE
+C0390,Overflowing bin attracting stray animals near Sainthamaruthu 16 school,Waste,High,Sainthamaruthu 16,23,6/30/2026 22:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0391,Water tank overflow reported near Kalmunaikudi 08 apartment complex,Water,Medium,Kalmunaikudi 08,15,5/16/2026 06:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0392,Road crack widening near Sainthamaruthu 01 junction after recent rain,Road,Medium,Sainthamaruthu 01,18,7/23/2026 08:00,Public Works Division,Pending,English,No,TRUE
+C0393,Bad smell from uncollected garbage near Maruthamunai 01 residential area,Waste,Medium,Maruthamunai 01,3,7/23/2026 06:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0394,Recycling bin missing near Sainthamaruthu 16 community center,Waste,Low,Sainthamaruthu 16,23,6/10/2026 09:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0395,Public notice board missing near Sainthamaruthu 17 bus stand,Public,Medium,Sainthamaruthu 17,23,5/18/2026 09:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0396,Electric meter box left open near Maruthamunai 01,Electrical,Medium,Maruthamunai 01,3,7/22/2026 00:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0397,Road caved in slightly near Maruthamunai 04 after water damage,Road,High,Maruthamunai 04,4,5/30/2026 12:00,Public Works Division,Pending,English,Yes,FALSE
+C0398,Flickering street lights making Kalmunaikudi 02 road unsafe at night,Electrical,Medium,Kalmunaikudi 02,13,7/27/2026 10:00,Street Lighting Unit,Pending,English,No,FALSE
+C0399,Street light flickering continuously near Periyaneelavanai 01 station,Electrical,Low,Periyaneelavanai 01,1,7/7/2026 07:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0400,Overflowing bin attracting stray animals near Periyaneelavanai 01 school,Waste,High,Periyaneelavanai 01,1,5/20/2026 22:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0401,Street light pole knocked down near Kalmunaikudi 10,Electrical,High,Kalmunaikudi 10,16,5/5/2026 06:00,Street Lighting Unit,Resolved,English,Yes,FALSE
+C0402,Electric meter box left open near Kalmunaikudi 05,Electrical,Medium,Kalmunaikudi 05,14,5/10/2026 06:00,Street Lighting Unit,Pending,English,No,FALSE
+C0403,Standing water in drain breeding mosquitoes near Maruthamunai 03,Drainage,High,Maruthamunai 03,4,5/29/2026 07:00,Public Works Division,Pending,English,No,FALSE
+C0404,Road caved in slightly near Sainthamaruthu 16 after water damage,Road,High,Sainthamaruthu 16,23,5/23/2026 16:00,Public Works Division,In Progress,English,Yes,FALSE
+C0405,Low water pressure reported by residents in Pandiruppu 01,Water,Medium,Pandiruppu 01,6,6/15/2026 05:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0406,Broken fence around Maruthamunai 06 public playground,Public,Medium,Maruthamunai 06,5,5/26/2026 17:00,Public Assistance Department,Resolved,English,Yes,FALSE
+C0407,"Water pipe burst near Natpiddymunai 01 hospital, water gushing onto road",Water,High,Natpiddymunai 01,7,5/21/2026 21:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0408,Public restroom near Maruthamunai 04 in poor hygienic condition,Public,Medium,Maruthamunai 04,4,5/30/2026 00:00,Public Assistance Department,Resolved,English,Yes,TRUE
+C0409,Damaged road surface near Periyaneelavanai 02 making travel difficult,Road,Medium,Periyaneelavanai 02,2,5/10/2026 04:00,Public Works Division,Resolved,English,No,FALSE
+C0410,Fishing boat registration delayed at Sainthamaruthu 16 office,Boat,Low,Sainthamaruthu 16,23,5/22/2026 13:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0411,Blocked culvert causing water stagnation near Sainthamaruthu 17,Drainage,Medium,Sainthamaruthu 17,23,6/26/2026 21:00,Public Works Division,In Progress,English,No,FALSE
+C0412,Road crack widening near Periyaneelavanai 02 junction after recent rain,Road,Medium,Periyaneelavanai 02,2,5/9/2026 22:00,Public Works Division,Pending,English,No,FALSE
+C0413,"Park swing broken near Maruthamunai 01, unsafe for children",Public,Medium,Maruthamunai 01,3,7/10/2026 08:00,Public Assistance Department,Pending,English,No,FALSE
+C0414,Discount for early rate settlement not applied for Periyaneelavanai 02 property,Billing,Low,Periyaneelavanai 02,2,5/27/2026 16:00,Assessment Department,Pending,English,Yes,FALSE
+C0415,Broken pavement tiles near Pandiruppu 02 making walking unsafe,Road,Medium,Pandiruppu 02,10,6/10/2026 00:00,Public Works Division,In Progress,English,Yes,FALSE
+C0416,Boat mooring point damaged near Maruthamunai 04 harbor,Boat,Medium,Maruthamunai 04,4,6/21/2026 01:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0417,Electric meter box left open near Sainthamaruthu 15,Electrical,High,Sainthamaruthu 15,22,7/15/2026 20:00,Street Lighting Unit,Pending,English,No,FALSE
+C0418,No lighting at Sainthamaruthu 01 boat launch area at night,Boat,Medium,Sainthamaruthu 01,18,5/22/2026 06:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0419,Waste collection truck has not visited Maruthamunai 02 this week,Waste,Medium,Maruthamunai 02,3,5/23/2026 14:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0420,Open drain without cover poses safety risk near Chenaikudiyiruppu 01,Drainage,High,Chenaikudiyiruppu 01,8,5/6/2026 10:00,Public Works Division,Pending,English,No,FALSE
+C0421,Broken street light cover near Sainthamaruthu 16 park,Electrical,Low,Sainthamaruthu 16,23,5/23/2026 23:00,Street Lighting Unit,Resolved,English,No,FALSE
+C0422,Litter accumulating in Sainthamaruthu 02 public park,Public,Medium,Sainthamaruthu 02,19,6/24/2026 16:00,Public Assistance Department,In Progress,English,No,FALSE
+C0423,Flickering street lights making Kalmunaikudi 13 road unsafe at night,Electrical,Medium,Kalmunaikudi 13,17,5/22/2026 05:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0424,Recycling bin missing near Kalmunaikudi 09 community center,Waste,Medium,Kalmunaikudi 09,15,7/9/2026 14:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0425,Storm drain clogged with debris near Maruthamunai 02 junction,Drainage,High,Maruthamunai 02,3,7/22/2026 04:00,Public Works Division,In Progress,English,No,FALSE
+C0426,"Park swing broken near Kalmunaikudi 02, unsafe for children",Public,Medium,Kalmunaikudi 02,13,6/1/2026 07:00,Public Assistance Department,In Progress,English,No,FALSE
+C0427,Drainage system overflowing near Sainthamaruthu 11 residential lane,Drainage,High,Sainthamaruthu 11,22,5/17/2026 21:00,Public Works Division,In Progress,English,No,FALSE
+C0428,Playground equipment damaged near Sainthamaruthu 07 community park,Public,Medium,Sainthamaruthu 07,21,5/13/2026 08:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0429,"Drain blocked after heavy rain near Sainthamaruthu 09, causing flooding",Drainage,High,Sainthamaruthu 09,21,5/4/2026 03:00,Public Works Division,Pending,English,No,FALSE
+C0430,Cracked drain pipe near Kalmunai 02 needs repair,Drainage,Low,Kalmunai 02,12,7/30/2026 22:00,Public Works Division,Resolved,English,Yes,FALSE
+C0431,"Jetty in poor condition near Kalmunai 03, unsafe for boarding",Boat,High,Kalmunai 03,12,7/25/2026 22:00,Boat Services Unit,Pending,English,No,FALSE
+C0432,Water meter reading appears incorrect for Kalmunaikudi 07 household,Water,Medium,Kalmunaikudi 07,14,7/16/2026 09:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0433,Water leakage near Maruthamunai 02 school flooding the pavement,Water,Medium,Maruthamunai 02,3,6/17/2026 20:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0434,Late payment surcharge applied incorrectly on Kalmunaikudi 13 property rates,Billing,High,Kalmunaikudi 13,17,7/13/2026 14:00,Assessment Department,In Progress,English,No,FALSE
+C0435,Street light flickering continuously near Kalmunaikudi 07 station,Electrical,Medium,Kalmunaikudi 07,14,5/11/2026 04:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0436,Water meter reading appears incorrect for Natpiddymunai 01 household,Water,Low,Natpiddymunai 01,7,5/10/2026 00:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0437,Vandalized public signage near Sainthamaruthu 04 market,Public,Low,Sainthamaruthu 04,19,6/28/2026 23:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0438,Have not received assessment tax bill for Maruthamunai 02 property this quarter,Billing,High,Maruthamunai 02,3,7/10/2026 02:00,Assessment Department,Pending,English,Yes,FALSE
+C0439,Uneven road surface near Kalmunai 01 causing vehicle damage,Road,Low,Kalmunai 01,11,5/15/2026 21:00,Public Works Division,Pending,English,No,FALSE
+C0440,Overflowing bin attracting stray animals near Periyaneelavanai 01 school,Waste,High,Periyaneelavanai 01,1,5/20/2026 09:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0441,Water leakage near Natpiddymunai 04 school flooding the pavement,Water,Low,Natpiddymunai 04,7,5/30/2026 22:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0442,Discount for early rate settlement not applied for Kalmunaikudi 10 property,Billing,Low,Kalmunaikudi 10,16,6/6/2026 00:00,Assessment Department,Pending,English,No,FALSE
+C0443,Late payment surcharge applied incorrectly on Natpiddymunai 02 property rates,Billing,High,Natpiddymunai 02,7,5/27/2026 01:00,Assessment Department,Pending,English,Yes,FALSE
+C0444,Garbage bin damaged and waste scattered near Sainthamaruthu 13 bus stand,Waste,Medium,Sainthamaruthu 13,22,6/10/2026 04:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0445,Electric meter box left open near Maruthamunai 02,Electrical,Medium,Maruthamunai 02,3,7/24/2026 04:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0446,Boat service counter closed during working hours at Chenaikudiyiruppu 01,Boat,Medium,Chenaikudiyiruppu 01,8,6/18/2026 17:00,Boat Services Unit,Pending,English,No,FALSE
+C0447,Open drain without cover poses safety risk near Sainthamaruthu 13,Drainage,High,Sainthamaruthu 13,22,5/19/2026 17:00,Public Works Division,Resolved,English,Yes,FALSE
+C0448,"Drain blocked after heavy rain near Kalmunaikudi 06, causing flooding",Drainage,Medium,Kalmunaikudi 06,14,5/15/2026 08:00,Public Works Division,In Progress,English,Yes,FALSE
+C0449,Road caved in slightly near Sainthamaruthu 11 after water damage,Road,High,Sainthamaruthu 11,22,6/1/2026 15:00,Public Works Division,Pending,English,Yes,FALSE
+C0450,Speed bump damaged near Kalmunaikudi 08 residential entrance,Road,Low,Kalmunaikudi 08,15,7/15/2026 21:00,Public Works Division,Pending,English,No,FALSE
+C0451,Requesting rate remission for vacant property in Kalmunaikudi 05,Billing,Medium,Kalmunaikudi 05,14,5/10/2026 17:00,Assessment Department,In Progress,English,No,FALSE
+C0452,Water main valve leaking near Sainthamaruthu 14 intersection,Water,High,Sainthamaruthu 14,23,6/9/2026 21:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0453,Faded zebra crossing markings near Sainthamaruthu 06 school,Road,Low,Sainthamaruthu 06,19,5/14/2026 23:00,Public Works Division,In Progress,English,Yes,FALSE
+C0454,Assessment tax amount for my Kalmunaikudi 04 property seems incorrectly calculated,Billing,Medium,Kalmunaikudi 04,13,7/29/2026 09:00,Assessment Department,Pending,English,Yes,FALSE
+C0455,Road caved in slightly near Periyaneelavanai 02 after water damage,Road,High,Periyaneelavanai 02,2,7/23/2026 07:00,Public Works Division,In Progress,English,Yes,FALSE
+C0456,Low water pressure reported by residents in Pandiruppu 01,Water,Medium,Pandiruppu 01,6,7/10/2026 18:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0457,Business license fee dispute for trade stall in Sainthamaruthu 06,Billing,High,Sainthamaruthu 06,19,6/17/2026 00:00,Assessment Department,Pending,English,No,FALSE
+C0458,Broken public bench near Kalmunaikudi 11 park needs replacement,Public,Low,Kalmunaikudi 11,16,7/15/2026 18:00,Public Assistance Department,Pending,English,No,FALSE
+C0459,Garbage bin damaged and waste scattered near Natpiddymunai 03 bus stand,Waste,Medium,Natpiddymunai 03,7,5/5/2026 21:00,Waste Collection & Recycling Unit,Pending,English,Yes,TRUE
+C0460,Playground equipment damaged near Natpiddimunai 02 community park,Public,Medium,Natpiddimunai 02,9,7/6/2026 03:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0461,Bad smell from uncollected garbage near Kalmunaikudi 02 residential area,Waste,Medium,Kalmunaikudi 02,13,6/23/2026 12:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0462,Litter accumulating in Natpiddymunai 01 public park,Public,Low,Natpiddymunai 01,7,5/3/2026 15:00,Public Assistance Department,Pending,English,No,FALSE
+C0463,Assessment tax amount for my Natpiddymunai 01 property seems incorrectly calculated,Billing,Medium,Natpiddymunai 01,7,5/22/2026 20:00,Assessment Department,In Progress,English,Yes,FALSE
+C0464,Damaged electrical pole leaning near Sainthamaruthu 06 road,Electrical,High,Sainthamaruthu 06,19,5/1/2026 20:00,Street Lighting Unit,Pending,English,No,FALSE
+C0465,"Jetty in poor condition near Sainthamaruthu 06, unsafe for boarding",Boat,Medium,Sainthamaruthu 06,19,7/31/2026 13:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0466,Uneven road surface near Kalmunaikudi 06 causing vehicle damage,Road,Medium,Kalmunaikudi 06,14,5/30/2026 08:00,Public Works Division,Resolved,English,Yes,FALSE
+C0467,Business license fee dispute for trade stall in Maruthamunai 05,Billing,High,Maruthamunai 05,5,6/24/2026 12:00,Assessment Department,Resolved,English,No,FALSE
+C0468,Uneven road surface near Sainthamaruthu 08 causing vehicle damage,Road,High,Sainthamaruthu 08,20,7/23/2026 15:00,Public Works Division,Pending,English,No,FALSE
+C0469,Uneven road surface near Sainthamaruthu 06 causing vehicle damage,Road,Medium,Sainthamaruthu 06,19,7/14/2026 07:00,Public Works Division,Resolved,English,Yes,FALSE
+C0470,Street light not working near Sainthamaruthu 16 junction for a week,Electrical,Medium,Sainthamaruthu 16,23,5/14/2026 14:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0471,Garbage bags left uncollected on Natpiddimunai 03 street corner,Waste,Low,Natpiddimunai 03,9,7/8/2026 17:00,Waste Collection & Recycling Unit,Pending,English,Yes,TRUE
+C0472,Transformer making loud noise near Sainthamaruthu 11 residential zone,Electrical,Medium,Sainthamaruthu 11,22,7/31/2026 07:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0473,Public water fountain not working near Kalmunai 01 park,Public,Low,Kalmunai 01,11,5/10/2026 11:00,Public Assistance Department,In Progress,English,No,FALSE
+C0474,"Jetty in poor condition near Sainthamaruthu 12, unsafe for boarding",Boat,High,Sainthamaruthu 12,20,7/5/2026 23:00,Boat Services Unit,In Progress,English,No,FALSE
+C0475,"Park swing broken near Natpiddymunai 05, unsafe for children",Public,Medium,Natpiddymunai 05,7,6/2/2026 04:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0476,Public notice board missing near Sainthamaruthu 02 bus stand,Public,Low,Sainthamaruthu 02,19,6/26/2026 15:00,Public Assistance Department,Resolved,English,Yes,FALSE
+C0477,Water tank overflow reported near Natpiddymunai 03 apartment complex,Water,Medium,Natpiddymunai 03,7,5/6/2026 05:00,National Water Supply & Drainage Board,Resolved,English,Yes,FALSE
+C0478,Drainage system overflowing near Natpiddymunai 03 residential lane,Drainage,High,Natpiddymunai 03,7,5/14/2026 21:00,Public Works Division,Resolved,English,No,FALSE
+C0479,Public restroom near Sainthamaruthu 14 in poor hygienic condition,Public,High,Sainthamaruthu 14,23,5/6/2026 15:00,Public Assistance Department,Pending,English,No,FALSE
+C0480,Garbage bags left uncollected on Natpiddimunai 02 street corner,Waste,Low,Natpiddimunai 02,9,7/16/2026 05:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0481,No water supply in Sainthamaruthu 04 area for two days,Water,High,Sainthamaruthu 04,19,5/1/2026 10:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0482,Recycling bin missing near Natpiddymunai 03 community center,Waste,Low,Natpiddymunai 03,7,6/21/2026 13:00,Waste Collection & Recycling Unit,Resolved,English,No,FALSE
+C0483,Street light not working near Sainthamaruthu 08 junction for a week,Electrical,High,Sainthamaruthu 08,20,5/31/2026 07:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0484,Open drain without cover poses safety risk near Kalmunaikudi 03,Drainage,High,Kalmunaikudi 03,13,5/29/2026 05:00,Public Works Division,Pending,English,Yes,TRUE
+C0485,Storm damage to boat shelter near Sainthamaruthu 03 needs assessment,Boat,High,Sainthamaruthu 03,18,7/27/2026 12:00,Boat Services Unit,Pending,English,No,FALSE
+C0486,No lighting at Sainthamaruthu 13 boat launch area at night,Boat,Low,Sainthamaruthu 13,22,5/23/2026 04:00,Boat Services Unit,Resolved,English,No,FALSE
+C0487,Street light flickering continuously near Natpiddymunai 04 station,Electrical,Low,Natpiddymunai 04,7,7/3/2026 03:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0488,Illegal dumping of construction waste near Sainthamaruthu 05,Waste,Medium,Sainthamaruthu 05,21,7/4/2026 06:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0489,Water leakage near Maruthamunai 02 school flooding the pavement,Water,Medium,Maruthamunai 02,3,6/16/2026 01:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0490,Blocked culvert causing water stagnation near Sainthamaruthu 09,Drainage,Medium,Sainthamaruthu 09,21,6/20/2026 12:00,Public Works Division,Pending,English,Yes,FALSE
+C0491,Road divider knocked down near Sainthamaruthu 03 roundabout,Road,Medium,Sainthamaruthu 03,18,6/29/2026 23:00,Public Works Division,Pending,English,No,FALSE
+C0492,Contaminated water supply reported near Maruthamunai 06,Water,High,Maruthamunai 06,5,7/20/2026 17:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0493,Transformer making loud noise near Sainthamaruthu 10 residential zone,Electrical,Medium,Sainthamaruthu 10,20,7/6/2026 19:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0494,No lighting at Chenaikudiyiruppu 01 boat launch area at night,Boat,High,Chenaikudiyiruppu 01,8,7/4/2026 22:00,Boat Services Unit,In Progress,English,No,FALSE
+C0495,"Jetty in poor condition near Maruthamunai 04, unsafe for boarding",Boat,High,Maruthamunai 04,4,7/2/2026 13:00,Boat Services Unit,Pending,English,No,FALSE
+C0496,Flickering street lights making Natpiddimunai 03 road unsafe at night,Electrical,Medium,Natpiddimunai 03,9,7/22/2026 17:00,Street Lighting Unit,Pending,English,No,FALSE
+C0497,Road caved in slightly near Sainthamaruthu 16 after water damage,Road,High,Sainthamaruthu 16,23,7/26/2026 10:00,Public Works Division,Pending,English,Yes,FALSE
+C0498,Garbage overflowing near Pandiruppu 01 market for the past three days,Waste,High,Pandiruppu 01,6,6/30/2026 08:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0499,Road crack widening near Kalmunaikudi 02 junction after recent rain,Road,Medium,Kalmunaikudi 02,13,5/27/2026 09:00,Public Works Division,Pending,English,Yes,FALSE
+C0500,Discount for early rate settlement not applied for Sainthamaruthu 16 property,Billing,Low,Sainthamaruthu 16,23,7/10/2026 12:00,Assessment Department,Resolved,English,Yes,FALSE
+C0501,Garbage bin damaged and waste scattered near Maruthamunai 05 bus stand,Waste,Medium,Maruthamunai 05,5,5/18/2026 14:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0502,Late payment surcharge applied incorrectly on Sainthamaruthu 04 property rates,Billing,Medium,Sainthamaruthu 04,19,5/13/2026 16:00,Assessment Department,In Progress,English,No,FALSE
+C0503,Request for new mooring space near Maruthamunai 06 fishing harbor,Boat,Low,Maruthamunai 06,5,5/2/2026 04:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0504,Transformer making loud noise near Kalmunaikudi 12 residential zone,Electrical,Medium,Kalmunaikudi 12,16,5/25/2026 03:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0505,No lighting at Sainthamaruthu 07 boat launch area at night,Boat,Medium,Sainthamaruthu 07,21,6/29/2026 12:00,Boat Services Unit,Pending,English,No,FALSE
+C0506,Garbage overflowing near Sainthamaruthu 06 market for the past three days,Waste,High,Sainthamaruthu 06,19,5/17/2026 01:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0507,Water tank overflow reported near Kalmunai 02 apartment complex,Water,Low,Kalmunai 02,12,7/2/2026 11:00,National Water Supply & Drainage Board,Resolved,English,Yes,FALSE
+C0508,Property valuation for assessment tax in Sainthamaruthu 17 needs review,Billing,Low,Sainthamaruthu 17,23,7/23/2026 03:00,Assessment Department,Pending,English,No,FALSE
+C0509,Request for new mooring space near Kalmunai 02 fishing harbor,Boat,Medium,Kalmunai 02,12,6/10/2026 00:00,Boat Services Unit,Pending,English,No,FALSE
+C0510,Recycling bin missing near Kalmunaikudi 14 community center,Waste,Medium,Kalmunaikudi 14,17,5/30/2026 13:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0511,Flickering street lights making Kalmunai 03 road unsafe at night,Electrical,Medium,Kalmunai 03,12,6/24/2026 09:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0512,No lighting at Sainthamaruthu 10 boat launch area at night,Boat,Medium,Sainthamaruthu 10,20,6/4/2026 11:00,Boat Services Unit,Pending,English,No,TRUE
+C0513,Speed bump damaged near Kalmunaikudi 12 residential entrance,Road,Low,Kalmunaikudi 12,16,7/19/2026 19:00,Public Works Division,Pending,English,No,FALSE
+C0514,Requesting rate remission for vacant property in Natpiddimunai 01,Billing,Low,Natpiddimunai 01,9,6/14/2026 08:00,Assessment Department,Pending,English,No,FALSE
+C0515,Transformer making loud noise near Maruthamunai 05 residential zone,Electrical,Medium,Maruthamunai 05,5,5/12/2026 23:00,Street Lighting Unit,Pending,English,No,FALSE
+C0516,Request for new mooring space near Sainthamaruthu 07 fishing harbor,Boat,Low,Sainthamaruthu 07,21,7/11/2026 11:00,Boat Services Unit,Pending,English,No,TRUE
+C0517,Recycling bin missing near Kalmunaikudi 06 community center,Waste,Low,Kalmunaikudi 06,14,5/18/2026 04:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0518,Drainage system overflowing near Maruthamunai 05 residential lane,Drainage,High,Maruthamunai 05,5,6/7/2026 08:00,Public Works Division,In Progress,English,No,FALSE
+C0519,Business license fee dispute for trade stall in Sainthamaruthu 09,Billing,Medium,Sainthamaruthu 09,21,6/13/2026 23:00,Assessment Department,Pending,English,No,FALSE
+C0520,Drainage system overflowing near Kalmunaikudi 05 residential lane,Drainage,High,Kalmunaikudi 05,14,6/23/2026 04:00,Public Works Division,Resolved,English,Yes,FALSE
+C0521,Public water fountain not working near Sainthamaruthu 05 park,Public,Low,Sainthamaruthu 05,21,7/29/2026 10:00,Public Assistance Department,Pending,English,No,FALSE
+C0522,Drainage system overflowing near Kalmunaikudi 11 residential lane,Drainage,High,Kalmunaikudi 11,16,6/24/2026 14:00,Public Works Division,In Progress,English,No,FALSE
+C0523,Boat service counter closed during working hours at Sainthamaruthu 01,Boat,Medium,Sainthamaruthu 01,18,6/21/2026 20:00,Boat Services Unit,In Progress,English,No,FALSE
+C0524,Faded zebra crossing markings near Sainthamaruthu 16 school,Road,Medium,Sainthamaruthu 16,23,5/6/2026 11:00,Public Works Division,Pending,English,Yes,FALSE
+C0525,Damaged electrical pole leaning near Sainthamaruthu 13 road,Electrical,High,Sainthamaruthu 13,22,5/7/2026 00:00,Street Lighting Unit,Resolved,English,No,FALSE
+C0526,Missing road signage near Sainthamaruthu 13 intersection,Road,Medium,Sainthamaruthu 13,22,7/5/2026 14:00,Public Works Division,Pending,English,Yes,FALSE
+C0527,Electric meter box left open near Kalmunaikudi 03,Electrical,Low,Kalmunaikudi 03,13,7/4/2026 12:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0528,Illegal dumping of construction waste near Kalmunaikudi 03,Waste,Medium,Kalmunaikudi 03,13,5/6/2026 05:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0529,Waste collection truck has not visited Natpiddymunai 03 this week,Waste,Medium,Natpiddymunai 03,7,7/28/2026 11:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0530,Vandalized public signage near Kalmunaikudi 13 market,Public,Low,Kalmunaikudi 13,17,6/13/2026 13:00,Public Assistance Department,Pending,English,No,FALSE
+C0531,Open drain without cover poses safety risk near Natpiddymunai 02,Drainage,High,Natpiddymunai 02,7,5/28/2026 02:00,Public Works Division,In Progress,English,Yes,TRUE
+C0532,Damaged road surface near Natpiddymunai 01 making travel difficult,Road,Medium,Natpiddymunai 01,7,5/16/2026 00:00,Public Works Division,Pending,English,Yes,FALSE
+C0533,Garbage bin damaged and waste scattered near Kalmunai 02 bus stand,Waste,Medium,Kalmunai 02,12,5/30/2026 05:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0534,Boat service counter closed during working hours at Kalmunaikudi 14,Boat,Medium,Kalmunaikudi 14,17,5/18/2026 20:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0535,Irregular water supply schedule affecting Natpiddymunai 01 residents,Water,Low,Natpiddymunai 01,7,5/21/2026 17:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0536,Litter accumulating in Kalmunaikudi 02 public park,Public,Low,Kalmunaikudi 02,13,6/24/2026 12:00,Public Assistance Department,Resolved,English,No,FALSE
+C0537,Uncollected waste piling up along the main road in Sainthamaruthu 07,Waste,High,Sainthamaruthu 07,21,5/24/2026 16:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0538,Overflowing bin attracting stray animals near Kalmunaikudi 03 school,Waste,High,Kalmunaikudi 03,13,5/28/2026 11:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0539,Recycling bin missing near Sainthamaruthu 17 community center,Waste,Low,Sainthamaruthu 17,23,5/29/2026 18:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0540,Transformer making loud noise near Kalmunaikudi 11 residential zone,Electrical,High,Kalmunaikudi 11,16,6/21/2026 18:00,Street Lighting Unit,Pending,English,No,FALSE
+C0541,Uncollected waste piling up along the main road in Natpiddymunai 04,Waste,High,Natpiddymunai 04,7,5/11/2026 02:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0542,Electric meter box left open near Sainthamaruthu 09,Electrical,Medium,Sainthamaruthu 09,21,5/8/2026 00:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0543,"Drain blocked after heavy rain near Kalmunaikudi 08, causing flooding",Drainage,High,Kalmunaikudi 08,15,5/25/2026 10:00,Public Works Division,Pending,English,Yes,FALSE
+C0544,Water main valve leaking near Sainthamaruthu 17 intersection,Water,Low,Sainthamaruthu 17,23,6/12/2026 01:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0545,Broken public bench near Kalmunaikudi 03 park needs replacement,Public,Low,Kalmunaikudi 03,13,7/13/2026 09:00,Public Assistance Department,Pending,English,No,FALSE
+C0546,Uncollected waste piling up along the main road in Kalmunaikudi 01,Waste,High,Kalmunaikudi 01,12,5/9/2026 09:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0547,Broken pavement tiles near Kalmunaikudi 03 making walking unsafe,Road,Low,Kalmunaikudi 03,13,5/14/2026 05:00,Public Works Division,In Progress,English,Yes,FALSE
+C0548,Stamp duty payment receipt not issued for transaction in Natpiddimunai 03,Billing,Low,Natpiddimunai 03,9,7/17/2026 04:00,Assessment Department,Pending,English,No,FALSE
+C0549,Broken public bench near Kalmunaikudi 14 park needs replacement,Public,Low,Kalmunaikudi 14,17,6/8/2026 06:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0550,Contaminated water supply reported near Natpiddymunai 04,Water,High,Natpiddymunai 04,7,7/2/2026 17:00,National Water Supply & Drainage Board,Resolved,English,Yes,FALSE
+C0551,Drainage system overflowing near Natpiddymunai 02 residential lane,Drainage,Medium,Natpiddymunai 02,7,7/17/2026 15:00,Public Works Division,In Progress,English,Yes,FALSE
+C0552,Recycling bin missing near Kalmunaikudi 08 community center,Waste,Low,Kalmunaikudi 08,15,5/20/2026 04:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0553,No lighting at Kalmunaikudi 01 boat launch area at night,Boat,High,Kalmunaikudi 01,12,7/27/2026 09:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0554,Transformer making loud noise near Kalmunaikudi 10 residential zone,Electrical,Medium,Kalmunaikudi 10,16,6/24/2026 21:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0555,Litter accumulating in Kalmunaikudi 06 public park,Public,Low,Kalmunaikudi 06,14,7/2/2026 05:00,Public Assistance Department,Pending,English,No,FALSE
+C0556,Overcharged on trade license renewal fee for shop in Kalmunaikudi 02,Billing,High,Kalmunaikudi 02,13,6/4/2026 19:00,Assessment Department,In Progress,English,No,FALSE
+C0557,Broken pavement tiles near Kalmunaikudi 14 making walking unsafe,Road,Medium,Kalmunaikudi 14,17,7/20/2026 05:00,Public Works Division,In Progress,English,Yes,FALSE
+C0558,Slow drainage causing minor waterlogging near Natpiddymunai 03,Drainage,Low,Natpiddymunai 03,7,5/2/2026 19:00,Public Works Division,Resolved,English,Yes,FALSE
+C0559,"Waste bin lid broken, causing littering near Sainthamaruthu 02",Waste,Low,Sainthamaruthu 02,19,6/22/2026 18:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0560,"Jetty in poor condition near Kalmunaikudi 02, unsafe for boarding",Boat,High,Kalmunaikudi 02,13,5/13/2026 23:00,Boat Services Unit,Resolved,English,No,FALSE
+C0561,Storm damage to boat shelter near Kalmunaikudi 11 needs assessment,Boat,Medium,Kalmunaikudi 11,16,7/18/2026 07:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0562,Slow drainage causing minor waterlogging near Pandiruppu 01,Drainage,Low,Pandiruppu 01,6,5/15/2026 04:00,Public Works Division,Pending,English,No,FALSE
+C0563,No lighting at Maruthamunai 01 boat launch area at night,Boat,Low,Maruthamunai 01,3,5/5/2026 03:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0564,Electric meter box left open near Sainthamaruthu 15,Electrical,Medium,Sainthamaruthu 15,22,7/2/2026 23:00,Street Lighting Unit,Pending,English,Yes,TRUE
+C0565,"Park swing broken near Sainthamaruthu 10, unsafe for children",Public,Medium,Sainthamaruthu 10,20,6/26/2026 04:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0566,Standing water in drain breeding mosquitoes near Sainthamaruthu 06,Drainage,High,Sainthamaruthu 06,19,5/25/2026 10:00,Public Works Division,In Progress,English,No,FALSE
+C0567,Certificate of ownership request delayed for property in Kalmunaikudi 12,Billing,Low,Kalmunaikudi 12,16,7/26/2026 03:00,Assessment Department,In Progress,English,Yes,FALSE
+C0568,Recycling bin missing near Pandiruppu 01 community center,Waste,Low,Pandiruppu 01,6,5/15/2026 14:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0569,Drainage system overflowing near Kalmunaikudi 02 residential lane,Drainage,High,Kalmunaikudi 02,13,6/2/2026 01:00,Public Works Division,In Progress,English,No,FALSE
+C0570,Water tank overflow reported near Sainthamaruthu 08 apartment complex,Water,Medium,Sainthamaruthu 08,20,5/3/2026 04:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0571,Street light not working near Pandiruppu 01 junction for a week,Electrical,Medium,Pandiruppu 01,6,6/25/2026 13:00,Street Lighting Unit,Pending,English,No,TRUE
+C0572,"Drain blocked after heavy rain near Natpiddymunai 01, causing flooding",Drainage,High,Natpiddymunai 01,7,6/24/2026 17:00,Public Works Division,Pending,English,No,FALSE
+C0573,Waste collection truck has not visited Maruthamunai 04 this week,Waste,Low,Maruthamunai 04,4,5/22/2026 07:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0574,Business license fee dispute for trade stall in Pandiruppu 02,Billing,Medium,Pandiruppu 02,10,5/26/2026 16:00,Assessment Department,In Progress,English,Yes,FALSE
+C0575,Storm drain clogged with debris near Kalmunaikudi 08 junction,Drainage,Medium,Kalmunaikudi 08,15,5/2/2026 14:00,Public Works Division,Pending,English,Yes,FALSE
+C0576,Electric meter box left open near Kalmunaikudi 11,Electrical,Medium,Kalmunaikudi 11,16,7/27/2026 12:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0577,Recycling bin missing near Kalmunaikudi 11 community center,Waste,Low,Kalmunaikudi 11,16,6/22/2026 08:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0578,Illegal dumping of construction waste near Kalmunaikudi 12,Waste,Medium,Kalmunaikudi 12,16,7/31/2026 02:00,Waste Collection & Recycling Unit,Resolved,English,No,FALSE
+C0579,Boat parking area overcrowded near Kalmunaikudi 01 harbor,Boat,Low,Kalmunaikudi 01,12,5/10/2026 11:00,Boat Services Unit,In Progress,English,No,FALSE
+C0580,Have not received assessment tax bill for Natpiddimunai 01 property this quarter,Billing,Medium,Natpiddimunai 01,9,7/25/2026 03:00,Assessment Department,Pending,English,No,FALSE
+C0581,Overcharged on trade license renewal fee for shop in Natpiddymunai 03,Billing,High,Natpiddymunai 03,7,6/20/2026 11:00,Assessment Department,In Progress,English,Yes,FALSE
+C0582,Illegal dumping of construction waste near Sainthamaruthu 06,Waste,Low,Sainthamaruthu 06,19,6/11/2026 08:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0583,Uneven road surface near Kalmunaikudi 13 causing vehicle damage,Road,Medium,Kalmunaikudi 13,17,7/13/2026 07:00,Public Works Division,Pending,English,Yes,FALSE
+C0584,Street light pole knocked down near Kalmunaikudi 14,Electrical,High,Kalmunaikudi 14,17,5/25/2026 15:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0585,Road divider knocked down near Kalmunaikudi 01 roundabout,Road,Medium,Kalmunaikudi 01,12,5/12/2026 13:00,Public Works Division,Pending,English,Yes,FALSE
+C0586,Flickering street lights making Sainthamaruthu 15 road unsafe at night,Electrical,Medium,Sainthamaruthu 15,22,6/2/2026 20:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0587,Garbage bin damaged and waste scattered near Kalmunaikudi 03 bus stand,Waste,Medium,Kalmunaikudi 03,13,7/29/2026 21:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0588,Requesting rate remission for vacant property in Maruthamunai 03,Billing,Low,Maruthamunai 03,4,7/30/2026 08:00,Assessment Department,Pending,English,No,FALSE
+C0589,Business license fee dispute for trade stall in Sainthamaruthu 06,Billing,Medium,Sainthamaruthu 06,19,7/19/2026 15:00,Assessment Department,In Progress,English,No,FALSE
+C0590,Drain cover missing near Kalmunaikudi 07 pedestrian crossing,Drainage,Medium,Kalmunaikudi 07,14,5/19/2026 21:00,Public Works Division,Resolved,English,No,FALSE
+C0591,"Waste bin lid broken, causing littering near Kalmunaikudi 11",Waste,Low,Kalmunaikudi 11,16,5/24/2026 05:00,Waste Collection & Recycling Unit,Pending,English,Yes,TRUE
+C0592,Garbage bin damaged and waste scattered near Maruthamunai 04 bus stand,Waste,Medium,Maruthamunai 04,4,6/26/2026 21:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0593,Electric meter box left open near Periyaneelavanai 01,Electrical,Medium,Periyaneelavanai 01,1,7/20/2026 13:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0594,Litter accumulating in Sainthamaruthu 17 public park,Public,Low,Sainthamaruthu 17,23,6/25/2026 19:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0595,Waste collection truck has not visited Natpiddymunai 02 this week,Waste,Medium,Natpiddymunai 02,7,7/31/2026 22:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0596,Irregular water supply schedule affecting Natpiddimunai 01 residents,Water,Low,Natpiddimunai 01,9,6/6/2026 14:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0597,Boat license renewal fee dispute for vessel based in Sainthamaruthu 13,Boat,Low,Sainthamaruthu 13,22,7/23/2026 16:00,Boat Services Unit,In Progress,English,No,FALSE
+C0598,Garbage bags left uncollected on Maruthamunai 06 street corner,Waste,Low,Maruthamunai 06,5,7/8/2026 01:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0599,Transformer making loud noise near Kalmunaikudi 05 residential zone,Electrical,Medium,Kalmunaikudi 05,14,5/25/2026 02:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0600,Road crack widening near Kalmunaikudi 04 junction after recent rain,Road,Medium,Kalmunaikudi 04,13,6/16/2026 06:00,Public Works Division,In Progress,English,Yes,FALSE
+C0601,Litter accumulating in Natpiddymunai 04 public park,Public,Low,Natpiddymunai 04,7,7/28/2026 08:00,Public Assistance Department,Pending,English,No,FALSE
+C0602,Flickering street lights making Sainthamaruthu 12 road unsafe at night,Electrical,Low,Sainthamaruthu 12,20,5/20/2026 16:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0603,Broken street light cover near Kalmunaikudi 01 park,Electrical,Low,Kalmunaikudi 01,12,7/4/2026 09:00,Street Lighting Unit,Pending,English,No,FALSE
+C0604,Boat service counter closed during working hours at Periyaneelavanai 01,Boat,Medium,Periyaneelavanai 01,1,6/30/2026 06:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0605,Damaged walking path in Sainthamaruthu 01 public garden,Public,Low,Sainthamaruthu 01,18,5/28/2026 05:00,Public Assistance Department,Pending,English,No,FALSE
+C0606,Certificate of ownership request delayed for property in Sainthamaruthu 13,Billing,Low,Sainthamaruthu 13,22,6/22/2026 12:00,Assessment Department,Pending,English,No,FALSE
+C0607,Recycling bin missing near Kalmunaikudi 01 community center,Waste,Low,Kalmunaikudi 01,12,7/7/2026 19:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0608,No lighting at Sainthamaruthu 09 boat launch area at night,Boat,High,Sainthamaruthu 09,21,6/5/2026 02:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0609,Damaged road surface near Kalmunaikudi 14 making travel difficult,Road,Medium,Kalmunaikudi 14,17,5/18/2026 20:00,Public Works Division,Pending,English,No,FALSE
+C0610,Boat parking area overcrowded near Natpiddymunai 04 harbor,Boat,Low,Natpiddymunai 04,7,6/13/2026 18:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0611,Cracked drain pipe near Pandiruppu 01 needs repair,Drainage,Low,Pandiruppu 01,6,7/18/2026 01:00,Public Works Division,In Progress,English,No,FALSE
+C0612,Electric meter box left open near Kalmunaikudi 06,Electrical,Medium,Kalmunaikudi 06,14,6/15/2026 22:00,Street Lighting Unit,Pending,English,No,FALSE
+C0613,Garbage bin damaged and waste scattered near Kalmunaikudi 05 bus stand,Waste,Medium,Kalmunaikudi 05,14,7/9/2026 23:00,Waste Collection & Recycling Unit,Resolved,English,No,FALSE
+C0614,Damaged walking path in Kalmunai 01 public garden,Public,Low,Kalmunai 01,11,5/16/2026 20:00,Public Assistance Department,Resolved,English,Yes,FALSE
+C0615,Bad smell from uncollected garbage near Sainthamaruthu 17 residential area,Waste,Medium,Sainthamaruthu 17,23,5/26/2026 05:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0616,Litter accumulating in Kalmunaikudi 14 public park,Public,Low,Kalmunaikudi 14,17,6/4/2026 02:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0617,Broken street light cover near Sainthamaruthu 01 park,Electrical,Low,Sainthamaruthu 01,18,6/1/2026 13:00,Street Lighting Unit,Pending,English,No,FALSE
+C0618,Request for new mooring space near Maruthamunai 04 fishing harbor,Boat,Low,Maruthamunai 04,4,5/17/2026 06:00,Boat Services Unit,Pending,English,No,FALSE
+C0619,Broken fence around Sainthamaruthu 05 public playground,Public,Medium,Sainthamaruthu 05,21,6/3/2026 08:00,Public Assistance Department,Pending,English,No,FALSE
+C0620,Transformer making loud noise near Kalmunai 02 residential zone,Electrical,Medium,Kalmunai 02,12,7/26/2026 04:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0621,No lighting at Sainthamaruthu 12 boat launch area at night,Boat,Medium,Sainthamaruthu 12,20,5/3/2026 05:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0622,Blocked culvert causing water stagnation near Sainthamaruthu 07,Drainage,Medium,Sainthamaruthu 07,21,6/8/2026 13:00,Public Works Division,In Progress,English,No,FALSE
+C0623,"Water pipe burst near Maruthamunai 03 hospital, water gushing onto road",Water,High,Maruthamunai 03,4,6/20/2026 20:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0624,"Water pipe burst near Natpiddimunai 01 hospital, water gushing onto road",Water,High,Natpiddimunai 01,9,5/23/2026 06:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0625,Damaged electrical pole leaning near Kalmunaikudi 07 road,Electrical,High,Kalmunaikudi 07,14,7/4/2026 10:00,Street Lighting Unit,Pending,English,No,TRUE
+C0626,Litter accumulating in Kalmunaikudi 09 public park,Public,Low,Kalmunaikudi 09,15,5/14/2026 02:00,Public Assistance Department,Resolved,English,No,FALSE
+C0627,Cracked drain pipe near Sainthamaruthu 03 needs repair,Drainage,Low,Sainthamaruthu 03,18,7/2/2026 02:00,Public Works Division,In Progress,English,No,FALSE
+C0628,Road caved in slightly near Kalmunaikudi 09 after water damage,Road,High,Kalmunaikudi 09,15,5/26/2026 05:00,Public Works Division,In Progress,English,Yes,FALSE
+C0629,Foul smell from blocked drain near Periyaneelavanai 01 market,Drainage,High,Periyaneelavanai 01,1,6/15/2026 13:00,Public Works Division,In Progress,English,No,FALSE
+C0630,Garbage bags left uncollected on Sainthamaruthu 13 street corner,Waste,Low,Sainthamaruthu 13,22,5/23/2026 10:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0631,Recycling bin missing near Kalmunaikudi 02 community center,Waste,Low,Kalmunaikudi 02,13,7/9/2026 09:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0632,Property valuation for assessment tax in Natpiddymunai 05 needs review,Billing,Medium,Natpiddymunai 05,7,7/28/2026 08:00,Assessment Department,Pending,English,Yes,FALSE
+C0633,Uneven road surface near Sainthamaruthu 06 causing vehicle damage,Road,Medium,Sainthamaruthu 06,19,5/18/2026 17:00,Public Works Division,In Progress,English,Yes,FALSE
+C0634,Foul smell from blocked drain near Maruthamunai 06 market,Drainage,Medium,Maruthamunai 06,5,5/19/2026 05:00,Public Works Division,In Progress,English,Yes,FALSE
+C0635,Broken public bench near Pandiruppu 02 park needs replacement,Public,Medium,Pandiruppu 02,10,5/27/2026 03:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0636,Drain cover missing near Sainthamaruthu 11 pedestrian crossing,Drainage,Medium,Sainthamaruthu 11,22,6/10/2026 19:00,Public Works Division,Pending,English,Yes,FALSE
+C0637,Broken pavement tiles near Kalmunaikudi 02 making walking unsafe,Road,Low,Kalmunaikudi 02,13,5/15/2026 04:00,Public Works Division,In Progress,English,Yes,FALSE
+C0638,Waste collection truck has not visited Sainthamaruthu 14 this week,Waste,Medium,Sainthamaruthu 14,23,5/25/2026 06:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0639,Assessment tax amount for my Maruthamunai 06 property seems incorrectly calculated,Billing,Medium,Maruthamunai 06,5,5/24/2026 23:00,Assessment Department,In Progress,English,Yes,FALSE
+C0640,Bad smell from uncollected garbage near Kalmunaikudi 08 residential area,Waste,Medium,Kalmunaikudi 08,15,6/7/2026 18:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0641,Road caved in slightly near Natpiddymunai 01 after water damage,Road,High,Natpiddymunai 01,7,5/25/2026 14:00,Public Works Division,Pending,English,No,FALSE
+C0642,Damaged boat landing point near Natpiddymunai 03 needs urgent repair,Boat,High,Natpiddymunai 03,7,5/23/2026 21:00,Boat Services Unit,Pending,English,No,FALSE
+C0643,Late payment surcharge applied incorrectly on Periyaneelavanai 01 property rates,Billing,Medium,Periyaneelavanai 01,1,5/1/2026 20:00,Assessment Department,Pending,English,Yes,FALSE
+C0644,"Waste bin lid broken, causing littering near Sainthamaruthu 15",Waste,Low,Sainthamaruthu 15,22,5/25/2026 03:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0645,Drain cover missing near Maruthamunai 04 pedestrian crossing,Drainage,High,Maruthamunai 04,4,5/6/2026 19:00,Public Works Division,Pending,English,No,FALSE
+C0646,Overflowing bin attracting stray animals near Sainthamaruthu 06 school,Waste,Medium,Sainthamaruthu 06,19,5/31/2026 18:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0647,Damaged walking path in Sainthamaruthu 11 public garden,Public,Low,Sainthamaruthu 11,22,7/27/2026 06:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0648,Garbage bags left uncollected on Sainthamaruthu 10 street corner,Waste,Low,Sainthamaruthu 10,20,5/19/2026 02:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0649,Litter accumulating in Sainthamaruthu 11 public park,Public,Low,Sainthamaruthu 11,22,5/16/2026 13:00,Public Assistance Department,Resolved,English,No,FALSE
+C0650,Irregular water supply schedule affecting Pandiruppu 02 residents,Water,Low,Pandiruppu 02,10,7/15/2026 08:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0651,Have not received assessment tax bill for Periyaneelavanai 02 property this quarter,Billing,Medium,Periyaneelavanai 02,2,5/7/2026 03:00,Assessment Department,Pending,English,No,FALSE
+C0652,Certificate of ownership request delayed for property in Kalmunaikudi 12,Billing,Low,Kalmunaikudi 12,16,6/9/2026 18:00,Assessment Department,In Progress,English,Yes,FALSE
+C0653,"Park swing broken near Maruthamunai 05, unsafe for children",Public,Medium,Maruthamunai 05,5,7/24/2026 19:00,Public Assistance Department,Pending,English,No,FALSE
+C0654,Bad smell from uncollected garbage near Maruthamunai 05 residential area,Waste,Medium,Maruthamunai 05,5,7/3/2026 21:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0655,Storm damage to boat shelter near Sainthamaruthu 04 needs assessment,Boat,High,Sainthamaruthu 04,19,5/7/2026 21:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0656,Bad smell from uncollected garbage near Sainthamaruthu 06 residential area,Waste,Medium,Sainthamaruthu 06,19,5/6/2026 21:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0657,Public water fountain not working near Sainthamaruthu 12 park,Public,Low,Sainthamaruthu 12,20,7/19/2026 23:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0658,Speed bump damaged near Maruthamunai 01 residential entrance,Road,Low,Maruthamunai 01,3,6/20/2026 10:00,Public Works Division,In Progress,English,Yes,FALSE
+C0659,"Water pipe burst near Sainthamaruthu 11 hospital, water gushing onto road",Water,Medium,Sainthamaruthu 11,22,6/25/2026 08:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0660,Slow drainage causing minor waterlogging near Sainthamaruthu 12,Drainage,Low,Sainthamaruthu 12,20,7/5/2026 11:00,Public Works Division,In Progress,English,No,FALSE
+C0661,Boat parking area overcrowded near Maruthamunai 05 harbor,Boat,Low,Maruthamunai 05,5,5/16/2026 08:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0662,No lighting at Kalmunai 02 boat launch area at night,Boat,Medium,Kalmunai 02,12,7/1/2026 11:00,Boat Services Unit,Resolved,English,No,FALSE
+C0663,Late payment surcharge applied incorrectly on Sainthamaruthu 03 property rates,Billing,Medium,Sainthamaruthu 03,18,7/12/2026 06:00,Assessment Department,Pending,English,Yes,FALSE
+C0664,Road caved in slightly near Kalmunaikudi 07 after water damage,Road,High,Kalmunaikudi 07,14,6/27/2026 20:00,Public Works Division,Pending,English,No,FALSE
+C0665,Recycling bin missing near Pandiruppu 01 community center,Waste,Low,Pandiruppu 01,6,7/23/2026 01:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0666,Broken public bench near Sainthamaruthu 14 park needs replacement,Public,Low,Sainthamaruthu 14,23,6/24/2026 00:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0667,Open drain without cover poses safety risk near Maruthamunai 01,Drainage,High,Maruthamunai 01,3,5/25/2026 06:00,Public Works Division,Pending,English,Yes,FALSE
+C0668,Damaged electrical pole leaning near Sainthamaruthu 16 road,Electrical,High,Sainthamaruthu 16,23,5/8/2026 11:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0669,Damaged walking path in Natpiddymunai 02 public garden,Public,Low,Natpiddymunai 02,7,5/10/2026 06:00,Public Assistance Department,Resolved,English,No,FALSE
+C0670,Large pothole on main road near Sainthamaruthu 11 causing accidents,Road,High,Sainthamaruthu 11,22,6/2/2026 11:00,Public Works Division,Pending,English,No,FALSE
+C0671,Broken fence around Kalmunaikudi 05 public playground,Public,Medium,Kalmunaikudi 05,14,7/22/2026 11:00,Public Assistance Department,Pending,English,No,FALSE
+C0672,Illegal dumping of construction waste near Maruthamunai 02,Waste,Medium,Maruthamunai 02,3,6/18/2026 18:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0673,Street light flickering continuously near Maruthamunai 02 station,Electrical,Low,Maruthamunai 02,3,6/25/2026 20:00,Street Lighting Unit,Resolved,English,No,FALSE
+C0674,Low water pressure reported by residents in Kalmunaikudi 06,Water,Medium,Kalmunaikudi 06,14,6/25/2026 11:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0675,Recycling bin missing near Kalmunaikudi 04 community center,Waste,Low,Kalmunaikudi 04,13,7/13/2026 23:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0676,Drain cover missing near Kalmunaikudi 14 pedestrian crossing,Drainage,Medium,Kalmunaikudi 14,17,7/11/2026 10:00,Public Works Division,Pending,English,No,FALSE
+C0677,Power outage reported frequently in Maruthamunai 03 area,Electrical,Medium,Maruthamunai 03,4,5/11/2026 22:00,Street Lighting Unit,Pending,English,No,FALSE
+C0678,Property valuation for assessment tax in Kalmunaikudi 02 needs review,Billing,Medium,Kalmunaikudi 02,13,5/30/2026 14:00,Assessment Department,Pending,English,No,TRUE
+C0679,Storm drain clogged with debris near Sainthamaruthu 04 junction,Drainage,Medium,Sainthamaruthu 04,19,7/29/2026 17:00,Public Works Division,In Progress,English,No,FALSE
+C0680,Power outage reported frequently in Sainthamaruthu 08 area,Electrical,Medium,Sainthamaruthu 08,20,5/6/2026 07:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0681,Broken street light cover near Pandiruppu 02 park,Electrical,Low,Pandiruppu 02,10,5/11/2026 19:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0682,Broken pavement tiles near Kalmunaikudi 09 making walking unsafe,Road,Medium,Kalmunaikudi 09,15,6/20/2026 19:00,Public Works Division,Pending,English,Yes,FALSE
+C0683,Speed bump damaged near Kalmunaikudi 09 residential entrance,Road,Low,Kalmunaikudi 09,15,6/6/2026 13:00,Public Works Division,Resolved,English,No,FALSE
+C0684,Waste collection truck has not visited Natpiddymunai 01 this week,Waste,High,Natpiddymunai 01,7,6/15/2026 03:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0685,Uncollected waste piling up along the main road in Kalmunaikudi 03,Waste,High,Kalmunaikudi 03,13,5/11/2026 11:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0686,Waste collection truck has not visited Sainthamaruthu 06 this week,Waste,Medium,Sainthamaruthu 06,19,7/27/2026 18:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0687,Damaged walking path in Sainthamaruthu 03 public garden,Public,Low,Sainthamaruthu 03,18,7/29/2026 22:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0688,Garbage overflowing near Chenaikudiyiruppu 01 market for the past three days,Waste,High,Chenaikudiyiruppu 01,8,5/2/2026 18:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0689,Litter accumulating in Kalmunaikudi 01 public park,Public,Low,Kalmunaikudi 01,12,7/18/2026 19:00,Public Assistance Department,Pending,English,No,FALSE
+C0690,Waste collection truck has not visited Kalmunaikudi 03 this week,Waste,Medium,Kalmunaikudi 03,13,5/28/2026 04:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0691,Street light flickering continuously near Kalmunai 03 station,Electrical,Low,Kalmunai 03,12,7/5/2026 19:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0692,Street light pole knocked down near Chenaikudiyiruppu 01,Electrical,High,Chenaikudiyiruppu 01,8,6/13/2026 14:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0693,Blocked culvert causing water stagnation near Sainthamaruthu 06,Drainage,High,Sainthamaruthu 06,19,5/31/2026 00:00,Public Works Division,Pending,English,No,FALSE
+C0694,Standing water in drain breeding mosquitoes near Sainthamaruthu 14,Drainage,Medium,Sainthamaruthu 14,23,6/24/2026 02:00,Public Works Division,Resolved,English,No,FALSE
+C0695,No water supply in Kalmunai 02 area for two days,Water,High,Kalmunai 02,12,6/10/2026 04:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0696,Overcharged on trade license renewal fee for shop in Kalmunaikudi 07,Billing,Medium,Kalmunaikudi 07,14,5/15/2026 18:00,Assessment Department,In Progress,English,No,FALSE
+C0697,Exposed electrical wiring near Pandiruppu 01 poses safety hazard,Electrical,Medium,Pandiruppu 01,6,6/25/2026 01:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0698,Broken street light cover near Natpiddymunai 05 park,Electrical,Low,Natpiddymunai 05,7,5/14/2026 00:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0699,No lighting at Natpiddymunai 02 boat launch area at night,Boat,Medium,Natpiddymunai 02,7,5/4/2026 03:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0700,Assessment tax amount for my Natpiddimunai 02 property seems incorrectly calculated,Billing,Medium,Natpiddimunai 02,9,5/20/2026 20:00,Assessment Department,Pending,English,No,FALSE
+C0701,No water supply in Kalmunaikudi 07 area for two days,Water,High,Kalmunaikudi 07,14,5/24/2026 23:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0702,Property valuation for assessment tax in Sainthamaruthu 14 needs review,Billing,High,Sainthamaruthu 14,23,6/29/2026 08:00,Assessment Department,In Progress,English,Yes,FALSE
+C0703,Recycling bin missing near Maruthamunai 05 community center,Waste,Low,Maruthamunai 05,5,6/20/2026 08:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0704,Assessment tax amount for my Kalmunaikudi 14 property seems incorrectly calculated,Billing,Medium,Kalmunaikudi 14,17,6/12/2026 16:00,Assessment Department,In Progress,English,No,FALSE
+C0705,Overcharged on trade license renewal fee for shop in Sainthamaruthu 14,Billing,Medium,Sainthamaruthu 14,23,5/6/2026 07:00,Assessment Department,Pending,English,Yes,FALSE
+C0706,Drain cover missing near Sainthamaruthu 06 pedestrian crossing,Drainage,High,Sainthamaruthu 06,19,7/31/2026 01:00,Public Works Division,In Progress,English,Yes,FALSE
+C0707,Standing water in drain breeding mosquitoes near Kalmunaikudi 05,Drainage,High,Kalmunaikudi 05,14,7/26/2026 23:00,Public Works Division,Pending,English,Yes,FALSE
+C0708,Flickering street lights making Maruthamunai 04 road unsafe at night,Electrical,Medium,Maruthamunai 04,4,7/9/2026 17:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0709,"Water pipe burst near Maruthamunai 06 hospital, water gushing onto road",Water,High,Maruthamunai 06,5,7/10/2026 13:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0710,Standing water in drain breeding mosquitoes near Kalmunaikudi 14,Drainage,High,Kalmunaikudi 14,17,7/4/2026 00:00,Public Works Division,In Progress,English,No,FALSE
+C0711,Drainage system overflowing near Pandiruppu 02 residential lane,Drainage,Medium,Pandiruppu 02,10,7/14/2026 15:00,Public Works Division,In Progress,English,Yes,FALSE
+C0712,Damaged boat landing point near Sainthamaruthu 05 needs urgent repair,Boat,Medium,Sainthamaruthu 05,21,7/14/2026 07:00,Boat Services Unit,Resolved,English,No,TRUE
+C0713,Large pothole on main road near Kalmunaikudi 08 causing accidents,Road,High,Kalmunaikudi 08,15,6/17/2026 21:00,Public Works Division,Pending,English,No,FALSE
+C0714,Power outage reported frequently in Sainthamaruthu 02 area,Electrical,Medium,Sainthamaruthu 02,19,5/1/2026 15:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0715,Electric meter box left open near Natpiddimunai 02,Electrical,Medium,Natpiddimunai 02,9,5/15/2026 09:00,Street Lighting Unit,In Progress,English,No,TRUE
+C0716,Overflowing bin attracting stray animals near Maruthamunai 01 school,Waste,Medium,Maruthamunai 01,3,6/2/2026 03:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0717,Water leakage near Maruthamunai 05 school flooding the pavement,Water,Medium,Maruthamunai 05,5,7/7/2026 03:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0718,Drain cover missing near Sainthamaruthu 12 pedestrian crossing,Drainage,High,Sainthamaruthu 12,20,6/5/2026 18:00,Public Works Division,Resolved,English,Yes,FALSE
+C0719,Requesting rate remission for vacant property in Sainthamaruthu 13,Billing,Low,Sainthamaruthu 13,22,7/7/2026 10:00,Assessment Department,In Progress,English,Yes,FALSE
+C0720,Road caved in slightly near Kalmunaikudi 12 after water damage,Road,High,Kalmunaikudi 12,16,6/25/2026 11:00,Public Works Division,Pending,English,Yes,FALSE
+C0721,Water tank overflow reported near Sainthamaruthu 11 apartment complex,Water,Medium,Sainthamaruthu 11,22,6/29/2026 02:00,National Water Supply & Drainage Board,Resolved,English,No,FALSE
+C0722,Public notice board missing near Kalmunaikudi 12 bus stand,Public,Low,Kalmunaikudi 12,16,6/18/2026 04:00,Public Assistance Department,In Progress,English,No,FALSE
+C0723,Request for new mooring space near Sainthamaruthu 16 fishing harbor,Boat,Low,Sainthamaruthu 16,23,5/1/2026 03:00,Boat Services Unit,In Progress,English,No,FALSE
+C0724,Water leakage near Kalmunaikudi 08 school flooding the pavement,Water,Medium,Kalmunaikudi 08,15,6/10/2026 06:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0725,Assessment tax amount for my Kalmunai 03 property seems incorrectly calculated,Billing,Medium,Kalmunai 03,12,7/6/2026 23:00,Assessment Department,In Progress,English,Yes,FALSE
+C0726,Uneven road surface near Sainthamaruthu 15 causing vehicle damage,Road,High,Sainthamaruthu 15,22,5/12/2026 01:00,Public Works Division,Pending,English,Yes,FALSE
+C0727,Litter accumulating in Kalmunaikudi 04 public park,Public,Low,Kalmunaikudi 04,13,6/2/2026 02:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0728,Damaged walking path in Kalmunaikudi 09 public garden,Public,Low,Kalmunaikudi 09,15,7/26/2026 14:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0729,Damaged walking path in Sainthamaruthu 15 public garden,Public,Low,Sainthamaruthu 15,22,6/24/2026 20:00,Public Assistance Department,Resolved,English,Yes,FALSE
+C0730,Public water fountain not working near Kalmunaikudi 13 park,Public,Medium,Kalmunaikudi 13,17,7/17/2026 06:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0731,"Park swing broken near Pandiruppu 02, unsafe for children",Public,Medium,Pandiruppu 02,10,7/21/2026 18:00,Public Assistance Department,Pending,English,No,FALSE
+C0732,Cracked drain pipe near Sainthamaruthu 03 needs repair,Drainage,Low,Sainthamaruthu 03,18,7/8/2026 11:00,Public Works Division,In Progress,English,No,FALSE
+C0733,Broken public bench near Natpiddimunai 02 park needs replacement,Public,Low,Natpiddimunai 02,9,5/30/2026 09:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0734,Electric meter box left open near Kalmunai 01,Electrical,Low,Kalmunai 01,11,5/9/2026 23:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0735,Storm damage to boat shelter near Periyaneelavanai 02 needs assessment,Boat,High,Periyaneelavanai 02,2,6/16/2026 22:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0736,Road caved in slightly near Pandiruppu 02 after water damage,Road,High,Pandiruppu 02,10,5/13/2026 21:00,Public Works Division,Pending,English,No,FALSE
+C0737,Street light not working near Kalmunaikudi 08 junction for a week,Electrical,Medium,Kalmunaikudi 08,15,5/5/2026 06:00,Street Lighting Unit,Resolved,English,Yes,FALSE
+C0738,Water meter reading appears incorrect for Kalmunaikudi 08 household,Water,Low,Kalmunaikudi 08,15,5/3/2026 04:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0739,Missing road signage near Kalmunai 02 intersection,Road,Low,Kalmunai 02,12,7/5/2026 03:00,Public Works Division,Pending,English,Yes,FALSE
+C0740,Contaminated water supply reported near Pandiruppu 02,Water,Medium,Pandiruppu 02,10,5/10/2026 22:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0741,Electric meter box left open near Kalmunaikudi 01,Electrical,Medium,Kalmunaikudi 01,12,6/25/2026 17:00,Street Lighting Unit,Pending,English,No,FALSE
+C0742,Street light flickering continuously near Maruthamunai 03 station,Electrical,Low,Maruthamunai 03,4,5/3/2026 19:00,Street Lighting Unit,Resolved,English,Yes,FALSE
+C0743,Boat mooring point damaged near Maruthamunai 05 harbor,Boat,Medium,Maruthamunai 05,5,7/26/2026 12:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0744,Boat service counter closed during working hours at Kalmunaikudi 01,Boat,Medium,Kalmunaikudi 01,12,6/21/2026 19:00,Boat Services Unit,In Progress,English,No,FALSE
+C0745,Water tank overflow reported near Sainthamaruthu 01 apartment complex,Water,High,Sainthamaruthu 01,18,6/14/2026 05:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0746,Broken pavement tiles near Kalmunaikudi 09 making walking unsafe,Road,Low,Kalmunaikudi 09,15,7/28/2026 15:00,Public Works Division,Pending,English,No,FALSE
+C0747,Broken fence around Natpiddymunai 02 public playground,Public,Medium,Natpiddymunai 02,7,6/14/2026 00:00,Public Assistance Department,In Progress,English,No,FALSE
+C0748,Boat mooring point damaged near Maruthamunai 03 harbor,Boat,Medium,Maruthamunai 03,4,7/14/2026 13:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0749,Vandalized public signage near Sainthamaruthu 01 market,Public,Medium,Sainthamaruthu 01,18,6/1/2026 15:00,Public Assistance Department,Pending,English,No,FALSE
+C0750,Contaminated water supply reported near Kalmunaikudi 13,Water,High,Kalmunaikudi 13,17,5/16/2026 10:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0751,Boat parking area overcrowded near Maruthamunai 03 harbor,Boat,Low,Maruthamunai 03,4,6/12/2026 06:00,Boat Services Unit,In Progress,English,No,FALSE
+C0752,Public water fountain not working near Sainthamaruthu 09 park,Public,Low,Sainthamaruthu 09,21,6/25/2026 17:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0753,Fishing boat registration delayed at Sainthamaruthu 02 office,Boat,Low,Sainthamaruthu 02,19,5/30/2026 21:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0754,Requesting rate remission for vacant property in Sainthamaruthu 03,Billing,Medium,Sainthamaruthu 03,18,6/17/2026 23:00,Assessment Department,In Progress,English,No,FALSE
+C0755,Uncollected waste piling up along the main road in Natpiddymunai 04,Waste,High,Natpiddymunai 04,7,5/1/2026 00:00,Waste Collection & Recycling Unit,Resolved,English,No,FALSE
+C0756,Drainage system overflowing near Kalmunaikudi 07 residential lane,Drainage,High,Kalmunaikudi 07,14,7/6/2026 04:00,Public Works Division,Pending,English,No,FALSE
+C0757,Public notice board missing near Sainthamaruthu 01 bus stand,Public,Low,Sainthamaruthu 01,18,7/9/2026 16:00,Public Assistance Department,In Progress,English,No,FALSE
+C0758,"Park swing broken near Sainthamaruthu 02, unsafe for children",Public,High,Sainthamaruthu 02,19,5/29/2026 13:00,Public Assistance Department,Resolved,English,Yes,FALSE
+C0759,Overflowing bin attracting stray animals near Kalmunaikudi 14 school,Waste,High,Kalmunaikudi 14,17,5/11/2026 15:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0760,Large pothole on main road near Chenaikudiyiruppu 01 causing accidents,Road,High,Chenaikudiyiruppu 01,8,6/9/2026 10:00,Public Works Division,In Progress,English,No,FALSE
+C0761,Property valuation for assessment tax in Kalmunaikudi 13 needs review,Billing,Low,Kalmunaikudi 13,17,7/21/2026 21:00,Assessment Department,Pending,English,Yes,FALSE
+C0762,Broken fence around Pandiruppu 02 public playground,Public,Medium,Pandiruppu 02,10,7/2/2026 22:00,Public Assistance Department,Resolved,English,Yes,TRUE
+C0763,Garbage bin damaged and waste scattered near Sainthamaruthu 11 bus stand,Waste,Medium,Sainthamaruthu 11,22,5/14/2026 07:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0764,Discount for early rate settlement not applied for Sainthamaruthu 15 property,Billing,Low,Sainthamaruthu 15,22,6/11/2026 04:00,Assessment Department,Resolved,English,No,FALSE
+C0765,Boat parking area overcrowded near Kalmunaikudi 01 harbor,Boat,Low,Kalmunaikudi 01,12,7/10/2026 23:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0766,Electric meter box left open near Natpiddimunai 02,Electrical,Medium,Natpiddimunai 02,9,6/25/2026 03:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0767,No lighting at Maruthamunai 06 boat launch area at night,Boat,Medium,Maruthamunai 06,5,6/21/2026 02:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0768,Broken pavement tiles near Kalmunaikudi 12 making walking unsafe,Road,Medium,Kalmunaikudi 12,16,7/12/2026 00:00,Public Works Division,Resolved,English,Yes,FALSE
+C0769,Irregular water supply schedule affecting Sainthamaruthu 16 residents,Water,Low,Sainthamaruthu 16,23,5/2/2026 01:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0770,Request for new mooring space near Kalmunaikudi 11 fishing harbor,Boat,Low,Kalmunaikudi 11,16,7/17/2026 11:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0771,Uneven road surface near Natpiddymunai 01 causing vehicle damage,Road,High,Natpiddymunai 01,7,6/24/2026 17:00,Public Works Division,Resolved,English,No,FALSE
+C0772,Large pothole on main road near Sainthamaruthu 05 causing accidents,Road,High,Sainthamaruthu 05,21,7/18/2026 12:00,Public Works Division,Pending,English,Yes,FALSE
+C0773,Waste collection truck has not visited Kalmunaikudi 10 this week,Waste,High,Kalmunaikudi 10,16,5/13/2026 20:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0774,Uneven road surface near Natpiddimunai 01 causing vehicle damage,Road,High,Natpiddimunai 01,9,5/15/2026 16:00,Public Works Division,Pending,English,Yes,FALSE
+C0775,No lighting at Sainthamaruthu 16 boat launch area at night,Boat,Low,Sainthamaruthu 16,23,6/21/2026 04:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0776,Overflowing bin attracting stray animals near Maruthamunai 04 school,Waste,High,Maruthamunai 04,4,7/13/2026 02:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0777,Property valuation for assessment tax in Chenaikudiyiruppu 01 needs review,Billing,Medium,Chenaikudiyiruppu 01,8,7/21/2026 17:00,Assessment Department,In Progress,English,Yes,FALSE
+C0778,Broken public bench near Sainthamaruthu 06 park needs replacement,Public,Low,Sainthamaruthu 06,19,6/16/2026 05:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0779,Broken pavement tiles near Sainthamaruthu 12 making walking unsafe,Road,Low,Sainthamaruthu 12,20,6/7/2026 20:00,Public Works Division,Resolved,English,Yes,FALSE
+C0780,Damaged boat landing point near Pandiruppu 02 needs urgent repair,Boat,High,Pandiruppu 02,10,6/7/2026 02:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0781,Public water fountain not working near Sainthamaruthu 08 park,Public,Low,Sainthamaruthu 08,20,7/21/2026 23:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0782,Business license fee dispute for trade stall in Sainthamaruthu 06,Billing,Medium,Sainthamaruthu 06,19,7/3/2026 12:00,Assessment Department,Pending,English,Yes,FALSE
+C0783,Discount for early rate settlement not applied for Sainthamaruthu 14 property,Billing,Low,Sainthamaruthu 14,23,6/20/2026 11:00,Assessment Department,Pending,English,No,FALSE
+C0784,Public restroom near Kalmunai 02 in poor hygienic condition,Public,Medium,Kalmunai 02,12,5/10/2026 11:00,Public Assistance Department,In Progress,English,No,TRUE
+C0785,Water tank overflow reported near Kalmunaikudi 01 apartment complex,Water,Low,Kalmunaikudi 01,12,5/9/2026 22:00,National Water Supply & Drainage Board,Pending,English,Yes,TRUE
+C0786,"Waste bin lid broken, causing littering near Sainthamaruthu 07",Waste,Low,Sainthamaruthu 07,21,5/12/2026 15:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0787,Water main valve leaking near Pandiruppu 01 intersection,Water,Medium,Pandiruppu 01,6,5/18/2026 22:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0788,No water supply in Natpiddimunai 01 area for two days,Water,High,Natpiddimunai 01,9,5/27/2026 20:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0789,Late payment surcharge applied incorrectly on Natpiddimunai 01 property rates,Billing,Medium,Natpiddimunai 01,9,6/2/2026 07:00,Assessment Department,Pending,English,No,FALSE
+C0790,Waste collection truck has not visited Sainthamaruthu 17 this week,Waste,Medium,Sainthamaruthu 17,23,6/29/2026 06:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0791,Have not received assessment tax bill for Sainthamaruthu 06 property this quarter,Billing,Medium,Sainthamaruthu 06,19,7/2/2026 11:00,Assessment Department,Pending,English,No,FALSE
+C0792,Water tank overflow reported near Sainthamaruthu 10 apartment complex,Water,Medium,Sainthamaruthu 10,20,7/15/2026 11:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0793,Boat mooring point damaged near Kalmunaikudi 10 harbor,Boat,High,Kalmunaikudi 10,16,5/26/2026 20:00,Boat Services Unit,In Progress,English,No,FALSE
+C0794,Storm drain clogged with debris near Kalmunaikudi 04 junction,Drainage,Medium,Kalmunaikudi 04,13,6/12/2026 08:00,Public Works Division,Pending,English,No,FALSE
+C0795,Requesting rate remission for vacant property in Kalmunaikudi 13,Billing,Low,Kalmunaikudi 13,17,5/12/2026 18:00,Assessment Department,Pending,English,No,FALSE
+C0796,Litter accumulating in Sainthamaruthu 08 public park,Public,Low,Sainthamaruthu 08,20,6/5/2026 11:00,Public Assistance Department,Pending,English,No,FALSE
+C0797,"Park swing broken near Kalmunaikudi 08, unsafe for children",Public,Medium,Kalmunaikudi 08,15,6/7/2026 07:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0798,Damaged electrical pole leaning near Sainthamaruthu 09 road,Electrical,High,Sainthamaruthu 09,21,7/25/2026 22:00,Street Lighting Unit,Pending,English,No,FALSE
+C0799,Boat license renewal fee dispute for vessel based in Pandiruppu 01,Boat,Medium,Pandiruppu 01,6,6/7/2026 17:00,Boat Services Unit,Pending,English,No,FALSE
+C0800,Irregular water supply schedule affecting Sainthamaruthu 06 residents,Water,Low,Sainthamaruthu 06,19,5/2/2026 14:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0801,Overflowing bin attracting stray animals near Maruthamunai 02 school,Waste,High,Maruthamunai 02,3,7/3/2026 11:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0802,Storm damage to boat shelter near Pandiruppu 02 needs assessment,Boat,High,Pandiruppu 02,10,6/17/2026 11:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0803,Garbage bags left uncollected on Sainthamaruthu 04 street corner,Waste,Medium,Sainthamaruthu 04,19,5/5/2026 20:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0804,Road crack widening near Kalmunaikudi 08 junction after recent rain,Road,Medium,Kalmunaikudi 08,15,5/12/2026 02:00,Public Works Division,In Progress,English,Yes,FALSE
+C0805,Boat service counter closed during working hours at Sainthamaruthu 16,Boat,Medium,Sainthamaruthu 16,23,7/21/2026 03:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0806,Late payment surcharge applied incorrectly on Maruthamunai 06 property rates,Billing,High,Maruthamunai 06,5,7/17/2026 00:00,Assessment Department,In Progress,English,Yes,FALSE
+C0807,Street light not working near Sainthamaruthu 02 junction for a week,Electrical,Low,Sainthamaruthu 02,19,5/17/2026 07:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0808,Public water fountain not working near Natpiddymunai 01 park,Public,Low,Natpiddymunai 01,7,7/22/2026 06:00,Public Assistance Department,Resolved,English,Yes,FALSE
+C0809,Have not received assessment tax bill for Periyaneelavanai 02 property this quarter,Billing,Medium,Periyaneelavanai 02,2,7/8/2026 14:00,Assessment Department,Pending,English,Yes,FALSE
+C0810,Faded zebra crossing markings near Sainthamaruthu 09 school,Road,Low,Sainthamaruthu 09,21,7/2/2026 02:00,Public Works Division,In Progress,English,No,FALSE
+C0811,Speed bump damaged near Kalmunaikudi 07 residential entrance,Road,Low,Kalmunaikudi 07,14,5/18/2026 11:00,Public Works Division,Resolved,English,No,TRUE
+C0812,Boat service counter closed during working hours at Maruthamunai 04,Boat,Medium,Maruthamunai 04,4,5/23/2026 21:00,Boat Services Unit,In Progress,English,Yes,TRUE
+C0813,Exposed electrical wiring near Kalmunaikudi 12 poses safety hazard,Electrical,High,Kalmunaikudi 12,16,6/19/2026 06:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0814,Flickering street lights making Sainthamaruthu 14 road unsafe at night,Electrical,Medium,Sainthamaruthu 14,23,5/15/2026 11:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0815,Request for new mooring space near Natpiddymunai 02 fishing harbor,Boat,Low,Natpiddymunai 02,7,5/21/2026 08:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0816,Overcharged on trade license renewal fee for shop in Kalmunai 03,Billing,Medium,Kalmunai 03,12,5/6/2026 02:00,Assessment Department,Resolved,English,Yes,FALSE
+C0817,Drainage system overflowing near Sainthamaruthu 15 residential lane,Drainage,Medium,Sainthamaruthu 15,22,6/13/2026 04:00,Public Works Division,Pending,English,Yes,FALSE
+C0818,Broken fence around Natpiddymunai 03 public playground,Public,Medium,Natpiddymunai 03,7,5/23/2026 02:00,Public Assistance Department,Resolved,English,Yes,FALSE
+C0819,Low water pressure reported by residents in Sainthamaruthu 12,Water,Medium,Sainthamaruthu 12,20,6/26/2026 19:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0820,Boat mooring point damaged near Kalmunaikudi 06 harbor,Boat,High,Kalmunaikudi 06,14,5/14/2026 05:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0821,Boat license renewal fee dispute for vessel based in Sainthamaruthu 05,Boat,Low,Sainthamaruthu 05,21,6/25/2026 05:00,Boat Services Unit,Pending,English,Yes,TRUE
+C0822,Waste collection truck has not visited Pandiruppu 01 this week,Waste,High,Pandiruppu 01,6,5/22/2026 08:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0823,Road divider knocked down near Natpiddymunai 01 roundabout,Road,Medium,Natpiddymunai 01,7,6/23/2026 16:00,Public Works Division,In Progress,English,No,FALSE
+C0824,Exposed electrical wiring near Kalmunaikudi 05 poses safety hazard,Electrical,High,Kalmunaikudi 05,14,7/21/2026 06:00,Street Lighting Unit,Pending,English,No,FALSE
+C0825,Damaged boat landing point near Periyaneelavanai 01 needs urgent repair,Boat,High,Periyaneelavanai 01,1,6/26/2026 06:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0826,Broken street light cover near Pandiruppu 02 park,Electrical,Low,Pandiruppu 02,10,6/15/2026 16:00,Street Lighting Unit,Resolved,English,Yes,TRUE
+C0827,Illegal dumping of construction waste near Kalmunaikudi 12,Waste,Medium,Kalmunaikudi 12,16,6/18/2026 02:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0828,Exposed electrical wiring near Kalmunaikudi 14 poses safety hazard,Electrical,High,Kalmunaikudi 14,17,6/4/2026 19:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0829,Missing road signage near Sainthamaruthu 06 intersection,Road,Medium,Sainthamaruthu 06,19,6/14/2026 14:00,Public Works Division,Pending,English,No,FALSE
+C0830,Garbage bags left uncollected on Kalmunaikudi 08 street corner,Waste,Low,Kalmunaikudi 08,15,6/5/2026 23:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0831,Boat mooring point damaged near Sainthamaruthu 05 harbor,Boat,High,Sainthamaruthu 05,21,6/11/2026 08:00,Boat Services Unit,Resolved,English,Yes,TRUE
+C0832,Road divider knocked down near Kalmunaikudi 13 roundabout,Road,Medium,Kalmunaikudi 13,17,6/2/2026 14:00,Public Works Division,Pending,English,No,FALSE
+C0833,Recycling bin missing near Sainthamaruthu 08 community center,Waste,Low,Sainthamaruthu 08,20,5/4/2026 23:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0834,Litter accumulating in Natpiddymunai 02 public park,Public,Low,Natpiddymunai 02,7,5/14/2026 10:00,Public Assistance Department,In Progress,English,No,FALSE
+C0835,Playground equipment damaged near Kalmunaikudi 13 community park,Public,High,Kalmunaikudi 13,17,7/8/2026 05:00,Public Assistance Department,Pending,English,No,FALSE
+C0836,Power outage reported frequently in Kalmunai 02 area,Electrical,Medium,Kalmunai 02,12,5/7/2026 03:00,Street Lighting Unit,Pending,English,No,FALSE
+C0837,Litter accumulating in Kalmunaikudi 07 public park,Public,Low,Kalmunaikudi 07,14,7/5/2026 20:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0838,Broken pavement tiles near Sainthamaruthu 04 making walking unsafe,Road,Low,Sainthamaruthu 04,19,7/25/2026 17:00,Public Works Division,In Progress,English,No,FALSE
+C0839,Low water pressure reported by residents in Kalmunaikudi 08,Water,High,Kalmunaikudi 08,15,5/8/2026 11:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0840,No water supply in Natpiddimunai 02 area for two days,Water,Medium,Natpiddimunai 02,9,6/30/2026 21:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0841,Waste collection truck has not visited Kalmunaikudi 05 this week,Waste,Medium,Kalmunaikudi 05,14,6/13/2026 02:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0842,Waste collection truck has not visited Natpiddymunai 03 this week,Waste,High,Natpiddymunai 03,7,7/2/2026 14:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0843,Broken fence around Sainthamaruthu 02 public playground,Public,Medium,Sainthamaruthu 02,19,7/7/2026 15:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0844,Request for new mooring space near Kalmunai 01 fishing harbor,Boat,Low,Kalmunai 01,11,5/23/2026 00:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0845,No lighting at Natpiddimunai 03 boat launch area at night,Boat,Medium,Natpiddimunai 03,9,5/17/2026 03:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0846,Slow drainage causing minor waterlogging near Natpiddimunai 03,Drainage,Low,Natpiddimunai 03,9,7/17/2026 03:00,Public Works Division,Pending,English,No,FALSE
+C0847,Drainage system overflowing near Chenaikudiyiruppu 01 residential lane,Drainage,Medium,Chenaikudiyiruppu 01,8,6/5/2026 21:00,Public Works Division,Resolved,English,No,FALSE
+C0848,Blocked culvert causing water stagnation near Kalmunaikudi 14,Drainage,Medium,Kalmunaikudi 14,17,6/13/2026 12:00,Public Works Division,In Progress,English,No,FALSE
+C0849,Slow drainage causing minor waterlogging near Kalmunai 01,Drainage,Medium,Kalmunai 01,11,6/14/2026 11:00,Public Works Division,Pending,English,No,FALSE
+C0850,Public restroom near Periyaneelavanai 01 in poor hygienic condition,Public,Medium,Periyaneelavanai 01,1,5/29/2026 16:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0851,Damaged boat landing point near Sainthamaruthu 13 needs urgent repair,Boat,High,Sainthamaruthu 13,22,7/28/2026 01:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0852,No lighting at Sainthamaruthu 09 boat launch area at night,Boat,High,Sainthamaruthu 09,21,5/12/2026 08:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0853,Large pothole on main road near Kalmunaikudi 04 causing accidents,Road,High,Kalmunaikudi 04,13,6/29/2026 01:00,Public Works Division,Pending,English,Yes,FALSE
+C0854,Broken street light cover near Kalmunaikudi 12 park,Electrical,Low,Kalmunaikudi 12,16,6/22/2026 06:00,Street Lighting Unit,Resolved,English,Yes,TRUE
+C0855,Fishing boat registration delayed at Kalmunaikudi 11 office,Boat,Low,Kalmunaikudi 11,16,5/6/2026 10:00,Boat Services Unit,Pending,English,No,FALSE
+C0856,Broken fence around Pandiruppu 02 public playground,Public,Medium,Pandiruppu 02,10,6/3/2026 11:00,Public Assistance Department,Pending,English,Yes,TRUE
+C0857,Public notice board missing near Kalmunaikudi 07 bus stand,Public,Low,Kalmunaikudi 07,14,6/10/2026 08:00,Public Assistance Department,Pending,English,No,FALSE
+C0858,Damaged boat landing point near Natpiddymunai 01 needs urgent repair,Boat,High,Natpiddymunai 01,7,5/14/2026 13:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0859,No water supply in Natpiddymunai 04 area for two days,Water,High,Natpiddymunai 04,7,7/30/2026 14:00,National Water Supply & Drainage Board,Resolved,English,Yes,FALSE
+C0860,Requesting rate remission for vacant property in Periyaneelavanai 01,Billing,Low,Periyaneelavanai 01,1,7/8/2026 22:00,Assessment Department,Resolved,English,Yes,FALSE
+C0861,Blocked culvert causing water stagnation near Natpiddymunai 02,Drainage,Medium,Natpiddymunai 02,7,5/30/2026 07:00,Public Works Division,Pending,English,Yes,FALSE
+C0862,Broken pavement tiles near Kalmunaikudi 14 making walking unsafe,Road,Low,Kalmunaikudi 14,17,5/30/2026 03:00,Public Works Division,Pending,English,No,FALSE
+C0863,Fishing boat registration delayed at Sainthamaruthu 06 office,Boat,Low,Sainthamaruthu 06,19,7/2/2026 14:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0864,Street light not working near Maruthamunai 06 junction for a week,Electrical,Medium,Maruthamunai 06,5,6/5/2026 02:00,Street Lighting Unit,Pending,English,No,FALSE
+C0865,Boat service counter closed during working hours at Kalmunaikudi 06,Boat,Medium,Kalmunaikudi 06,14,5/12/2026 14:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0866,Public water fountain not working near Sainthamaruthu 11 park,Public,Low,Sainthamaruthu 11,22,6/1/2026 00:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0867,"Jetty in poor condition near Kalmunaikudi 01, unsafe for boarding",Boat,Medium,Kalmunaikudi 01,12,6/4/2026 13:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0868,Waste collection truck has not visited Natpiddimunai 03 this week,Waste,Medium,Natpiddimunai 03,9,5/18/2026 18:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0869,Water main valve leaking near Sainthamaruthu 13 intersection,Water,Low,Sainthamaruthu 13,22,7/17/2026 15:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0870,Uneven road surface near Sainthamaruthu 08 causing vehicle damage,Road,Medium,Sainthamaruthu 08,20,5/14/2026 22:00,Public Works Division,Pending,English,Yes,FALSE
+C0871,Garbage bin damaged and waste scattered near Kalmunaikudi 12 bus stand,Waste,Medium,Kalmunaikudi 12,16,5/16/2026 19:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0872,Low water pressure reported by residents in Pandiruppu 02,Water,Medium,Pandiruppu 02,10,7/6/2026 23:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0873,Leaking water pipe wasting water near Kalmunaikudi 08 junction,Water,Medium,Kalmunaikudi 08,15,6/3/2026 19:00,National Water Supply & Drainage Board,Pending,English,Yes,TRUE
+C0874,Road caved in slightly near Pandiruppu 01 after water damage,Road,High,Pandiruppu 01,6,6/3/2026 05:00,Public Works Division,Resolved,English,No,FALSE
+C0875,Foul smell from blocked drain near Periyaneelavanai 02 market,Drainage,Medium,Periyaneelavanai 02,2,7/6/2026 19:00,Public Works Division,Pending,English,Yes,FALSE
+C0876,Damaged electrical pole leaning near Pandiruppu 01 road,Electrical,Medium,Pandiruppu 01,6,5/11/2026 20:00,Street Lighting Unit,Resolved,English,Yes,FALSE
+C0877,Water leakage near Sainthamaruthu 14 school flooding the pavement,Water,Medium,Sainthamaruthu 14,23,7/4/2026 01:00,National Water Supply & Drainage Board,Pending,English,Yes,TRUE
+C0878,Garbage bags left uncollected on Maruthamunai 06 street corner,Waste,Low,Maruthamunai 06,5,5/10/2026 08:00,Waste Collection & Recycling Unit,Pending,English,Yes,TRUE
+C0879,Water main valve leaking near Natpiddymunai 04 intersection,Water,Medium,Natpiddymunai 04,7,5/15/2026 03:00,National Water Supply & Drainage Board,Pending,English,No,TRUE
+C0880,Road divider knocked down near Kalmunaikudi 01 roundabout,Road,Medium,Kalmunaikudi 01,12,6/19/2026 00:00,Public Works Division,Resolved,English,No,FALSE
+C0881,"Water pipe burst near Sainthamaruthu 17 hospital, water gushing onto road",Water,High,Sainthamaruthu 17,23,5/28/2026 08:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0882,Slow drainage causing minor waterlogging near Periyaneelavanai 01,Drainage,Low,Periyaneelavanai 01,1,7/8/2026 17:00,Public Works Division,Pending,English,Yes,FALSE
+C0883,No lighting at Sainthamaruthu 09 boat launch area at night,Boat,Medium,Sainthamaruthu 09,21,6/4/2026 10:00,Boat Services Unit,Pending,English,No,FALSE
+C0884,Property valuation for assessment tax in Natpiddymunai 04 needs review,Billing,Medium,Natpiddymunai 04,7,6/15/2026 05:00,Assessment Department,Pending,English,No,FALSE
+C0885,Irregular water supply schedule affecting Pandiruppu 01 residents,Water,Low,Pandiruppu 01,6,5/8/2026 23:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0886,Damaged walking path in Maruthamunai 06 public garden,Public,Low,Maruthamunai 06,5,7/21/2026 15:00,Public Assistance Department,Pending,English,No,FALSE
+C0887,Boat license renewal fee dispute for vessel based in Kalmunaikudi 14,Boat,Low,Kalmunaikudi 14,17,7/26/2026 20:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0888,No lighting at Natpiddymunai 02 boat launch area at night,Boat,High,Natpiddymunai 02,7,6/20/2026 17:00,Boat Services Unit,In Progress,English,No,FALSE
+C0889,"Water pipe burst near Pandiruppu 02 hospital, water gushing onto road",Water,High,Pandiruppu 02,10,7/26/2026 15:00,National Water Supply & Drainage Board,In Progress,English,No,FALSE
+C0890,Open drain without cover poses safety risk near Kalmunaikudi 02,Drainage,High,Kalmunaikudi 02,13,5/12/2026 22:00,Public Works Division,Pending,English,No,FALSE
+C0891,Street light pole knocked down near Sainthamaruthu 11,Electrical,High,Sainthamaruthu 11,22,7/13/2026 10:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0892,Late payment surcharge applied incorrectly on Kalmunaikudi 09 property rates,Billing,High,Kalmunaikudi 09,15,5/15/2026 07:00,Assessment Department,Resolved,English,No,FALSE
+C0893,Fishing boat registration delayed at Maruthamunai 06 office,Boat,Low,Maruthamunai 06,5,5/10/2026 16:00,Boat Services Unit,Pending,English,No,FALSE
+C0894,Uncollected waste piling up along the main road in Kalmunaikudi 10,Waste,High,Kalmunaikudi 10,16,5/15/2026 19:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0895,Road divider knocked down near Sainthamaruthu 04 roundabout,Road,High,Sainthamaruthu 04,19,7/16/2026 23:00,Public Works Division,Pending,English,No,FALSE
+C0896,Boat license renewal fee dispute for vessel based in Natpiddimunai 03,Boat,Low,Natpiddimunai 03,9,7/23/2026 11:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0897,Garbage overflowing near Kalmunaikudi 06 market for the past three days,Waste,High,Kalmunaikudi 06,14,6/12/2026 23:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0898,Boat mooring point damaged near Maruthamunai 01 harbor,Boat,Low,Maruthamunai 01,3,5/16/2026 22:00,Boat Services Unit,In Progress,English,No,FALSE
+C0899,Boat parking area overcrowded near Pandiruppu 01 harbor,Boat,Low,Pandiruppu 01,6,6/17/2026 15:00,Boat Services Unit,Pending,English,No,FALSE
+C0900,Request for new mooring space near Kalmunaikudi 14 fishing harbor,Boat,Low,Kalmunaikudi 14,17,6/6/2026 16:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0901,Public notice board missing near Kalmunai 02 bus stand,Public,Medium,Kalmunai 02,12,7/18/2026 14:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0902,Overflowing bin attracting stray animals near Kalmunaikudi 03 school,Waste,Medium,Kalmunaikudi 03,13,7/4/2026 04:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0903,Power outage reported frequently in Chenaikudiyiruppu 01 area,Electrical,Medium,Chenaikudiyiruppu 01,8,5/30/2026 14:00,Street Lighting Unit,In Progress,English,No,FALSE
+C0904,Water meter reading appears incorrect for Natpiddymunai 01 household,Water,Medium,Natpiddymunai 01,7,6/25/2026 03:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0905,Overcharged on trade license renewal fee for shop in Periyaneelavanai 02,Billing,Medium,Periyaneelavanai 02,2,6/7/2026 21:00,Assessment Department,In Progress,English,No,FALSE
+C0906,Vandalized public signage near Maruthamunai 05 market,Public,Low,Maruthamunai 05,5,6/18/2026 19:00,Public Assistance Department,Pending,English,No,FALSE
+C0907,Public restroom near Sainthamaruthu 04 in poor hygienic condition,Public,Medium,Sainthamaruthu 04,19,7/16/2026 10:00,Public Assistance Department,Resolved,English,Yes,FALSE
+C0908,Irregular water supply schedule affecting Natpiddymunai 04 residents,Water,Low,Natpiddymunai 04,7,5/22/2026 22:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0909,Water main valve leaking near Maruthamunai 05 intersection,Water,Medium,Maruthamunai 05,5,6/11/2026 11:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0910,Transformer making loud noise near Sainthamaruthu 15 residential zone,Electrical,High,Sainthamaruthu 15,22,7/4/2026 09:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0911,Playground equipment damaged near Kalmunaikudi 05 community park,Public,Medium,Kalmunaikudi 05,14,5/18/2026 12:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0912,Recycling bin missing near Natpiddymunai 02 community center,Waste,Low,Natpiddymunai 02,7,6/15/2026 08:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0913,Speed bump damaged near Sainthamaruthu 16 residential entrance,Road,Low,Sainthamaruthu 16,23,6/30/2026 20:00,Public Works Division,In Progress,English,Yes,FALSE
+C0914,Recycling bin missing near Natpiddymunai 03 community center,Waste,Low,Natpiddymunai 03,7,5/30/2026 03:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0915,Property valuation for assessment tax in Kalmunai 02 needs review,Billing,Medium,Kalmunai 02,12,5/26/2026 22:00,Assessment Department,Resolved,English,No,FALSE
+C0916,Damaged road surface near Natpiddimunai 01 making travel difficult,Road,Medium,Natpiddimunai 01,9,5/3/2026 16:00,Public Works Division,Pending,English,Yes,FALSE
+C0917,Damaged electrical pole leaning near Kalmunaikudi 08 road,Electrical,High,Kalmunaikudi 08,15,5/20/2026 14:00,Street Lighting Unit,Resolved,English,Yes,FALSE
+C0918,Foul smell from blocked drain near Pandiruppu 01 market,Drainage,High,Pandiruppu 01,6,7/2/2026 13:00,Public Works Division,In Progress,English,Yes,FALSE
+C0919,Garbage bags left uncollected on Sainthamaruthu 15 street corner,Waste,Medium,Sainthamaruthu 15,22,7/24/2026 04:00,Waste Collection & Recycling Unit,Resolved,English,Yes,FALSE
+C0920,Leaking water pipe wasting water near Kalmunaikudi 02 junction,Water,Medium,Kalmunaikudi 02,13,7/21/2026 19:00,National Water Supply & Drainage Board,Resolved,English,Yes,FALSE
+C0921,Blocked culvert causing water stagnation near Maruthamunai 06,Drainage,Medium,Maruthamunai 06,5,6/26/2026 08:00,Public Works Division,Pending,English,Yes,FALSE
+C0922,Broken pavement tiles near Maruthamunai 04 making walking unsafe,Road,Low,Maruthamunai 04,4,6/26/2026 17:00,Public Works Division,Pending,English,No,FALSE
+C0923,Certificate of ownership request delayed for property in Kalmunaikudi 06,Billing,Low,Kalmunaikudi 06,14,6/9/2026 15:00,Assessment Department,Pending,English,Yes,FALSE
+C0924,Road divider knocked down near Maruthamunai 02 roundabout,Road,Medium,Maruthamunai 02,3,6/11/2026 03:00,Public Works Division,Pending,English,No,FALSE
+C0925,Boat license renewal fee dispute for vessel based in Natpiddimunai 02,Boat,Low,Natpiddimunai 02,9,7/19/2026 17:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0926,Large pothole on main road near Sainthamaruthu 06 causing accidents,Road,High,Sainthamaruthu 06,19,7/31/2026 08:00,Public Works Division,In Progress,English,No,FALSE
+C0927,Bad smell from uncollected garbage near Natpiddimunai 01 residential area,Waste,Medium,Natpiddimunai 01,9,7/18/2026 20:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0928,Irregular water supply schedule affecting Chenaikudiyiruppu 01 residents,Water,Low,Chenaikudiyiruppu 01,8,7/29/2026 02:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0929,Uneven road surface near Maruthamunai 04 causing vehicle damage,Road,Medium,Maruthamunai 04,4,5/16/2026 13:00,Public Works Division,In Progress,English,Yes,FALSE
+C0930,No lighting at Sainthamaruthu 16 boat launch area at night,Boat,Medium,Sainthamaruthu 16,23,7/19/2026 22:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0931,Request for new mooring space near Sainthamaruthu 12 fishing harbor,Boat,Low,Sainthamaruthu 12,20,7/19/2026 15:00,Boat Services Unit,In Progress,English,No,FALSE
+C0932,No water supply in Sainthamaruthu 09 area for two days,Water,High,Sainthamaruthu 09,21,6/23/2026 04:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0933,Damaged walking path in Sainthamaruthu 09 public garden,Public,Medium,Sainthamaruthu 09,21,7/16/2026 19:00,Public Assistance Department,Pending,English,No,FALSE
+C0934,"Drain blocked after heavy rain near Kalmunaikudi 04, causing flooding",Drainage,Medium,Kalmunaikudi 04,13,5/25/2026 05:00,Public Works Division,Pending,English,No,FALSE
+C0935,Cracked drain pipe near Sainthamaruthu 08 needs repair,Drainage,Low,Sainthamaruthu 08,20,5/13/2026 23:00,Public Works Division,Resolved,English,Yes,FALSE
+C0936,Damaged road surface near Sainthamaruthu 08 making travel difficult,Road,Medium,Sainthamaruthu 08,20,6/5/2026 16:00,Public Works Division,Pending,English,Yes,FALSE
+C0937,Standing water in drain breeding mosquitoes near Kalmunaikudi 03,Drainage,High,Kalmunaikudi 03,13,7/29/2026 15:00,Public Works Division,Resolved,English,Yes,FALSE
+C0938,Exposed electrical wiring near Kalmunaikudi 08 poses safety hazard,Electrical,Medium,Kalmunaikudi 08,15,6/11/2026 15:00,Street Lighting Unit,In Progress,English,Yes,FALSE
+C0939,Damaged road surface near Maruthamunai 04 making travel difficult,Road,Medium,Maruthamunai 04,4,6/21/2026 01:00,Public Works Division,Pending,English,No,TRUE
+C0940,Discount for early rate settlement not applied for Sainthamaruthu 17 property,Billing,Low,Sainthamaruthu 17,23,7/23/2026 16:00,Assessment Department,Pending,English,No,FALSE
+C0941,Uneven road surface near Sainthamaruthu 12 causing vehicle damage,Road,Medium,Sainthamaruthu 12,20,7/20/2026 00:00,Public Works Division,Pending,English,No,FALSE
+C0942,Missing road signage near Kalmunaikudi 05 intersection,Road,Low,Kalmunaikudi 05,14,5/23/2026 20:00,Public Works Division,In Progress,English,Yes,FALSE
+C0943,Boat license renewal fee dispute for vessel based in Kalmunaikudi 02,Boat,Low,Kalmunaikudi 02,13,7/24/2026 14:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0944,Broken fence around Sainthamaruthu 08 public playground,Public,Low,Sainthamaruthu 08,20,5/8/2026 02:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0945,Irregular water supply schedule affecting Maruthamunai 02 residents,Water,Medium,Maruthamunai 02,3,6/28/2026 20:00,National Water Supply & Drainage Board,Resolved,English,Yes,FALSE
+C0946,Garbage overflowing near Natpiddimunai 01 market for the past three days,Waste,High,Natpiddimunai 01,9,5/13/2026 20:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0947,"Waste bin lid broken, causing littering near Natpiddymunai 02",Waste,Low,Natpiddymunai 02,7,5/13/2026 19:00,Waste Collection & Recycling Unit,Pending,English,No,FALSE
+C0948,Water meter reading appears incorrect for Sainthamaruthu 10 household,Water,Low,Sainthamaruthu 10,20,5/13/2026 09:00,National Water Supply & Drainage Board,Pending,English,Yes,TRUE
+C0949,Damaged boat landing point near Sainthamaruthu 12 needs urgent repair,Boat,High,Sainthamaruthu 12,20,7/20/2026 13:00,Boat Services Unit,Pending,English,No,FALSE
+C0950,Speed bump damaged near Kalmunai 02 residential entrance,Road,Low,Kalmunai 02,12,5/15/2026 16:00,Public Works Division,Pending,English,No,FALSE
+C0951,Boat mooring point damaged near Natpiddymunai 03 harbor,Boat,High,Natpiddymunai 03,7,7/8/2026 13:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0952,Boat parking area overcrowded near Maruthamunai 06 harbor,Boat,Low,Maruthamunai 06,5,7/8/2026 20:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0953,Request for new mooring space near Kalmunaikudi 10 fishing harbor,Boat,Medium,Kalmunaikudi 10,16,5/20/2026 18:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0954,Damaged road surface near Natpiddymunai 01 making travel difficult,Road,Medium,Natpiddymunai 01,7,5/21/2026 14:00,Public Works Division,In Progress,English,No,FALSE
+C0955,Recycling bin missing near Sainthamaruthu 14 community center,Waste,Low,Sainthamaruthu 14,23,7/5/2026 17:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0956,Water meter reading appears incorrect for Periyaneelavanai 02 household,Water,Low,Periyaneelavanai 02,2,7/30/2026 05:00,National Water Supply & Drainage Board,Resolved,English,Yes,FALSE
+C0957,Water meter reading appears incorrect for Pandiruppu 02 household,Water,Medium,Pandiruppu 02,10,7/1/2026 00:00,National Water Supply & Drainage Board,Pending,English,No,FALSE
+C0958,Road divider knocked down near Sainthamaruthu 07 roundabout,Road,High,Sainthamaruthu 07,21,6/1/2026 13:00,Public Works Division,Resolved,English,No,FALSE
+C0959,Blocked culvert causing water stagnation near Maruthamunai 02,Drainage,Medium,Maruthamunai 02,3,6/23/2026 02:00,Public Works Division,Pending,English,No,FALSE
+C0960,Requesting rate remission for vacant property in Kalmunaikudi 04,Billing,Low,Kalmunaikudi 04,13,5/2/2026 23:00,Assessment Department,Pending,English,No,FALSE
+C0961,Street light flickering continuously near Kalmunaikudi 03 station,Electrical,Low,Kalmunaikudi 03,13,5/12/2026 17:00,Street Lighting Unit,Pending,English,No,FALSE
+C0962,Broken pavement tiles near Sainthamaruthu 16 making walking unsafe,Road,Low,Sainthamaruthu 16,23,5/13/2026 17:00,Public Works Division,In Progress,English,Yes,FALSE
+C0963,"Park swing broken near Kalmunaikudi 02, unsafe for children",Public,Medium,Kalmunaikudi 02,13,6/24/2026 16:00,Public Assistance Department,Pending,English,No,FALSE
+C0964,Requesting rate remission for vacant property in Sainthamaruthu 13,Billing,Low,Sainthamaruthu 13,22,5/10/2026 00:00,Assessment Department,Pending,English,Yes,FALSE
+C0965,Recycling bin missing near Kalmunai 03 community center,Waste,Low,Kalmunai 03,12,7/30/2026 08:00,Waste Collection & Recycling Unit,In Progress,English,No,FALSE
+C0966,Storm damage to boat shelter near Sainthamaruthu 05 needs assessment,Boat,High,Sainthamaruthu 05,21,7/17/2026 19:00,Boat Services Unit,Pending,English,Yes,FALSE
+C0967,Damaged boat landing point near Pandiruppu 02 needs urgent repair,Boat,High,Pandiruppu 02,10,6/11/2026 12:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0968,Road divider knocked down near Maruthamunai 02 roundabout,Road,Medium,Maruthamunai 02,3,6/10/2026 02:00,Public Works Division,Resolved,English,Yes,FALSE
+C0969,Water tank overflow reported near Sainthamaruthu 07 apartment complex,Water,Medium,Sainthamaruthu 07,21,7/14/2026 15:00,National Water Supply & Drainage Board,In Progress,English,Yes,FALSE
+C0970,Uncollected waste piling up along the main road in Sainthamaruthu 12,Waste,High,Sainthamaruthu 12,20,5/9/2026 02:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0971,Overcharged on trade license renewal fee for shop in Kalmunai 02,Billing,Medium,Kalmunai 02,12,5/26/2026 17:00,Assessment Department,Pending,English,No,FALSE
+C0972,Public restroom near Natpiddymunai 04 in poor hygienic condition,Public,Low,Natpiddymunai 04,7,5/11/2026 07:00,Public Assistance Department,In Progress,English,No,FALSE
+C0973,Stamp duty payment receipt not issued for transaction in Periyaneelavanai 02,Billing,Medium,Periyaneelavanai 02,2,7/7/2026 04:00,Assessment Department,Pending,English,Yes,FALSE
+C0974,Business license fee dispute for trade stall in Sainthamaruthu 11,Billing,Medium,Sainthamaruthu 11,22,7/5/2026 10:00,Assessment Department,In Progress,English,No,FALSE
+C0975,Overcharged on trade license renewal fee for shop in Maruthamunai 04,Billing,High,Maruthamunai 04,4,5/19/2026 06:00,Assessment Department,Pending,English,Yes,TRUE
+C0976,Bad smell from uncollected garbage near Kalmunaikudi 09 residential area,Waste,Medium,Kalmunaikudi 09,15,7/16/2026 16:00,Waste Collection & Recycling Unit,In Progress,English,Yes,FALSE
+C0977,Exposed electrical wiring near Kalmunai 01 poses safety hazard,Electrical,High,Kalmunai 01,11,7/27/2026 14:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0978,Drain cover missing near Kalmunaikudi 10 pedestrian crossing,Drainage,High,Kalmunaikudi 10,16,6/25/2026 06:00,Public Works Division,Resolved,English,No,FALSE
+C0979,Assessment tax amount for my Kalmunai 03 property seems incorrectly calculated,Billing,High,Kalmunai 03,12,7/22/2026 09:00,Assessment Department,In Progress,English,No,FALSE
+C0980,Boat service counter closed during working hours at Sainthamaruthu 03,Boat,Medium,Sainthamaruthu 03,18,6/19/2026 20:00,Boat Services Unit,Resolved,English,Yes,FALSE
+C0981,Boat license renewal fee dispute for vessel based in Sainthamaruthu 10,Boat,Medium,Sainthamaruthu 10,20,5/27/2026 00:00,Boat Services Unit,Pending,English,No,FALSE
+C0982,Discount for early rate settlement not applied for Maruthamunai 06 property,Billing,Low,Maruthamunai 06,5,5/3/2026 00:00,Assessment Department,Resolved,English,Yes,FALSE
+C0983,Foul smell from blocked drain near Sainthamaruthu 11 market,Drainage,Low,Sainthamaruthu 11,22,7/28/2026 06:00,Public Works Division,Pending,English,Yes,FALSE
+C0984,Vandalized public signage near Sainthamaruthu 10 market,Public,Low,Sainthamaruthu 10,20,6/10/2026 11:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0985,Damaged walking path in Sainthamaruthu 16 public garden,Public,Low,Sainthamaruthu 16,23,5/9/2026 08:00,Public Assistance Department,Pending,English,Yes,FALSE
+C0986,"Jetty in poor condition near Natpiddymunai 02, unsafe for boarding",Boat,Medium,Natpiddymunai 02,7,6/17/2026 22:00,Boat Services Unit,In Progress,English,Yes,FALSE
+C0987,Missing road signage near Natpiddymunai 04 intersection,Road,Medium,Natpiddymunai 04,7,7/5/2026 17:00,Public Works Division,Resolved,English,Yes,FALSE
+C0988,Drainage system overflowing near Sainthamaruthu 17 residential lane,Drainage,High,Sainthamaruthu 17,23,5/12/2026 01:00,Public Works Division,Pending,English,No,FALSE
+C0989,Exposed electrical wiring near Kalmunaikudi 14 poses safety hazard,Electrical,Medium,Kalmunaikudi 14,17,5/5/2026 12:00,Street Lighting Unit,Pending,English,Yes,FALSE
+C0990,Damaged road surface near Sainthamaruthu 09 making travel difficult,Road,Medium,Sainthamaruthu 09,21,7/31/2026 20:00,Public Works Division,In Progress,English,Yes,FALSE
+C0991,Request for new mooring space near Sainthamaruthu 13 fishing harbor,Boat,Medium,Sainthamaruthu 13,22,7/31/2026 23:00,Boat Services Unit,Pending,English,No,FALSE
+C0992,Irregular water supply schedule affecting Maruthamunai 01 residents,Water,Low,Maruthamunai 01,3,6/5/2026 02:00,National Water Supply & Drainage Board,Pending,English,Yes,FALSE
+C0993,Foul smell from blocked drain near Sainthamaruthu 10 market,Drainage,Medium,Sainthamaruthu 10,20,7/2/2026 19:00,Public Works Division,Pending,English,No,FALSE
+C0994,Litter accumulating in Sainthamaruthu 17 public park,Public,Medium,Sainthamaruthu 17,23,7/14/2026 15:00,Public Assistance Department,In Progress,English,Yes,FALSE
+C0995,Bad smell from uncollected garbage near Sainthamaruthu 16 residential area,Waste,Medium,Sainthamaruthu 16,23,7/9/2026 10:00,Waste Collection & Recycling Unit,Pending,English,Yes,FALSE
+C0996,Late payment surcharge applied incorrectly on Sainthamaruthu 05 property rates,Billing,High,Sainthamaruthu 05,21,5/23/2026 03:00,Assessment Department,Pending,English,No,FALSE
+C0997,Standing water in drain breeding mosquitoes near Kalmunaikudi 05,Drainage,High,Kalmunaikudi 05,14,7/6/2026 05:00,Public Works Division,Resolved,English,No,FALSE
+C0998,Broken public bench near Kalmunaikudi 07 park needs replacement,Public,Medium,Kalmunaikudi 07,14,5/9/2026 05:00,Public Assistance Department,Pending,English,No,FALSE
+C0999,Litter accumulating in Kalmunaikudi 04 public park,Public,Low,Kalmunaikudi 04,13,7/4/2026 02:00,Public Assistance Department,Pending,English,Yes,FALSE
+C1000,Cracked drain pipe near Maruthamunai 02 needs repair,Drainage,Low,Maruthamunai 02,3,5/29/2026 17:00,Public Works Division,Resolved,English,No,FALSE
