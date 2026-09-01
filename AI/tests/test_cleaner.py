@@ -7,6 +7,8 @@ sys.path.append(
 
 from src.preprocessing.text_cleaner import clean_text
 
-sample = "Water Leakage Near School!!!"
+df["clean_text"] = df["complaint_text"].apply(clean_text)
 
-print(clean_text(sample))
+df[
+    ["complaint_text", "clean_text"]
+].head(10)
