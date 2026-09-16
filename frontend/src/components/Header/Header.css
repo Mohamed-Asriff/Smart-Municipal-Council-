@@ -1,0 +1,218 @@
+.site-header {
+  width: 100%;
+}
+
+/* Top Black Bar */
+.top-bar {
+  background-color: #000000;
+  color: #d1d5db;
+  font-size: 12px;
+  padding: 8px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.emergency-text {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.secretariat-text {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.top-right-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.notif-btn {
+  background: #111827;
+  border: 1px solid #374151;
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.notif-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.notif-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 7px;
+  height: 7px;
+  background-color: #2563eb;
+  border-radius: 50%;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.lang-btn.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+/* Header User Badge (Scoped to prevent CSS collision) */
+.header-user-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 14px;
+  border-left: 1px solid #374151;
+  background: transparent;
+}
+
+.header-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.header-user-details {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-user-name {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.header-user-role {
+  color: #9ca3af;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+/* Main White Navigation Header */
+.main-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.kmc-badge {
+  background-color: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.brand-title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.brand-title span {
+  color: #2563eb;
+}
+
+.brand-subtitle {
+  color: #4b5563;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.nav-container {
+  display: flex;
+  background-color: #f1f5f9;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  gap: 6px;
+}
+
+.nav-tab {
+  background: none;
+  border: none;
+  color: #475569;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-tab:hover {
+  color: #000000;
+}
+
+.nav-tab.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.admin-header-search .header-search-input {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #cbd5e1;
+  font-size: 13px;
+  width: 240px;
+  outline: none;
+  background-color: #f8fafc;
+}

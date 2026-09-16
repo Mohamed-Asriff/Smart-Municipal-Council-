@@ -1,0 +1,100 @@
+.sidebar {
+  width: 260px;
+  background-color: #ffffff; /* White Theme */
+  border-right: 1px solid #e2e8f0;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 73px); /* Stretches to the bottom corner */
+  box-sizing: border-box;
+}
+
+.brand {
+  color: #000000; /* Black Font */
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.admin-subtitle {
+  color: #2563eb; /* Blue Font */
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f8fafc;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 28px;
+}
+
+.avatar {
+  font-size: 24px;
+}
+
+.user-info strong {
+  color: #000000;
+  font-size: 14px;
+  display: block;
+}
+
+.user-info p {
+  color: #2563eb; /* Blue ID */
+  font-size: 12px;
+  font-weight: 600;
+  margin: 2px 0 0 0;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-menu li {
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #000000; /* Black text */
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-menu li:hover {
+  background-color: #f1f5f9;
+  color: #2563eb;
+}
+
+.nav-menu li.active {
+  background-color: #2563eb; /* Blue Active Tab */
+  color: #ffffff; /* White Text */
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.emergency-btn {
+  margin-top: auto; /* Pushes button to bottom left corner */
+  background-color: #000000; /* Black Button */
+  color: #ffffff; /* White Text */
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.emergency-btn:hover {
+  background-color: #2563eb; /* Turns blue on hover */
+}
