@@ -8,3 +8,5 @@ jupyter
 joblib
 fastapi
 uvicorn
+python-dotenv
+google-genai
