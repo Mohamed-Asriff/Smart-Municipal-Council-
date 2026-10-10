@@ -1,12 +1,4 @@
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-nltk
-jupyter
-joblib
-fastapi
-uvicorn
-python-dotenv
 google-genai
+python-dotenv
+joblib
+scikit-learn
