@@ -1,7 +1,21 @@
+# Dependencies
+node_modules/
+
+# IDE
+.idea/
+*.iml
+
+# Build output
+backend/target/
+dist/
+build/
+
+# Environment
 .env
 .env.*
 !.env.example
 
+# Python
 .venv/
 venv/
 __pycache__/
@@ -9,11 +23,7 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 
-node_modules/
-dist/
-build/
-.vite/
-
+# AI Models
 AI/models/
 *.pkl
 *.joblib
@@ -21,6 +31,8 @@ AI/models/
 *.pt
 *.onnx
 
+# Misc
 .ipynb_checkpoints/
 .DS_Store
 Thumbs.db
+.vite/
