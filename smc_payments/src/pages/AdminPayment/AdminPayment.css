@@ -1,0 +1,68 @@
+.page-layout { display: flex; height: 100vh; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+.admin-bg { background-color: #f4f6f8; }
+.main-content { flex: 1; padding: 20px 40px; overflow-y: auto; box-sizing: border-box;}
+
+.page-header h1 { margin: 0; color: #1a1a1a; font-weight: 800; }
+.kpi-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 25px; }
+.kpi-card { background: white; padding: 20px; border-radius: 8px; border: 1px solid #ddd; text-align: center; border-top: 5px solid #1a1a1a; box-shadow: 0 2px 8px rgba(0,0,0,0.02);}
+.kpi-card h3 { margin: 0; color: #666; font-size: 14px; text-transform: uppercase; font-weight: 700; }
+.kpi-card h2 { margin: 10px 0 0 0; color: #e61c24; font-size: 32px; }
+
+.filters-row { display: flex; gap: 15px; margin-bottom: 25px; }
+.search-input { flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;}
+.search-input:focus { border-color: #e61c24; outline: none; }
+.filters-row select { padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: white; font-size: 14px;}
+.filters-row select:focus { border-color: #e61c24; outline: none; }
+.btn-generate { background-color: #1a1a1a; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+.btn-generate:hover { background-color: #e61c24; }
+
+.table-container { background: white; padding: 25px; border-radius: 8px; border: 1px solid #ddd; border-top: 5px solid #1a1a1a; }
+.table-container h3 { margin-top: 0; color: #1a1a1a; }
+table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+th, td { padding: 14px 12px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
+th { color: #1a1a1a; font-weight: 700; background-color: #f8f9fa; }
+.status-success { background-color: #1a1a1a; color: white; padding: 6px 12px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.status-pending { background-color: #f8f9fa; color: #1a1a1a; padding: 6px 12px; border-radius: 4px; font-size: 12px; font-weight: bold; border: 1px solid #ddd;}
+.status-failed { background-color: #e61c24; color: white; padding: 6px 12px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.link-btn { background: none; border: none; color: #e61c24; cursor: pointer; text-decoration: underline; font-weight: bold; transition: 0.2s;}
+.link-btn:hover { color: #1a1a1a; }
+
+/* Modal Styles for View Details */
+.modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); display: flex; justify-content: center; align-items: center; z-index: 1000; }
+.modal-content { background: white; padding: 30px; border-radius: 8px; width: 450px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-top: 6px solid #e61c24; }
+.modal-content h2 { margin-top: 0; color: #1a1a1a; }
+.modal-body p { font-size: 15px; margin: 10px 0; border-bottom: 1px solid #f4f6f8; padding-bottom: 8px; color: #333; }
+.btn-close { background-color: #1a1a1a; color: white; border: none; padding: 10px 25px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+.btn-close:hover { background-color: #e61c24; }
+
+.issue-bill-card { background: white; padding: 25px; border-radius: 8px; border: 1px solid #ddd; margin-bottom: 30px; border-top: 5px solid #e61c24; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.issue-bill-card h3 { margin-top: 0; color: #1a1a1a; }
+.issue-bill-form { display: flex; gap: 15px; margin-top: 15px; align-items: center; }
+.issue-bill-form input, .issue-bill-form select { flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; background-color: white; }
+.issue-bill-form input:focus, .issue-bill-form select:focus { border-color: #e61c24; outline: none; box-shadow: 0 0 0 2px rgba(230, 28, 36, 0.1); }
+.btn-issue { background-color: #e61c24; color: white; border: none; padding: 12px 25px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+.btn-issue:hover { background-color: #cc1820; }
+
+.status-dropdown { padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; background-color: white; cursor: pointer; min-width: 160px; }
+.status-dropdown:focus { border-color: #e61c24; outline: none; }
+
+.sortable-th { cursor: pointer; user-select: none; transition: background-color 0.2s; }
+.sortable-th:hover { background-color: #fdf2f2; color: #e61c24; }
+
+.pagination-controls { display: flex; justify-content: flex-end; align-items: center; margin-top: 20px; gap: 15px; }
+.btn-page { background-color: white; border: 1px solid #ddd; color: #1a1a1a; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+.btn-page:hover:not(:disabled) { background-color: #fdf2f2; border-color: #e61c24; color: #e61c24; }
+.btn-page:disabled { background-color: #f9f9f9; color: #ccc; cursor: not-allowed; border-color: #eee; }
+.page-indicator { font-size: 14px; color: #555; font-weight: 600; }
+
+/* Styling for Top-Right Toast Notification */
+.custom-popup-overlay { position: fixed; top: 30px; right: 30px; z-index: 9999; pointer-events: none; }
+.custom-popup { background-color: #1a1a1a; color: white; padding: 15px 20px; border-radius: 8px; width: 320px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 15px; pointer-events: auto; animation: slideInRight 0.4s ease-out; border-left: 6px solid #e61c24; }
+.custom-popup.error-toast { background-color: #e61c24; border-left: 6px solid #1a1a1a; }
+.popup-icon { font-size: 26px; margin: 0; }
+.popup-text-content { flex: 1; text-align: left; }
+.custom-popup h2 { margin: 0 0 5px 0; font-size: 18px; color: white !important; }
+.custom-popup p { color: white !important; font-size: 14px; margin: 0; line-height: 1.4; }
+.btn-popup-close { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.5); padding: 6px 12px; border-radius: 6px; font-size: 14px; font-weight: bold; cursor: pointer; transition: 0.2s; width: auto; }
+.btn-popup-close:hover { background-color: rgba(255, 255, 255, 0.2); border-color: white; }
+@keyframes slideInRight { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }

@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# IDE
+.idea/
+*.iml
+
+# Build output
+backend/target/
+dist/
+build/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# AI Models
+AI/models/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+
+# Misc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.vite/
