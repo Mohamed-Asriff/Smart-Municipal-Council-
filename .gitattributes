@@ -1,0 +1,35 @@
+# Normalize line endings on all text files
+* text=auto eol=lf
+
+# Specific file types
+*.js    text eol=lf
+*.jsx   text eol=lf
+*.ts    text eol=lf
+*.tsx   text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.properties text eol=lf
+*.sql   text eol=lf
+
+# Windows-only files
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# Binary files ? never touch
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.svg   text eol=lf
+*.ico   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.eot   binary
+*.pdf   binary
+*.jar   binary
+*.class binary
