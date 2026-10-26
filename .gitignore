@@ -1,0 +1,15 @@
+﻿.env
+.env.*
+!.env.example
+
+**/node_modules/
+**/target/
+**/__pycache__/
+**/.venv/
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated frontend build
+frontend/dist/

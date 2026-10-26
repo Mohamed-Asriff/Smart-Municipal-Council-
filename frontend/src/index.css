@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-kmc-navy: #16324F;
+  --color-kmc-navy-light: #23476B;
+  --color-kmc-gold: #D4AF37;
+  --color-kmc-gold-light: #F4E4B5;
+  --color-kmc-blue: #2563EB;
+  --color-kmc-bg: #F8FAFC;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Merriweather', Georgia, serif;
+}
+
+@layer base {
+  body { @apply bg-kmc-bg text-slate-800 antialiased font-sans; }
+  h1, h2, h3, h4, h5, h6 { @apply font-serif text-kmc-navy tracking-tight; }
+}
+
+@layer components {
+  .btn-gov { @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-kmc-navy text-white font-semibold rounded-lg shadow-sm hover:bg-kmc-navy-light hover:shadow-md transition-all duration-200 border border-transparent; }
+  .btn-gov-outline { @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-kmc-navy font-semibold rounded-lg shadow-sm border border-slate-300 hover:bg-slate-50 hover:border-kmc-navy transition-all duration-200; }
+  .btn-gold { @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-kmc-gold text-kmc-navy font-bold rounded-lg shadow-sm hover:bg-yellow-500 hover:shadow-md transition-all duration-200 border border-transparent; }
+  .input-gov { @apply w-full px-4 py-3 bg-white border border-slate-300 rounded-lg text-slate-800 focus:outline-none focus:ring-2 focus:ring-kmc-blue/20 focus:border-kmc-blue transition-all duration-200 text-sm; }
+  .card-gov { @apply bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow duration-200; }
+  .badge-gov { @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider; }
+  .badge-success { @apply bg-emerald-50 text-emerald-700 border border-emerald-200; }
+  .badge-warning { @apply bg-amber-50 text-amber-700 border border-amber-200; }
+  .badge-danger { @apply bg-red-50 text-red-700 border border-red-200; }
+  .badge-info { @apply bg-blue-50 text-blue-700 border border-blue-200; }
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Fixes anchor links scrolling under the sticky navbar */
+section[id], footer[id] {
+  scroll-margin-top: 80px;
+}
