@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Diagnose Spring Boot startup",
+			"type": "shell",
+			"command": "mvn",
+			"args": [
+				"-f",
+				"backend/pom.xml",
+				"spring-boot:run"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Start Spring Boot backend",
+			"type": "shell",
+			"command": "mvn",
+			"args": [
+				"-f",
+				"backend/pom.xml",
+				"spring-boot:run"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}

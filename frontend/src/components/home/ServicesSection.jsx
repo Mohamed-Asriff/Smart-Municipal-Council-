@@ -39,46 +39,6 @@ export default function ServicesSection({ onOpenReport, onOpenPay, onOpenWaste }
                     {item.desc}
                   </p>
                 </div>
-
-                {/* Action Button */}
-                <div className="pt-4 mt-4 border-t border-slate-100">
-                  {(item.id === 'waste' || item.id === 'smartBins') && (
-                    <button
-                      onClick={onOpenWaste}
-                      className="inline-flex items-center gap-1.5 text-[13px] font-bold text-[#10B981] hover:text-[#059669] transition-colors group/btn"
-                    >
-                      <span>{t.btnWaste}</span>
-                      <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
-                    </button>
-                  )}
-                  {item.id === 'tax' && (
-                    <button
-                      onClick={onOpenPay}
-                      className="inline-flex items-center gap-1.5 text-[13px] font-bold text-kmc-blue hover:text-[#1D4ED8] transition-colors group/btn"
-                    >
-                      <span>{t.btnPay}</span>
-                      <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
-                    </button>
-                  )}
-                  {item.id === 'roads' && (
-                    <button
-                      onClick={onOpenReport}
-                      className="inline-flex items-center gap-1.5 text-[13px] font-bold text-kmc-blue hover:text-[#1D4ED8] transition-colors group/btn"
-                    >
-                      <span>{t.btnComplaint}</span>
-                      <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
-                    </button>
-                  )}
-                  {(item.id === 'ai' || item.id === 'analytics') && (
-                    <a
-                      href="#tracker"
-                      className="inline-flex items-center gap-1.5 text-[13px] font-bold text-kmc-blue hover:text-[#1D4ED8] transition-colors group/btn"
-                    >
-                      <span>{t.btnLearn}</span>
-                      <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
-                    </a>
-                  )}
-                </div>
               </div>
             );
           })}
