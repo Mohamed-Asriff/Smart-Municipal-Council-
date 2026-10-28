@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   LayoutDashboard, FileText, CreditCard, User, 
-  LogOut, Menu, X, Bell, ShieldCheck, ChevronDown, Clock
+  LogOut, Menu, X, ShieldCheck, ChevronDown, Clock
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
@@ -181,12 +181,6 @@ export default function CitizenPortal({ onBackToPublic }) {
           </div>
 
           <div className="flex items-center gap-4">
-            <button className="relative p-2.5 text-slate-500 bg-slate-50 hover:bg-slate-100 rounded-full transition border border-slate-200 hidden sm:flex">
-              <Bell className="w-5 h-5" />
-              <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>
-            </button>
-
-            <div className="h-8 w-px bg-slate-200 hidden sm:block"></div>
 
             <div className="relative" ref={profileDropdownRef}>
               <button 

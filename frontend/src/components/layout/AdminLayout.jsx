@@ -62,12 +62,7 @@ export default function AdminLayout({ user, onLogout, activeTab, setActiveTab, c
           </div>
 
           <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2">
-              <span className="font-serif font-bold text-lg text-white tracking-wide">KMC</span>
-              <span className="text-[9px] font-black uppercase tracking-widest text-kmc-gold bg-kmc-gold/15 px-1.5 py-0.5 rounded border border-kmc-gold/30">
-                Console
-              </span>
-            </div>
+            <span className="font-serif font-bold text-lg text-white tracking-wide">KMC</span>
             <p className="text-[11px] text-slate-300 font-medium truncate mt-0.5">
               Kalmunai Municipal Council
             </p>
@@ -125,13 +120,7 @@ export default function AdminLayout({ user, onLogout, activeTab, setActiveTab, c
           </div>
 
           <div className="flex items-center gap-4">
-            {/* System Status */}
-            <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-emerald-50 border border-emerald-200 rounded-full">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-xs font-bold text-emerald-700 uppercase tracking-wide">System Online</span>
-            </div>
 
-            <div className="h-8 w-px bg-slate-200 hidden sm:block"></div>
 
             {/* Profile Dropdown */}
             <div className="relative" ref={profileDropdownRef}>

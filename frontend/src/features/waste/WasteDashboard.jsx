@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Trash2, AlertTriangle, Activity, CheckCircle2, RefreshCw, Plus } from 'lucide-react';
+import { Trash2, AlertTriangle, Activity, CheckCircle2, Plus } from 'lucide-react';
 import { api } from '../../api';
 import { WasteMap } from '../../components/maps/WasteMap';
 import BinSidebar from '../../components/waste/BinSidebar';
@@ -54,19 +54,9 @@ export default function WasteDashboard() {
           <p className="text-sm text-slate-500 mt-1">Real-time sensor telemetry and bin fill levels — Kalmunai Municipal Council</p>
         </div>
         <div style={{ display:'flex', gap:'10px', alignItems:'center' }}>
-          <div style={{ display:'flex', alignItems:'center', gap:'6px', padding:'6px 12px',
-            background:'rgba(16,185,129,0.1)', borderRadius:'20px', border:'1px solid rgba(16,185,129,0.3)' }}>
-            <span style={{ width:'7px', height:'7px', borderRadius:'50%', background:'#10b981',
-              animation:'pulse 2s infinite', display:'inline-block' }}/>
-            <span style={{ fontSize:'12px', color:'#10b981', fontWeight:600 }}>Live</span>
-          </div>
           <button onClick={() => setShowAddBin(true)} className="btn-gov py-2.5 px-4 text-sm"
             style={{ display:'flex', alignItems:'center', gap:'6px' }}>
             <Plus className="w-4 h-4"/> Add Bin
-          </button>
-          <button onClick={fetchData} className="btn-gov-outline py-2.5 px-4 text-sm shadow-none"
-            style={{ display:'flex', alignItems:'center', gap:'6px' }}>
-            <RefreshCw className={`w-4 h-4 ${isLoading ? 'animate-spin' : ''}`}/> Refresh
           </button>
         </div>
       </div>
