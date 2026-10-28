@@ -73,7 +73,7 @@ export default function AdminComplaints() {
       {/* Top Action Bar */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 shrink-0">
         <div>
-          <h1 className="text-2xl font-serif font-bold text-kmc-navy">Municipal Grievances</h1>
+          <h1 className="text-2xl font-serif font-bold text-kmc-navy">Complaints</h1>
           <p className="text-sm text-slate-500 mt-1">Review, assign, and resolve citizen complaints.</p>
         </div>
         <div className="flex items-center gap-3 w-full sm:w-auto">

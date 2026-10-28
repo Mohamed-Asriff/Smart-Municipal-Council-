@@ -14,6 +14,7 @@ import com.smc.service.PaymentService;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
@@ -30,17 +31,20 @@ public class AdminController {
     private final NoticeRepository noticeRepository;
     private final ComplaintService complaintService;
     private final PaymentService paymentService;
+    private final PasswordEncoder passwordEncoder;
 
     public AdminController(UserRepository userRepository,
                            NewsRepository newsRepository,
                            NoticeRepository noticeRepository,
                            ComplaintService complaintService,
-                           PaymentService paymentService) {
+                           PaymentService paymentService,
+                           PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
         this.newsRepository = newsRepository;
         this.noticeRepository = noticeRepository;
         this.complaintService = complaintService;
         this.paymentService = paymentService;
+        this.passwordEncoder = passwordEncoder;
     }
 
     private User currentUser() {
@@ -229,9 +233,119 @@ public class AdminController {
 
     @GetMapping("/users")
     public ResponseEntity<?> allUsers() {
-        List<User> users = userRepository.findAll();
+        List<User> users = userRepository.findAll(Sort.by(Sort.Direction.DESC, "id"));
         users.forEach(u -> u.setPasswordHash(null));
         return ResponseEntity.ok(users);
+    }
+
+    @PostMapping("/users")
+    public ResponseEntity<?> createUser(@RequestBody Map<String, Object> body) {
+        String name = body.getOrDefault("name", "").toString().trim();
+        String email = body.getOrDefault("email", "").toString().trim().toLowerCase();
+        if (name.isEmpty() || email.isEmpty()) {
+            return ResponseEntity.badRequest().body(Map.of("error", "Name and email are required."));
+        }
+        if (userRepository.existsByEmailIgnoreCase(email)) {
+            return ResponseEntity.badRequest().body(Map.of("error", "A citizen with this email is already registered."));
+        }
+
+        String username = body.getOrDefault("username", "").toString().trim();
+        if (username.isEmpty()) {
+            username = email.split("@")[0].replaceAll("[^a-zA-Z0-9_]", "") + "_" + (int)(Math.random() * 900 + 100);
+        }
+
+        String phone = body.getOrDefault("phone", "").toString().trim();
+        String nic = body.getOrDefault("nic", "").toString().trim();
+        String assessmentNo = body.getOrDefault("assessmentNo", "").toString().trim();
+        if (assessmentNo.isEmpty()) {
+            assessmentNo = "KMC-TAX-2026-" + (int)(Math.random() * 9000 + 1000);
+        }
+        String role = body.getOrDefault("role", "CITIZEN").toString().trim().toUpperCase();
+        String status = body.getOrDefault("status", "Verified Citizen").toString().trim();
+        String zone = body.getOrDefault("zone", "Kalmunai Town").toString().trim();
+        String address = body.getOrDefault("address", "Main Street").toString().trim();
+        String rawPassword = body.getOrDefault("password", "password123").toString();
+
+        User user = new User();
+        user.setUserCode("USR-KMC-" + (int)(Math.random() * 9000 + 1000));
+        user.setName(name);
+        user.setUsername(username);
+        user.setEmail(email);
+        user.setPhone(phone.isEmpty() ? null : phone);
+        user.setPhoneNormalized(phone.isEmpty() ? null : phone.replaceAll("[^0-9+]", ""));
+        user.setNic(nic.isEmpty() ? null : nic);
+        user.setAssessmentNo(assessmentNo);
+        user.setRole(role);
+        user.setStatus(status);
+        user.setZone(zone);
+        user.setAddress(address);
+        user.setIsActive(true);
+        user.setPasswordHash(passwordEncoder.encode(rawPassword.isBlank() ? "password123" : rawPassword));
+
+        User saved = userRepository.save(user);
+        saved.setPasswordHash(null);
+        return ResponseEntity.ok(saved);
+    }
+
+    @PutMapping("/users/{id}")
+    @SuppressWarnings("null")
+    public ResponseEntity<?> updateUser(@PathVariable long id, @RequestBody Map<String, Object> body) {
+        return userRepository.findById(id).map(user -> {
+            if (body.containsKey("name") && body.get("name") != null) {
+                String name = body.get("name").toString().trim();
+                if (!name.isEmpty()) user.setName(name);
+            }
+            if (body.containsKey("email") && body.get("email") != null) {
+                String email = body.get("email").toString().trim().toLowerCase();
+                if (!email.isEmpty() && !email.equalsIgnoreCase(user.getEmail())) {
+                    if (userRepository.existsByEmailIgnoreCase(email)) {
+                        return ResponseEntity.badRequest().body(Map.of("error", "Email is already registered by another citizen."));
+                    }
+                    user.setEmail(email);
+                }
+            }
+            if (body.containsKey("phone") && body.get("phone") != null) {
+                String phone = body.get("phone").toString().trim();
+                user.setPhone(phone);
+                user.setPhoneNormalized(phone.replaceAll("[^0-9+]", ""));
+            }
+            if (body.containsKey("nic") && body.get("nic") != null) {
+                user.setNic(body.get("nic").toString().trim());
+            }
+            if (body.containsKey("assessmentNo") && body.get("assessmentNo") != null) {
+                user.setAssessmentNo(body.get("assessmentNo").toString().trim());
+            }
+            if (body.containsKey("role") && body.get("role") != null) {
+                user.setRole(body.get("role").toString().trim().toUpperCase());
+            }
+            if (body.containsKey("status") && body.get("status") != null) {
+                user.setStatus(body.get("status").toString().trim());
+            }
+            if (body.containsKey("zone") && body.get("zone") != null) {
+                user.setZone(body.get("zone").toString().trim());
+            }
+            if (body.containsKey("address") && body.get("address") != null) {
+                user.setAddress(body.get("address").toString().trim());
+            }
+            if (body.containsKey("password") && body.get("password") != null) {
+                String p = body.get("password").toString().trim();
+                if (!p.isEmpty() && p.length() >= 6) {
+                    user.setPasswordHash(passwordEncoder.encode(p));
+                }
+            }
+            User saved = userRepository.save(user);
+            saved.setPasswordHash(null);
+            return ResponseEntity.ok((Object) saved);
+        }).orElse(ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("/users/{id}")
+    public ResponseEntity<?> deleteUser(@PathVariable long id) {
+        if (!userRepository.existsById(id)) {
+            return ResponseEntity.notFound().build();
+        }
+        userRepository.deleteById(id);
+        return ResponseEntity.ok(Map.of("deleted", id));
     }
 
     // ================= PAYMENTS & REVENUE MANAGEMENT =================

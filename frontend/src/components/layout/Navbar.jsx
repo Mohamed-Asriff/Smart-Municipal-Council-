@@ -277,7 +277,7 @@ export default function Navbar({ onOpenPortal }) {
                 onClick={(e) => handleNavClick(e, link.href)}
                 className={`px-4 py-3 rounded-xl text-sm font-semibold transition ${
                   activeSection === link.id
-                    ? 'bg-kmc-gold/10 text-[#D4AF37]'
+                    ? 'bg-kmc-gold/10 text-kmc-gold'
                     : 'text-white hover:bg-white/10'
                 }`}
               >

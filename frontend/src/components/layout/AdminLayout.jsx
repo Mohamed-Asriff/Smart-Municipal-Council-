@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
-  Newspaper, Bell, FileText, Users, CreditCard, Trash2, 
+  Newspaper, FileText, Users, CreditCard, Trash2, 
   LogOut, Menu, X, ShieldCheck, LayoutDashboard, User, ChevronDown
 } from 'lucide-react';
 
@@ -22,12 +22,11 @@ export default function AdminLayout({ user, onLogout, activeTab, setActiveTab, c
 
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { id: 'complaints', label: 'Grievances', icon: FileText },
+    { id: 'complaints', label: 'Complaints', icon: FileText },
     { id: 'payments', label: 'Treasury & Revenue', icon: CreditCard },
     { id: 'wastebins', label: 'Smart Waste IoT', icon: Trash2 },
-    { id: 'news', label: 'News & Media', icon: Newspaper },
-    { id: 'notices', label: 'Public Notices', icon: Bell },
-    { id: 'users', label: 'Citizen Directory', icon: Users },
+    { id: 'news', label: 'News & Announcements', icon: Newspaper },
+    { id: 'users', label: 'Citizen Records', icon: Users },
   ];
 
   return (
@@ -44,13 +43,40 @@ export default function AdminLayout({ user, onLogout, activeTab, setActiveTab, c
         ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
         {/* Branding */}
-        <div className="h-20 flex items-center gap-3 px-6 border-b border-white/10 shrink-0">
-          <img src="/kmc_logo.png" alt="KMC" className="w-10 h-10 object-contain" />
-          <div>
-            <h1 className="font-serif font-bold text-lg leading-tight">KMC Admin</h1>
-            <p className="text-[10px] text-kmc-gold uppercase tracking-wider font-bold mt-0.5">Console</p>
+        <div className="h-22 flex items-center gap-3.5 px-5 border-b border-white/10 shrink-0 bg-linear-to-b from-white/5 to-transparent relative">
+          {/* Official Emblem Container */}
+          <div className="relative w-11 h-11 rounded-xl bg-white/10 p-1 flex items-center justify-center border border-white/15 shadow-inner backdrop-blur-md shrink-0">
+            <div className="w-full h-full rounded-lg bg-white overflow-hidden p-0.5 shadow-sm flex items-center justify-center">
+              <img 
+                src="/sri_lanka_emblem.jpg" 
+                alt="State Emblem" 
+                className="w-full h-full object-contain"
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = '/kmc_logo.png';
+                }}
+              />
+            </div>
+            {/* Live Status indicator */}
+            <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-500 rounded-full border-2 border-kmc-navy shadow-sm" />
           </div>
-          <button className="ml-auto lg:hidden text-slate-400 hover:text-white" onClick={() => setIsSidebarOpen(false)}>
+
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-2">
+              <span className="font-serif font-bold text-lg text-white tracking-wide">KMC</span>
+              <span className="text-[9px] font-black uppercase tracking-widest text-kmc-gold bg-kmc-gold/15 px-1.5 py-0.5 rounded border border-kmc-gold/30">
+                Console
+              </span>
+            </div>
+            <p className="text-[11px] text-slate-300 font-medium truncate mt-0.5">
+              Kalmunai Municipal Council
+            </p>
+          </div>
+
+          <button 
+            className="ml-auto lg:hidden text-slate-400 hover:text-white p-1 rounded-lg hover:bg-white/10 transition" 
+            onClick={() => setIsSidebarOpen(false)}
+          >
             <X className="w-5 h-5" />
           </button>
         </div>

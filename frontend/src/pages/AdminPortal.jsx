@@ -5,7 +5,6 @@ import AdminComplaints from '../features/complaints/AdminComplaints';
 import WasteDashboard from '../features/waste/WasteDashboard';
 import AdminPayments from '../features/payments/AdminPayments';
 import AdminNews from '../features/announcements/AdminNews';
-import AdminNotices from '../features/announcements/AdminNotices';
 import AdminUsers from '../features/users/AdminUsers';
 import { useAuth } from '../context/AuthContext';
 
@@ -13,7 +12,8 @@ export default function AdminPortal() {
   const { user, logout } = useAuth();
   
   const [activeTab, setActiveTab] = useState(() => {
-    return localStorage.getItem('kmc_admin_tab') || 'dashboard';
+    const saved = localStorage.getItem('kmc_admin_tab');
+    return (saved && saved !== 'notices') ? saved : 'dashboard';
   });
 
   useEffect(() => {
@@ -39,7 +39,6 @@ export default function AdminPortal() {
       {activeTab === 'wastebins' && <WasteDashboard />}
       {activeTab === 'payments' && <AdminPayments />}
       {activeTab === 'news' && <AdminNews />}
-      {activeTab === 'notices' && <AdminNotices />}
       {activeTab === 'users' && <AdminUsers />}
     </AdminLayout>
   );

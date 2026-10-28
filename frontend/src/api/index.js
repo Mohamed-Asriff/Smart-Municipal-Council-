@@ -62,8 +62,40 @@ export const api = {
   getNews:    () => get('/news', { public: true }),
   getNotices: () => get('/notices', { public: true }),
 
+  // NEWS (admin)
+  adminGetNews: async () => {
+    try {
+      return await get('/admin/news');
+    } catch {
+      return await get('/news', { public: true });
+    }
+  },
+  adminCreateNews: (data) => post('/admin/news', data),
+  adminUpdateNews: (id, data) => put(`/admin/news/${id}`, data),
+  adminDeleteNews: (id) => del(`/admin/news/${id}`),
+
+  // NOTICES (admin)
+  adminGetNotices: async () => {
+    try {
+      return await get('/admin/notices');
+    } catch {
+      return await get('/notices', { public: true });
+    }
+  },
+  adminCreateNotice: (data) => post('/admin/notices', data),
+  adminDeleteNotice: (id) => del(`/admin/notices/${id}`),
+
   // USERS (admin)
-  adminGetUsers: () => get('/admin/users'),
+  adminGetUsers: async () => {
+    try {
+      return await get('/admin/users');
+    } catch {
+      return await get('/admin/users', { public: true });
+    }
+  },
+  adminCreateUser: (data) => post('/admin/users', data),
+  adminUpdateUser: (id, data) => put(`/admin/users/${id}`, data),
+  adminDeleteUser: (id) => del(`/admin/users/${id}`),
 
   // WASTE / BINS
   getBins:       ()               => get('/bins', { public: true }),

@@ -125,7 +125,7 @@ export default function CitizenPortal({ onBackToPublic }) {
           </div>
           <div className="flex-1 min-w-0">
             <h1 className="font-serif font-bold text-base text-white leading-tight truncate">Kalmunai Council</h1>
-            <p className="text-[10px] text-[#D4AF37] uppercase tracking-widest font-bold mt-0.5">Citizen Portal</p>
+            <p className="text-[10px] text-kmc-gold uppercase tracking-widest font-bold mt-0.5">Citizen Portal</p>
           </div>
           <button className="lg:hidden text-slate-400 hover:text-white p-1" onClick={() => setIsSidebarOpen(false)}>
             <X className="w-5 h-5" />
@@ -142,16 +142,16 @@ export default function CitizenPortal({ onBackToPublic }) {
                 key={item.id}
                 onClick={() => { setActiveTab(item.id); setIsSidebarOpen(false); }}
                 className={`w-full flex items-center justify-between px-3 py-3 rounded-xl text-sm transition-all duration-200 relative group ${
-                  isActive ? 'bg-[#D4AF37]/10 text-[#D4AF37] border border-[#D4AF37]/20 shadow-sm' : 'text-slate-300 hover:bg-white/5 hover:text-white border border-transparent'
+                  isActive ? 'bg-kmc-gold/10 text-kmc-gold border border-kmc-gold/20 shadow-sm' : 'text-slate-300 hover:bg-white/5 hover:text-white border border-transparent'
                 }`}
               >
-                {isActive && <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-[#D4AF37] rounded-r-md"></span>}
+                {isActive && <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-kmc-gold rounded-r-md"></span>}
                 <div className="flex items-center gap-3">
-                  <Icon className={`w-5 h-5 transition-colors ${isActive ? 'text-[#D4AF37]' : 'text-slate-400 group-hover:text-white'}`} />
+                  <Icon className={`w-5 h-5 transition-colors ${isActive ? 'text-kmc-gold' : 'text-slate-400 group-hover:text-white'}`} />
                   <span className="font-semibold">{item.label}</span>
                 </div>
                 {item.badge > 0 && (
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${isActive ? 'bg-[#D4AF37] text-[#0B1E33]' : 'bg-red-500 text-white'}`}>
+                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${isActive ? 'bg-kmc-gold text-[#0B1E33]' : 'bg-red-500 text-white'}`}>
                     {item.badge}
                   </span>
                 )}
@@ -173,7 +173,7 @@ export default function CitizenPortal({ onBackToPublic }) {
               <Menu className="w-5 h-5" />
             </button>
             <div>
-              <h2 className="text-xl font-serif font-bold text-[#16324F] leading-tight">
+              <h2 className="text-xl font-serif font-bold text-kmc-navy leading-tight">
                 {navItems.find(i => i.id === activeTab)?.label || 'Dashboard'}
               </h2>
               <p className="text-[11px] text-slate-500 font-medium mt-0.5">Manage your municipal services</p>
@@ -194,10 +194,10 @@ export default function CitizenPortal({ onBackToPublic }) {
                 className="flex items-center gap-3 p-1.5 pr-3 rounded-full hover:bg-slate-50 border border-transparent hover:border-slate-200 transition group"
               >
                 <div className="text-right hidden sm:block">
-                  <p className="text-xs font-bold text-[#16324F]">{user?.zone || 'Kalmunai'}</p>
+                  <p className="text-xs font-bold text-kmc-navy">{user?.zone || 'Kalmunai'}</p>
                   <p className="text-[10px] text-slate-500 font-mono">{user?.assessmentNo || 'N/A'}</p>
                 </div>
-                <div className="w-10 h-10 rounded-full bg-[#16324F] flex items-center justify-center text-[#D4AF37] font-black border-2 border-[#D4AF37]/30 shadow-sm group-hover:scale-105 transition-transform">
+                <div className="w-10 h-10 rounded-full bg-kmc-navy flex items-center justify-center text-kmc-gold font-black border-2 border-kmc-gold/30 shadow-sm group-hover:scale-105 transition-transform">
                   {user?.name?.charAt(0) || 'C'}
                 </div>
                 <ChevronDown className={`w-4 h-4 text-slate-400 hidden sm:block transition-transform ${isProfileOpen ? 'rotate-180' : ''}`} />
@@ -206,13 +206,13 @@ export default function CitizenPortal({ onBackToPublic }) {
               {isProfileOpen && (
                 <div className="absolute right-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden animate-in fade-in slide-in-from-top-2 z-50">
                   <div className="px-5 py-4 bg-slate-50 border-b border-slate-200">
-                    <p className="font-bold text-sm text-[#16324F] truncate">{user?.name || 'Citizen'}</p>
+                    <p className="font-bold text-sm text-kmc-navy truncate">{user?.name || 'Citizen'}</p>
                     <p className="text-[10px] text-slate-500 font-mono mt-0.5 truncate">{user?.email || 'No email'}</p>
                   </div>
                   <div className="p-2">
                     <button 
                       onClick={() => { setActiveTab('profile'); setIsProfileOpen(false); }}
-                      className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-[#16324F] transition"
+                      className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-kmc-navy transition"
                     >
                       <User className="w-4 h-4 text-slate-400" /> My Profile
                     </button>
@@ -250,7 +250,7 @@ export default function CitizenPortal({ onBackToPublic }) {
             <div className="max-w-5xl mx-auto space-y-4 animate-in fade-in">
               <div className="flex items-center justify-between">
                 <div>
-                  <h1 className="text-2xl font-serif font-bold text-[#16324F]">Payment History</h1>
+                  <h1 className="text-2xl font-serif font-bold text-kmc-navy">Payment History</h1>
                   <p className="text-sm text-slate-500 mt-1">View all your municipal bills and settle pending dues.</p>
                 </div>
               </div>
@@ -279,7 +279,7 @@ export default function CitizenPortal({ onBackToPublic }) {
                             <CreditCard className="w-5 h-5" />
                           </div>
                           <div>
-                            <p className="font-bold text-[#16324F]">{p.service}</p>
+                            <p className="font-bold text-kmc-navy">{p.service}</p>
                             <p className="text-xs text-slate-500 font-mono mt-0.5">{p.billingPeriod} • {p.assessmentNo}</p>
                             {p.paidAt && <p className="text-[10px] text-slate-400 mt-0.5">Paid on {new Date(p.paidAt).toLocaleDateString()}</p>}
                           </div>
@@ -287,7 +287,7 @@ export default function CitizenPortal({ onBackToPublic }) {
                         
                         <div className="text-right flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-2">
                           <div>
-                            <p className="font-black text-lg text-[#16324F]">{formatCurrency(totalAmount)}</p>
+                            <p className="font-black text-lg text-kmc-navy">{formatCurrency(totalAmount)}</p>
                             {paidAmount > 0 && remaining > 0 && (
                               <p className="text-[10px] font-bold text-amber-600 mt-0.5 bg-amber-50 px-1.5 py-0.5 rounded">
                                 Paid: {formatCurrency(paidAmount)} | Due: {formatCurrency(remaining)}
@@ -305,7 +305,7 @@ export default function CitizenPortal({ onBackToPublic }) {
                               <ShieldCheck className="w-3.5 h-3.5" /> Fully Paid
                             </span>
                           ) : (
-                            <button onClick={() => openPaymentModal(p)} className="text-xs font-bold bg-[#D4AF37] hover:bg-yellow-500 text-[#0B1E33] px-4 py-1.5 rounded-lg transition shadow-sm">
+                            <button onClick={() => openPaymentModal(p)} className="text-xs font-bold bg-kmc-gold hover:bg-yellow-500 text-[#0B1E33] px-4 py-1.5 rounded-lg transition shadow-sm">
                               Pay {paidAmount > 0 ? 'Remaining' : 'Now'} →
                             </button>
                           )}
