@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: smc_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: smart_municipal_council
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "#Mahu2236"
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql
+      - ./database/seed.sql:/docker-entrypoint-initdb.d/02_seed.sql
+    networks:
+      - smc_net
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: smc_backend
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/smart_municipal_council
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: "#Mahu2236"
+      APPLICATION_SECURITY_JWT_SECRET_KEY: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    depends_on:
+      - postgres
+    networks:
+      - smc_net
+
+  ai-service:
+    build:
+      context: ./ai-service
+      dockerfile: Dockerfile
+    container_name: smc_ai_service
+    restart: always
+    ports:
+      - "8001:8001"
+    environment:
+      PORT: 8001
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-demo_key}
+    networks:
+      - smc_net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: smc_frontend
+    restart: always
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+      - ai-service
+    networks:
+      - smc_net
+
+networks:
+  smc_net:
+    driver: bridge
+
+volumes:
+  pgdata:

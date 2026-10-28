@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SmcApplication",
+            "request": "launch",
+            "mainClass": "com.smc.SmcApplication",
+            "projectName": "smart-municipal-council",
+            "cwd": "${workspaceFolder}/backend",
+            "vmArgs": "--enable-native-access=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED"
+        },
+        {
+            "type": "java",
+            "name": "Current Java File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "cwd": "${workspaceFolder}/backend",
+            "vmArgs": "--enable-native-access=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED"
+        }
+    ]
+}
