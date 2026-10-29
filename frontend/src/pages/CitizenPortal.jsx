@@ -499,7 +499,13 @@ export default function CitizenPortal({ onBackToPublic }) {
         </main>
       </div>
 
-      <ReportComplaintModal isOpen={isReportModalOpen} onClose={() => setIsReportModalOpen(false)} onTicketCreated={handleComplaintCreated} />
+      {isReportModalOpen && (
+        <ReportComplaintModal 
+          isOpen={isReportModalOpen} 
+          onClose={() => setIsReportModalOpen(false)} 
+          onTicketCreated={handleComplaintCreated} 
+        />
+      )}
       <PaymentModal isOpen={isPayModalOpen} onClose={() => { setIsPayModalOpen(false); setSelectedBill(null); }} prefillBill={selectedBill} onPaymentSuccess={handlePaymentSuccess} />
 
       {/* Bill Details / Submission History Modal */}

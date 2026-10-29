@@ -15,6 +15,7 @@ export default function AdminComplaints() {
   
   // Action States
   const [newStatus, setNewStatus] = useState('');
+  const [newPriority, setNewPriority] = useState('');
   const [note, setNote] = useState('');
   const [isUpdating, setIsUpdating] = useState(false);
   const [feedback, setFeedback] = useState({ type: '', msg: '' });
@@ -38,18 +39,26 @@ export default function AdminComplaints() {
   }, []);
 
   const handleUpdateStatus = async () => {
-    if (!newStatus || !selected) return;
+    if ((!newStatus && !newPriority) || !selected) return;
     setIsUpdating(true);
     setFeedback({ type: '', msg: '' });
     
     try {
-      const updated = await api.adminUpdateComplaint(selected.id, { status: newStatus, note });
+      const payload = {
+        status: newStatus || selected.status,
+        note,
+      };
+      if (newPriority) {
+        payload.priority = newPriority;
+      }
+      const updated = await api.adminUpdateComplaint(selected.id, payload);
       if (updated) {
         setComplaints(prev => prev.map(c => c.id === updated.id ? updated : c));
         setSelected(updated);
         setNewStatus('');
+        setNewPriority('');
         setNote('');
-        setFeedback({ type: 'success', msg: 'Ticket status updated successfully.' });
+        setFeedback({ type: 'success', msg: 'Ticket updated successfully.' });
       } else {
         throw new Error('Update failed.');
       }
@@ -87,7 +96,6 @@ export default function AdminComplaints() {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
-          {/* Refresh button removed here */}
         </div>
       </div>
 
@@ -109,7 +117,12 @@ export default function AdminComplaints() {
               filteredComplaints.map(ticket => (
                 <button 
                   key={ticket.id}
-                  onClick={() => setSelected(ticket)}
+                  onClick={() => {
+                    setSelected(ticket);
+                    setNewStatus('');
+                    setNewPriority('');
+                    setNote('');
+                  }}
                   className={`w-full text-left p-4 hover:bg-slate-50 transition-colors ${selected?.id === ticket.id ? 'bg-blue-50/50 border-l-4 border-l-kmc-blue' : 'border-l-4 border-l-transparent'}`}
                 >
                   <div className="flex justify-between items-start mb-1">
@@ -167,7 +180,13 @@ export default function AdminComplaints() {
                 </div>
                 <div className="bg-slate-50 p-3 rounded-lg border border-slate-200">
                   <p className="text-[10px] font-bold text-slate-400 uppercase flex items-center gap-1"><AlertCircle className="w-3 h-3" /> Priority</p>
-                  <p className={`text-sm font-semibold mt-1 ${selected.priority?.toUpperCase() === 'HIGH' || selected.priority?.toUpperCase() === 'CRITICAL' ? 'text-red-600' : 'text-amber-600'}`}>{selected.priority || 'MEDIUM'}</p>
+                  <p className={`text-sm font-semibold mt-1 ${
+                    selected.priority?.toUpperCase() === 'CRITICAL' ? 'text-red-700' :
+                    selected.priority?.toUpperCase() === 'HIGH' ? 'text-orange-600' :
+                    selected.priority?.toUpperCase() === 'MEDIUM' ? 'text-blue-600' : 'text-slate-600'
+                  }`}>
+                    {selected.priority || 'Medium'}
+                  </p>
                 </div>
                 <div className="bg-slate-50 p-3 rounded-lg border border-slate-200">
                   <p className="text-[10px] font-bold text-slate-400 uppercase flex items-center gap-1"><Building className="w-3 h-3" /> Department</p>
@@ -175,7 +194,7 @@ export default function AdminComplaints() {
                 </div>
               </div>
 
-              {/* Action Form */}
+              {/* Action Form: Update Status & Dispatch (matches requested UI) */}
               <div className="bg-kmc-navy/5 p-6 rounded-xl border border-kmc-navy/10">
                 <h4 className="text-sm font-bold text-kmc-navy mb-4 flex items-center gap-2">
                   <ShieldAlert className="w-4 h-4 text-kmc-blue" /> Update Status & Dispatch
@@ -191,6 +210,7 @@ export default function AdminComplaints() {
                 )}
 
                 <div className="space-y-4">
+                  {/* Row 1: New Status & Review Priority */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-bold text-slate-600 mb-1">New Status</label>
@@ -205,21 +225,40 @@ export default function AdminComplaints() {
                         <option value="REJECTED">Reject (Invalid)</option>
                       </select>
                     </div>
+
                     <div>
-                      <label className="block text-xs font-bold text-slate-600 mb-1">Internal Note (Optional)</label>
-                      <input 
-                        type="text" 
+                      <label className="block text-xs font-bold text-slate-600 mb-1">Review Priority</label>
+                      <select 
                         className="input-gov" 
-                        placeholder="e.g. Crew #4 dispatched..." 
-                        value={note} 
-                        onChange={(e) => setNote(e.target.value)} 
-                      />
+                        value={newPriority} 
+                        onChange={(e) => setNewPriority(e.target.value)}
+                      >
+                        <option value="">No priority change</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                        <option value="Critical">Critical</option>
+                      </select>
                     </div>
                   </div>
+
+                  {/* Row 2: Internal Note */}
+                  <div>
+                    <label className="block text-xs font-bold text-slate-600 mb-1">Internal Note (Optional)</label>
+                    <input 
+                      type="text" 
+                      className="input-gov" 
+                      placeholder="e.g. Crew #4 dispatched..." 
+                      value={note} 
+                      onChange={(e) => setNote(e.target.value)} 
+                    />
+                  </div>
+
+                  {/* Row 3: Submit Update button */}
                   <button 
                     onClick={handleUpdateStatus} 
-                    disabled={isUpdating || !newStatus} 
-                    className="btn-gov w-full py-2.5 text-sm"
+                    disabled={isUpdating || (!newStatus && !newPriority)} 
+                    className="btn-gov w-full py-2.5 text-sm cursor-pointer disabled:opacity-50"
                   >
                     {isUpdating ? 'Processing...' : 'Submit Update'}
                   </button>

@@ -1,5 +1,7 @@
 {
-  "java.configuration.updateBuildConfiguration": "interactive",
+  "java.configuration.updateBuildConfiguration": "disabled",
+  "java.import.maven.enabled": true,
+  "maven.pomPath": "backend/pom.xml",
   "java.compile.nullAnalysis.mode": "automatic",
   "spring-boot.ls.check-out-of-support": false,
   "spring-boot.ls.problem.build.version.out.of.support": "ignore",
@@ -21,7 +23,13 @@
     "javascriptreact": "javascriptreact"
   },
   "tailwindCSS.experimental.classRegex": [
-    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
-    ["className\\s*=\\s*[\"'`]([^\"'`]*)[\"'`]", "([a-zA-Z0-9\\-:/\\[\\]\\.]+)"]
+    [
+      "clsx\\(([^)]*)\\)",
+      "(?:'|\"|`)([^']*)(?:'|\"|`)"
+    ],
+    [
+      "className\\s*=\\s*[\"'`]([^\"'`]*)[\"'`]",
+      "([a-zA-Z0-9\\-:/\\[\\]\\.]+)"
+    ]
   ]
 }
