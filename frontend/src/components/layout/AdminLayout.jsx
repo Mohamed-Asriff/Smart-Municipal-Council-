@@ -45,7 +45,7 @@ export default function AdminLayout({ user, onLogout, activeTab, setActiveTab, c
       `}>
         {/* Branding */}
         <div className="h-20 flex items-center gap-3 px-6 border-b border-white/10 shrink-0">
-          <img src="/kmc_logo.png" alt="KMC" className="w-10 h-10 object-contain" />
+          <img src="/kmc_logo.jpg" alt="Kalmunai Municipal Council logo" className="w-9 h-16 shrink-0 object-contain" />
           <div>
             <h1 className="font-serif font-bold text-lg leading-tight">KMC Admin</h1>
             <p className="text-[10px] text-kmc-gold uppercase tracking-wider font-bold mt-0.5">Console</p>
