@@ -1,4 +1,8 @@
+fastapi
+uvicorn
+pydantic
 google-genai
 python-dotenv
 joblib
 scikit-learn
+pandas

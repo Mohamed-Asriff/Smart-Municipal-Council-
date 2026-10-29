@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   LayoutDashboard, FileText, CreditCard, User, 
-  LogOut, Menu, X, ShieldCheck, ChevronDown, Clock
+  LogOut, Menu, X, ShieldCheck, ChevronDown, Clock, Search, Printer
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
@@ -32,6 +32,11 @@ export default function CitizenPortal({ onBackToPublic }) {
   const [isReportModalOpen, setIsReportModalOpen] = useState(false);
   const [selectedBill, setSelectedBill] = useState(null);
   const [isPayModalOpen, setIsPayModalOpen] = useState(false);
+  const [paymentSearch, setPaymentSearch] = useState('');
+  const [paymentStatusFilter, setPaymentStatusFilter] = useState('all');
+  const [paymentSort, setPaymentSort] = useState('newest');
+  const [detailModalBill, setDetailModalBill] = useState(null);
+  const [receiptModalBill, setReceiptModalBill] = useState(null);
 
   useEffect(() => {
     localStorage.setItem('kmc_citizen_tab', activeTab);
@@ -80,6 +85,79 @@ export default function CitizenPortal({ onBackToPublic }) {
     { id: 'payments',   label: 'Payments',        icon: CreditCard, badge: pendingBillsCount },
     { id: 'profile',    label: 'My Profile',      icon: User },
   ];
+
+  // Payments metrics calculations for summary cards
+  const outstandingBalance = payments.reduce((sum, p) => {
+    if (p.status?.toUpperCase() === 'PAID') return sum;
+    const total = Number(p.amount || 0);
+    const paid = Number(p.amountPaid || 0);
+    const remaining = Math.max(0, total - paid);
+    return sum + remaining;
+  }, 0);
+
+  const settledBills = payments
+    .filter(p => p.status?.toUpperCase() === 'PAID' || (Number(p.amountPaid || 0) > 0 && Number(p.amount || 0) <= Number(p.amountPaid || 0)))
+    .sort((a, b) => new Date(b.paidAt || b.updatedAt || 0) - new Date(a.paidAt || a.updatedAt || 0));
+
+  const mostRecentPaid = settledBills[0] || payments
+    .filter(p => Number(p.amountPaid || 0) > 0)
+    .sort((a, b) => new Date(b.paidAt || b.updatedAt || 0) - new Date(a.paidAt || a.updatedAt || 0))[0];
+
+  const lastPaidAmount = mostRecentPaid 
+    ? Number(mostRecentPaid.amountPaid || mostRecentPaid.amount || 0) 
+    : 0;
+
+  const lastPaidDate = mostRecentPaid?.paidAt 
+    ? new Date(mostRecentPaid.paidAt).toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' }) 
+    : (mostRecentPaid?.updatedAt 
+        ? new Date(mostRecentPaid.updatedAt).toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' }) 
+        : 'N/A');
+
+  const lastPaidRef = mostRecentPaid?.billCode || (mostRecentPaid ? `BILL-${mostRecentPaid.id}` : '');
+
+  const filteredPayments = payments.filter(p => {
+    const totalAmount = Number(p.amount || 0);
+    const paidAmount = Number(p.amountPaid || 0);
+    const remaining = totalAmount - paidAmount;
+    const isFullyPaid = p.status?.toUpperCase() === 'PAID' || remaining <= 0;
+    const isVerifying = p.status === 'PENDING_VERIFICATION';
+    const isPending = !isFullyPaid && !isVerifying;
+
+    if (paymentStatusFilter === 'paid' && !isFullyPaid) return false;
+    if (paymentStatusFilter === 'pending' && !isPending) return false;
+    if (paymentStatusFilter === 'verifying' && !isVerifying) return false;
+
+    if (paymentSearch.trim()) {
+      const term = paymentSearch.toLowerCase();
+      const matches = 
+        (p.service || '').toLowerCase().includes(term) ||
+        (p.category || '').toLowerCase().includes(term) ||
+        (p.billCode || '').toLowerCase().includes(term) ||
+        (p.assessmentNo || '').toLowerCase().includes(term) ||
+        (p.billingPeriod || '').toLowerCase().includes(term);
+      if (!matches) return false;
+    }
+
+    return true;
+  }).sort((a, b) => {
+    if (paymentSort === 'newest') {
+      const dateA = new Date(a.dueDate || a.createdAt || 0);
+      const dateB = new Date(b.dueDate || b.createdAt || 0);
+      return dateB - dateA;
+    }
+    if (paymentSort === 'oldest') {
+      const dateA = new Date(a.dueDate || a.createdAt || 0);
+      const dateB = new Date(b.dueDate || b.createdAt || 0);
+      return dateA - dateB;
+    }
+    if (paymentSort === 'amount_desc') {
+      return Number(b.amount || 0) - Number(a.amount || 0);
+    }
+    if (paymentSort === 'amount_asc') {
+      return Number(a.amount || 0) - Number(b.amount || 0);
+    }
+    return 0;
+  });
 
   const openPaymentModal = (bill) => {
     setSelectedBill(bill);
@@ -241,68 +319,173 @@ export default function CitizenPortal({ onBackToPublic }) {
           )}
 
           {activeTab === 'payments' && (
-            <div className="max-w-5xl mx-auto space-y-4 animate-in fade-in">
-              <div className="flex items-center justify-between">
-                <div>
-                  <h1 className="text-2xl font-serif font-bold text-kmc-navy">Payment History</h1>
-                  <p className="text-sm text-slate-500 mt-1">View all your municipal bills and settle pending dues.</p>
+            <div className="max-w-5xl mx-auto space-y-6 animate-in fade-in">
+              {/* Header */}
+              <div>
+                <h1 className="text-2xl font-serif font-bold text-kmc-navy">Payment History</h1>
+                <p className="text-sm text-slate-500 mt-1">View all your municipal bills and settle pending dues.</p>
+              </div>
+
+              {/* Summary on the top */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* Outstanding Balance */}
+                <div className="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <span className="text-[11px] font-bold tracking-wider text-slate-500 uppercase">OUTSTANDING BALANCE</span>
+                    <h2 className="text-2xl sm:text-3xl font-black text-slate-900 mt-2">
+                      {formatCurrency(outstandingBalance)}
+                    </h2>
+                  </div>
+                  <p className="text-xs text-slate-400 mt-4 leading-relaxed">
+                    Calculated from verified payments. Submitted slips remain due until approved.
+                  </p>
+                </div>
+
+                {/* Last Paid */}
+                <div className="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <span className="text-[11px] font-bold tracking-wider text-slate-500 uppercase">LAST PAID</span>
+                    <h2 className="text-2xl sm:text-3xl font-black text-slate-900 mt-2">
+                      {formatCurrency(lastPaidAmount)}
+                    </h2>
+                  </div>
+                  <div className="mt-4">
+                    <p className="text-xs text-slate-500">
+                      Most recently settled bill • {lastPaidDate}
+                    </p>
+                    {lastPaidRef && (
+                      <p className="text-[11px] text-slate-400 font-mono mt-0.5">{lastPaidRef}</p>
+                    )}
+                  </div>
                 </div>
               </div>
-              
-              {payments.length === 0 ? (
+
+              {/* Search and Filters */}
+              <div className="flex flex-col sm:flex-row gap-3 items-center justify-between">
+                <div className="relative flex-1 w-full">
+                  <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+                  <input 
+                    type="text"
+                    placeholder="Search bill, category, account or reference..."
+                    value={paymentSearch}
+                    onChange={(e) => setPaymentSearch(e.target.value)}
+                    className="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-200 rounded-xl text-sm text-slate-700 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-kmc-navy/10 focus:border-kmc-navy shadow-sm transition"
+                  />
+                </div>
+
+                <div className="flex items-center gap-2.5 w-full sm:w-auto">
+                  <select 
+                    value={paymentStatusFilter}
+                    onChange={(e) => setPaymentStatusFilter(e.target.value)}
+                    className="flex-1 sm:flex-initial px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-kmc-navy/10 focus:border-kmc-navy shadow-sm cursor-pointer"
+                  >
+                    <option value="all">All payment statuses</option>
+                    <option value="paid">Fully Paid</option>
+                    <option value="pending">Pending / Due</option>
+                    <option value="verifying">Verifying Slip</option>
+                  </select>
+
+                  <select 
+                    value={paymentSort}
+                    onChange={(e) => setPaymentSort(e.target.value)}
+                    className="flex-1 sm:flex-initial px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-kmc-navy/10 focus:border-kmc-navy shadow-sm cursor-pointer"
+                  >
+                    <option value="newest">Due date: newest</option>
+                    <option value="oldest">Due date: oldest</option>
+                    <option value="amount_desc">Amount: high to low</option>
+                    <option value="amount_asc">Amount: low to high</option>
+                  </select>
+                </div>
+              </div>
+
+              {/* Bills List */}
+              {filteredPayments.length === 0 ? (
                 <div className="bg-white rounded-2xl p-12 text-center border border-slate-200">
                   <CreditCard className="w-12 h-12 text-slate-300 mx-auto mb-3" />
                   <p className="text-slate-500 font-semibold">No payment records found.</p>
-                  <p className="text-xs text-slate-400 mt-1">Your municipal bills will appear here.</p>
+                  <p className="text-xs text-slate-400 mt-1">
+                    {paymentSearch.trim() || paymentStatusFilter !== 'all' 
+                      ? 'Try adjusting your search query or filter.' 
+                      : 'Your municipal bills will appear here.'}
+                  </p>
                 </div>
               ) : (
                 <div className="space-y-3">
-                  {payments.map(p => {
+                  {filteredPayments.map(p => {
                     const totalAmount = Number(p.amount || 0);
                     const paidAmount = Number(p.amountPaid || 0);
-                    const remaining = totalAmount - paidAmount;
+                    const remaining = Math.max(0, totalAmount - paidAmount);
+                    const isFullyPaid = p.status?.toUpperCase() === 'PAID' || remaining <= 0;
 
                     return (
-                      <div key={p.id} className="bg-white rounded-xl p-5 border border-slate-200 flex flex-col sm:flex-row justify-between sm:items-center gap-4 shadow-sm hover:shadow-md transition">
-                        <div className="flex items-center gap-4">
-                          <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
-                            p.status === 'PENDING_VERIFICATION' ? 'bg-amber-50 text-amber-600' : 
-                            remaining <= 0 ? 'bg-emerald-50 text-emerald-600' : 
-                            'bg-blue-50 text-blue-600'
+                      <div key={p.id} className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div className="flex items-start sm:items-center gap-4">
+                          <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${
+                            isFullyPaid ? 'bg-emerald-50 text-emerald-600 border border-emerald-100' :
+                            p.status === 'PENDING_VERIFICATION' ? 'bg-amber-50 text-amber-600 border border-amber-100' :
+                            'bg-blue-50 text-blue-600 border border-blue-100'
                           }`}>
                             <CreditCard className="w-5 h-5" />
                           </div>
                           <div>
-                            <p className="font-bold text-kmc-navy">{p.service}</p>
-                            <p className="text-xs text-slate-500 font-mono mt-0.5">{p.billingPeriod} • {p.assessmentNo}</p>
-                            {p.paidAt && <p className="text-[10px] text-slate-400 mt-0.5">Paid on {new Date(p.paidAt).toLocaleDateString()}</p>}
+                            <h3 className="font-bold text-base text-slate-900">{p.service}</h3>
+                            <p className="text-xs text-slate-500 font-mono mt-1 flex flex-wrap items-center gap-1.5">
+                              <span>{p.billCode || `BILL-2026-${String(p.id).padStart(8, '0')}`}</span>
+                              <span>•</span>
+                              <span>{p.billingPeriod || '2026'}</span>
+                              <span>•</span>
+                              <span>{p.assessmentNo || user?.citizenId || 'KMC-TAX-2026-9041'}</span>
+                            </p>
+                            <p className="text-xs text-slate-400 mt-1">
+                              {p.paidAt 
+                                ? `Paid on ${new Date(p.paidAt).toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' })}` 
+                                : p.dueDate 
+                                  ? `Due on ${new Date(p.dueDate).toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' })}`
+                                  : 'Payable upon issue'}
+                            </p>
                           </div>
                         </div>
-                        
-                        <div className="text-right flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-2">
+
+                        <div className="text-right flex flex-col items-end gap-1.5 flex-shrink-0">
                           <div>
-                            <p className="font-black text-lg text-kmc-navy">{formatCurrency(totalAmount)}</p>
+                            <p className="text-xl font-black text-slate-900">{formatCurrency(totalAmount)}</p>
                             {paidAmount > 0 && remaining > 0 && (
-                              <p className="text-[10px] font-bold text-amber-600 mt-0.5 bg-amber-50 px-1.5 py-0.5 rounded">
+                              <p className="text-[10px] font-bold text-amber-600 mt-0.5 bg-amber-50 px-2 py-0.5 rounded">
                                 Paid: {formatCurrency(paidAmount)} | Due: {formatCurrency(remaining)}
                               </p>
                             )}
                           </div>
-                          
-                          {/* FIXED LOGIC ORDER: Check for verification FIRST */}
+
                           {p.status === 'PENDING_VERIFICATION' ? (
-                            <span className="text-xs text-amber-600 font-bold flex items-center gap-1 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-100">
+                            <span className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
                               <Clock className="w-3.5 h-3.5" /> Verifying Slip
                             </span>
-                          ) : remaining <= 0 ? (
-                            <span className="text-xs text-emerald-600 font-bold flex items-center gap-1 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-100">
+                          ) : isFullyPaid ? (
+                            <span className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-3.5 py-1 rounded-full border border-emerald-200">
                               <ShieldCheck className="w-3.5 h-3.5" /> Fully Paid
                             </span>
                           ) : (
-                            <button onClick={() => openPaymentModal(p)} className="text-xs font-bold bg-kmc-gold hover:bg-yellow-500 text-[#0B1E33] px-4 py-1.5 rounded-lg transition shadow-sm">
+                            <button 
+                              onClick={() => openPaymentModal(p)} 
+                              className="inline-flex items-center justify-center text-xs font-bold bg-[#E5A83B] hover:bg-[#D4972A] text-slate-900 px-5 py-2 rounded-lg transition shadow-sm font-semibold"
+                            >
                               Pay {paidAmount > 0 ? 'Remaining' : 'Now'} →
                             </button>
                           )}
+
+                          <div className="flex items-center gap-3 text-xs text-blue-600 font-medium mt-1">
+                            <button onClick={() => setDetailModalBill({ bill: p, type: 'history' })} className="hover:underline">
+                              Submission history
+                            </button>
+                            <button onClick={() => setDetailModalBill({ bill: p, type: 'details' })} className="hover:underline">
+                              Bill details
+                            </button>
+                            {isFullyPaid && (
+                              <button onClick={() => setReceiptModalBill(p)} className="hover:underline">
+                                Print receipt
+                              </button>
+                            )}
+                          </div>
                         </div>
                       </div>
                     );
@@ -318,6 +501,148 @@ export default function CitizenPortal({ onBackToPublic }) {
 
       <ReportComplaintModal isOpen={isReportModalOpen} onClose={() => setIsReportModalOpen(false)} onTicketCreated={handleComplaintCreated} />
       <PaymentModal isOpen={isPayModalOpen} onClose={() => { setIsPayModalOpen(false); setSelectedBill(null); }} prefillBill={selectedBill} onPaymentSuccess={handlePaymentSuccess} />
+
+      {/* Bill Details / Submission History Modal */}
+      {detailModalBill && (
+        <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in">
+          <div className="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200 relative">
+            <button 
+              onClick={() => setDetailModalBill(null)}
+              className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-600 rounded-lg hover:bg-slate-100 transition"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold">
+                <CreditCard className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-slate-900">
+                  {detailModalBill.type === 'history' ? 'Submission History' : 'Bill Details'}
+                </h3>
+                <p className="text-xs text-slate-500 font-mono">{detailModalBill.bill.service} • {detailModalBill.bill.billCode || `BILL-${detailModalBill.bill.id}`}</p>
+              </div>
+            </div>
+
+            <div className="space-y-3 bg-slate-50 p-4 rounded-xl text-sm border border-slate-100">
+              <div className="flex justify-between py-1 border-b border-slate-200/60">
+                <span className="text-slate-500">Service:</span>
+                <span className="font-semibold text-slate-800">{detailModalBill.bill.service}</span>
+              </div>
+              <div className="flex justify-between py-1 border-b border-slate-200/60">
+                <span className="text-slate-500">Assessment No:</span>
+                <span className="font-mono text-slate-800">{detailModalBill.bill.assessmentNo || user?.citizenId}</span>
+              </div>
+              <div className="flex justify-between py-1 border-b border-slate-200/60">
+                <span className="text-slate-500">Billing Period:</span>
+                <span className="font-semibold text-slate-800">{detailModalBill.bill.billingPeriod || 'Current'}</span>
+              </div>
+              <div className="flex justify-between py-1 border-b border-slate-200/60">
+                <span className="text-slate-500">Total Bill Amount:</span>
+                <span className="font-bold text-slate-900">{formatCurrency(detailModalBill.bill.amount)}</span>
+              </div>
+              <div className="flex justify-between py-1 border-b border-slate-200/60">
+                <span className="text-slate-500">Amount Settled:</span>
+                <span className="font-bold text-emerald-600">{formatCurrency(detailModalBill.bill.amountPaid || 0)}</span>
+              </div>
+              <div className="flex justify-between py-1 border-b border-slate-200/60">
+                <span className="text-slate-500">Payment Status:</span>
+                <span className="font-bold text-slate-800">{detailModalBill.bill.status}</span>
+              </div>
+              {detailModalBill.bill.paidAt && (
+                <div className="flex justify-between py-1 border-b border-slate-200/60">
+                  <span className="text-slate-500">Paid Date:</span>
+                  <span className="text-slate-800">{new Date(detailModalBill.bill.paidAt).toLocaleString()}</span>
+                </div>
+              )}
+              {detailModalBill.bill.receiptNo && (
+                <div className="flex justify-between py-1">
+                  <span className="text-slate-500">Receipt No:</span>
+                  <span className="font-mono font-semibold text-blue-600">{detailModalBill.bill.receiptNo}</span>
+                </div>
+              )}
+            </div>
+
+            <div className="mt-6 flex justify-end">
+              <button 
+                onClick={() => setDetailModalBill(null)}
+                className="px-5 py-2 bg-slate-900 hover:bg-slate-800 text-white font-medium text-sm rounded-xl transition"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Print Receipt Modal */}
+      {receiptModalBill && (
+        <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in">
+          <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200 relative print:p-0 print:border-none print:shadow-none">
+            <button 
+              onClick={() => setReceiptModalBill(null)}
+              className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-600 rounded-lg hover:bg-slate-100 transition print:hidden"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            <div className="text-center pb-4 border-b border-slate-200">
+              <h2 className="text-lg font-serif font-bold text-kmc-navy tracking-wide">KALMUNAI MUNICIPAL COUNCIL</h2>
+              <p className="text-xs text-slate-500">Official Municipal Payment Receipt</p>
+              <div className="inline-block mt-2 px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-full border border-emerald-200">
+                PAYMENT VERIFIED & SETTLED
+              </div>
+            </div>
+
+            <div className="my-5 space-y-2.5 text-xs">
+              <div className="flex justify-between">
+                <span className="text-slate-500">Receipt Number:</span>
+                <span className="font-mono font-bold text-slate-900">{receiptModalBill.receiptNo || `REC-2026-${receiptModalBill.id}`}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-slate-500">Bill Reference:</span>
+                <span className="font-mono text-slate-800">{receiptModalBill.billCode || `BILL-${receiptModalBill.id}`}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-slate-500">Service:</span>
+                <span className="font-semibold text-slate-800">{receiptModalBill.service}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-slate-500">Citizen / Assessment:</span>
+                <span className="font-medium text-slate-800">{user?.name || 'Citizen'} ({receiptModalBill.assessmentNo || user?.citizenId})</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-slate-500">Billing Period:</span>
+                <span className="text-slate-800">{receiptModalBill.billingPeriod || '2026'}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-slate-500">Payment Date:</span>
+                <span className="text-slate-800">{receiptModalBill.paidAt ? new Date(receiptModalBill.paidAt).toLocaleDateString() : new Date().toLocaleDateString()}</span>
+              </div>
+              <div className="pt-3 border-t border-slate-200 flex justify-between items-center text-sm">
+                <span className="font-bold text-slate-700">Total Amount Paid:</span>
+                <span className="text-lg font-black text-kmc-navy">{formatCurrency(receiptModalBill.amountPaid || receiptModalBill.amount)}</span>
+              </div>
+            </div>
+
+            <div className="mt-6 flex justify-end gap-2.5 print:hidden">
+              <button 
+                onClick={() => setReceiptModalBill(null)}
+                className="px-4 py-2 border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs font-semibold rounded-xl transition"
+              >
+                Close
+              </button>
+              <button 
+                onClick={() => window.print()}
+                className="px-4 py-2 bg-kmc-navy hover:bg-slate-800 text-white text-xs font-bold rounded-xl transition flex items-center gap-1.5 shadow-sm"
+              >
+                <Printer className="w-3.5 h-3.5" /> Print Receipt
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

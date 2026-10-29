@@ -4,7 +4,6 @@ import {
   Minimize2, Maximize2, RotateCcw, Check, Copy, PhoneCall
 } from 'lucide-react';
 import { sendChatMessage, formatTime, getStoredSessionId } from '../../services/chatbot';
-import { api } from '../../api';
 
 // Multilingual Configuration
 const MULTILINGUAL = {
@@ -105,7 +104,7 @@ export default function Chatbot({ isOpen, onClose, lang = 'en', onOpenReport, on
         content: m.text
       }));
       
-      const res = await api.sendChatMessage(query, sessionId.current, history, lang);
+      const res = await sendChatMessage(query, sessionId.current, history, lang);
       
       setMessages(prev => [...prev, { 
         sender: 'bot', 
