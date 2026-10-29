@@ -60,7 +60,7 @@ export default function BinDetailsModal({ bin, onClose, onBinDeleted }) {
           <div style={{position:'fixed',inset:0,background:'rgba(0,0,0,0.7)',display:'flex',alignItems:'center',justifyContent:'center',zIndex:1001}}>
             <div style={{background:'#1e293b',borderRadius:'16px',padding:'28px',width:'340px',textAlign:'center',color:'#e2e8f0',boxShadow:'0 20px 60px rgba(0,0,0,0.8)'}}>
               <div style={{fontSize:'40px',marginBottom:'12px'}}>Warning</div>
-              <h3 style={{margin:'0 0 8px'}}>Delete {bin.name}?</h3>
+              <h3 style={{margin:'0 0 8px',color:'#e2e8f0'}}>Delete {bin.name}?</h3>
               <p style={{color:'#ef4444',fontSize:'12px',margin:'0 0 20px'}}>This cannot be undone.</p>
               {deleteError && <p style={{color:'#ef4444',fontSize:'13px',marginBottom:'12px'}}>{deleteError}</p>}
               <div style={{display:'flex',gap:'12px',justifyContent:'center'}}>

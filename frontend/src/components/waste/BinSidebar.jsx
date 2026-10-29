@@ -1,10 +1,10 @@
 
 import React from 'react';
 import BinCard from './BinCard';
-import ZoneChart from '../charts/ZoneChart';
 
 const inp = {width:'100%',padding:'9px 12px',borderRadius:'8px',border:'1px solid rgba(255,255,255,0.1)',
   background:'rgba(255,255,255,0.06)',color:'#f1f5f9',fontSize:'13px',boxSizing:'border-box',outline:'none'};
+const opt = {background:'#1e293b',color:'#f1f5f9'};
 const lbl = {fontSize:'11px',color:'#64748b',fontWeight:600,textTransform:'uppercase',letterSpacing:'0.05em',display:'block',marginBottom:'6px'};
 
 export default function BinSidebar({ bins, allBins, searchTerm, onSearchChange, zoneFilter, onZoneChange,
@@ -19,10 +19,10 @@ export default function BinSidebar({ bins, allBins, searchTerm, onSearchChange, 
       <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'8px'}}>
         <div><label style={lbl}>Zone</label>
           <select style={{...inp,cursor:'pointer'}} value={zoneFilter} onChange={e=>onZoneChange(e.target.value)}>
-            {zones.map(z=><option key={z}>{z}</option>)}</select></div>
+            {zones.map(z=><option key={z} style={opt}>{z}</option>)}</select></div>
         <div><label style={lbl}>Status</label>
           <select style={{...inp,cursor:'pointer'}} value={statusFilter} onChange={e=>onStatusChange(e.target.value)}>
-            {['All','Normal','Warning','High','Critical'].map(s=><option key={s}>{s}</option>)}</select></div>
+            {['All','Normal','Warning','High','Critical'].map(s=><option key={s} style={opt}>{s}</option>)}</select></div>
       </div>
       <div style={{flex:1,overflowY:'auto',minHeight:'100px'}}>
         {bins.length===0
@@ -30,12 +30,7 @@ export default function BinSidebar({ bins, allBins, searchTerm, onSearchChange, 
           : bins.map(b=><BinCard key={b.id} bin={b} isSelected={selectedBin?.id===b.id} onSelect={()=>onSelectBin(b)}/>)
         }
       </div>
-      {(allBins||[]).length>0 && (
-        <div>
-          <label style={lbl}>Zone Avg Fill</label>
-          <div style={{background:'rgba(255,255,255,0.03)',borderRadius:'8px',padding:'8px'}}><ZoneChart bins={allBins}/></div>
-        </div>
-      )}
+
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Trash2, AlertTriangle, Activity, CheckCircle2, Plus } from 'lucide-react';
+import { Trash2, AlertTriangle, Activity, Plus } from 'lucide-react';
 import { api } from '../../api';
 import { WasteMap } from '../../components/maps/WasteMap';
 import BinSidebar from '../../components/waste/BinSidebar';
@@ -68,7 +68,7 @@ export default function WasteDashboard() {
             { label:'Total Bins', value:stats.totalBins, icon:Trash2, color:'kmc-navy', bg:'slate-100', border:'kmc-navy' },
             { label:'Critical (>85%)', value:stats.criticalBins, icon:AlertTriangle, color:'red-600', bg:'red-50', border:'red-500' },
             { label:'Avg Fill Level', value:(stats.averageFillPercentage?.toFixed(1)||0)+'%', icon:Activity, color:'amber-600', bg:'amber-50', border:'amber-500' },
-            { label:'Active Sensors', value:stats.activeBins, icon:CheckCircle2, color:'emerald-600', bg:'emerald-50', border:'emerald-500' },
+            { label:'Today\'s Readings', value:stats.totalReadingsToday??0, icon:Activity, color:'emerald-600', bg:'emerald-50', border:'emerald-500' },
           ].map(({ label, value, icon: Icon, color, bg, border }) => (
             <div key={label} className={`card-gov p-4 flex items-center gap-4 border-l-4 border-l-${border}`}>
               <div className={`w-10 h-10 rounded-lg bg-${bg} flex items-center justify-center text-${color}`}>
