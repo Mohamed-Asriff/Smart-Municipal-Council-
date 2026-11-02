@@ -31,6 +31,15 @@ public class PaymentService {
         return paymentRepository.findByUserIdOrderByDueDateDesc(userId);
     }
 
+    public List<Payment> getPaymentsForCitizen(User user) {
+        if (user == null) return List.of();
+        String assessmentNo = user.getAssessmentNo();
+        if (assessmentNo != null && !assessmentNo.isBlank()) {
+            return paymentRepository.findForCitizen(user.getId(), assessmentNo.trim());
+        }
+        return paymentRepository.findByUserIdOrderByDueDateDesc(user.getId());
+    }
+
     @Transactional
     public Payment checkout(PaymentCheckoutRequest request, User user) {
         Payment payment = paymentRepository.findById(request.getPaymentId())

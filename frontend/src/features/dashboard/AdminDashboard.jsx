@@ -39,10 +39,33 @@ export default function AdminDashboard({ setActiveTab }) {
           api.adminGetAllPayments().catch(() => [])
         ]);
         
+        const paymentsList = Array.isArray(allPayments) ? allPayments : [];
+        const liveTotalRev = paymentsList.reduce((sum, p) => {
+          const isPaid = (p.status || '').toUpperCase() === 'PAID';
+          const amount = Number(p.amount || 0);
+          const amountPaid = Number(p.amountPaid || 0);
+          if (isPaid) return sum + (amountPaid > 0 ? amountPaid : amount);
+          return sum + amountPaid;
+        }, 0);
+
+        const livePendingCol = paymentsList.reduce((sum, p) => {
+          const status = (p.status || '').toUpperCase();
+          if (status === 'PAID' || status === 'CANCELLED' || status === 'REFUNDED') return sum;
+          const amount = Number(p.amount || 0);
+          const amountPaid = Number(p.amountPaid || 0);
+          return sum + Math.max(0, amount - amountPaid);
+        }, 0);
+
+        const resolvedPayments = {
+          ...(kpis || {}),
+          totalRevenue: paymentsList.length > 0 ? Math.max(Number(kpis?.totalRevenue || 0), liveTotalRev) : (kpis?.totalRevenue || 0),
+          pendingCollections: paymentsList.length > 0 ? Math.max(Number(kpis?.pendingCollections || 0), livePendingCol) : (kpis?.pendingCollections || 0),
+        };
+        
         setStats({
           complaints: Array.isArray(complaints) ? complaints : [],
-          payments: kpis,
-          recentPayments: Array.isArray(allPayments) ? allPayments : [],
+          payments: resolvedPayments,
+          recentPayments: paymentsList,
           isLoading: false
         });
       } catch (err) {
@@ -78,12 +101,18 @@ export default function AdminDashboard({ setActiveTab }) {
     return { resolved, inProgress, submitted };
   }, [stats.complaints]);
 
-  // 3. Payment Revenue by Category aggregation
+  // 3. Payment Revenue by Category aggregation (collected revenue)
   const paymentRevenueByCategory = useMemo(() => {
     const map = {};
     stats.recentPayments.forEach(p => {
       const cat = p.category || 'Taxes';
-      map[cat] = (map[cat] || 0) + Number(p.amount || 0);
+      const isPaid = (p.status || '').toUpperCase() === 'PAID';
+      const amount = Number(p.amount || 0);
+      const amountPaid = Number(p.amountPaid || 0);
+      const rev = isPaid ? (amountPaid > 0 ? amountPaid : amount) : amountPaid;
+      if (rev > 0) {
+        map[cat] = (map[cat] || 0) + rev;
+      }
     });
     return map;
   }, [stats.recentPayments]);

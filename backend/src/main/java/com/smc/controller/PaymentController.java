@@ -42,7 +42,7 @@ public class PaymentController {
         if (user == null) {
             return ResponseEntity.status(401).build();
         }
-        return ResponseEntity.ok(paymentService.getPaymentsByUserId(user.getId()));
+        return ResponseEntity.ok(paymentService.getPaymentsForCitizen(user));
     }
 
     // Standard Checkout (Card / QR)
@@ -96,7 +96,7 @@ public class PaymentController {
         if (user == null) {
             return ResponseEntity.status(401).build();
         }
-        Payment payment = paymentService.getPaymentsByUserId(user.getId()).stream()
+        Payment payment = paymentService.getPaymentsForCitizen(user).stream()
                 .filter(p -> p.getId().equals(paymentId))
                 .findFirst()
                 .orElse(null);

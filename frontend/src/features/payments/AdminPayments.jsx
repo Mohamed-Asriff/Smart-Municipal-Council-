@@ -84,6 +84,31 @@ export default function AdminPayments() {
     p.billCode?.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  // Calculate live KPIs including partially paid bills
+  const calculatedTotalRevenue = payments.reduce((sum, p) => {
+    const isPaid = (p.status || '').toUpperCase() === 'PAID';
+    const amount = Number(p.amount || 0);
+    const amountPaid = Number(p.amountPaid || 0);
+    if (isPaid) {
+      return sum + (amountPaid > 0 ? amountPaid : amount);
+    }
+    return sum + amountPaid;
+  }, 0);
+
+  const calculatedPendingCollections = payments.reduce((sum, p) => {
+    const status = (p.status || '').toUpperCase();
+    if (status === 'PAID' || status === 'CANCELLED' || status === 'REFUNDED') return sum;
+    const amount = Number(p.amount || 0);
+    const amountPaid = Number(p.amountPaid || 0);
+    const remaining = Math.max(0, amount - amountPaid);
+    return sum + remaining;
+  }, 0);
+
+  const awaitingApprovalCount = payments.filter(p => p.status === 'PENDING_VERIFICATION').length;
+
+  const displayTotalRevenue = payments.length > 0 ? calculatedTotalRevenue : (kpis?.totalRevenue || 0);
+  const displayPendingCollections = payments.length > 0 ? calculatedPendingCollections : (kpis?.pendingCollections || 0);
+
   return (
     <div className="h-[calc(100vh-8rem)] flex flex-col animate-in fade-in duration-300">
       
@@ -103,22 +128,20 @@ export default function AdminPayments() {
         </div>
       </div>
 
-      {kpis && (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 shrink-0">
-          <div className="card-gov p-5 border-l-4 border-l-emerald-500">
-            <p className="text-xs font-bold text-slate-500 uppercase">Total Revenue</p>
-            <p className="text-2xl font-black text-kmc-navy">{formatCurrency(kpis.totalRevenue)}</p>
-          </div>
-          <div className="card-gov p-5 border-l-4 border-l-amber-500">
-            <p className="text-xs font-bold text-slate-500 uppercase">Pending Collections</p>
-            <p className="text-2xl font-black text-kmc-navy">{formatCurrency(kpis.pendingCollections)}</p>
-          </div>
-          <div className="card-gov p-5 border-l-4 border-l-kmc-blue">
-             <p className="text-xs font-bold text-slate-500 uppercase">Awaiting Approval</p>
-             <p className="text-2xl font-black text-kmc-navy">{payments.filter(p => p.status === 'PENDING_VERIFICATION').length}</p>
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 shrink-0">
+        <div className="card-gov p-5 border-l-4 border-l-emerald-500">
+          <p className="text-xs font-bold text-slate-500 uppercase">Total Revenue</p>
+          <p className="text-2xl font-black text-kmc-navy">{formatCurrency(displayTotalRevenue)}</p>
         </div>
-      )}
+        <div className="card-gov p-5 border-l-4 border-l-amber-500">
+          <p className="text-xs font-bold text-slate-500 uppercase">Pending Collections</p>
+          <p className="text-2xl font-black text-kmc-navy">{formatCurrency(displayPendingCollections)}</p>
+        </div>
+        <div className="card-gov p-5 border-l-4 border-l-kmc-blue">
+           <p className="text-xs font-bold text-slate-500 uppercase">Awaiting Approval</p>
+           <p className="text-2xl font-black text-kmc-navy">{awaitingApprovalCount}</p>
+        </div>
+      </div>
 
       <div className="flex-1 bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
         <div className="flex-1 overflow-auto custom-scrollbar">

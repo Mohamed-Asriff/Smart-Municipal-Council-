@@ -82,12 +82,19 @@ export default function PortalDashboard({
   });
   const resolvedComplaints = complaints.filter(c => normalizeStatus(c.status) === STATUS.RESOLVED);
   
+  // Calculate pending bills and total dues consistently with Payments page
   const pendingBills = payments.filter(p => {
-    const remaining = Number(p.amount || 0) - Number(p.amountPaid || 0);
-    return remaining > 0 && (p.status === 'Pending' || p.status === 'Overdue');
+    const isPaid = (p.status || '').toUpperCase() === 'PAID';
+    const remaining = Math.max(0, Number(p.amount || 0) - Number(p.amountPaid || 0));
+    return !isPaid && remaining > 0;
   });
-  const totalDue = pendingBills.reduce((s, p) => {
-    return s + (Number(p.amount || 0) - Number(p.amountPaid || 0));
+
+  const totalDue = payments.reduce((sum, p) => {
+    if ((p.status || '').toUpperCase() === 'PAID') return sum;
+    const total = Number(p.amount || 0);
+    const paid = Number(p.amountPaid || 0);
+    const remaining = Math.max(0, total - paid);
+    return sum + remaining;
   }, 0);
 
   const today = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
@@ -261,14 +268,22 @@ export default function PortalDashboard({
               <div className="flex items-center gap-2">
                 <CreditCard className="w-4 h-4 text-kmc-navy" />
                 <h2 className="font-bold text-kmc-navy text-sm">Pending Dues</h2>
+                {pendingBills.length > 0 && (
+                  <span className="text-[10px] font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200/50">
+                    {pendingBills.length}
+                  </span>
+                )}
               </div>
-              <span className="text-[10px] font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded-full">
-                {pendingBills.length}
-              </span>
+              <button 
+                onClick={() => onNavigate('payments')} 
+                className="text-xs font-bold text-kmc-gold hover:underline flex items-center gap-1"
+              >
+                View All <ArrowRight className="w-3 h-3" />
+              </button>
             </div>
 
             {/* Scrollable List Area */}
-            <div className="flex-1 overflow-y-auto custom-scrollbar p-3 space-y-2">
+            <div className="flex-1 overflow-y-auto custom-scrollbar p-3 space-y-2.5">
               {pendingBills.length === 0 ? (
                 <div className="flex flex-col items-center justify-center h-full text-center">
                   <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center mx-auto mb-2">
@@ -279,18 +294,46 @@ export default function PortalDashboard({
                 </div>
               ) : (
                 pendingBills.map(bill => {
-                  const remaining = Number(bill.amount || 0) - Number(bill.amountPaid || 0);
+                  const remaining = Math.max(0, Number(bill.amount || 0) - Number(bill.amountPaid || 0));
+                  const isVerifying = bill.status === 'PENDING_VERIFICATION';
                   return (
-                    <div key={bill.id} className="bg-amber-50/60 border border-amber-200 rounded-lg p-3">
-                      <div className="flex justify-between items-start mb-2 gap-2">
-                        <p className="text-[11px] font-bold text-kmc-navy leading-tight">{bill.service}</p>
-                        <span className="text-xs font-black text-amber-700 whitespace-nowrap">
-                          {formatCurrency(remaining)}
-                        </span>
+                    <div key={bill.id} className="bg-amber-50/60 border border-amber-200/80 rounded-xl p-3.5 space-y-2 hover:bg-amber-50 transition shadow-xs">
+                      <div className="flex justify-between items-start gap-2">
+                        <div className="min-w-0">
+                          <p className="text-xs font-bold text-kmc-navy leading-tight truncate">{bill.service}</p>
+                          <div className="flex items-center gap-1.5 text-[10px] text-slate-500 font-mono mt-0.5">
+                            <span>{bill.billCode || `BILL-${bill.id}`}</span>
+                            {bill.dueDate && (
+                              <>
+                                <span>•</span>
+                                <span>Due: {new Date(bill.dueDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</span>
+                              </>
+                            )}
+                          </div>
+                        </div>
+                        <div className="text-right shrink-0">
+                          <span className="text-xs font-black text-amber-700 whitespace-nowrap block">
+                            {formatCurrency(remaining)}
+                          </span>
+                          {Number(bill.amountPaid || 0) > 0 && (
+                            <span className="text-[9px] text-slate-500 block font-medium">
+                              Paid: {formatCurrency(bill.amountPaid)}
+                            </span>
+                          )}
+                        </div>
                       </div>
-                      <button onClick={() => onOpenPayment(bill)} className="w-full bg-kmc-gold hover:bg-yellow-500 text-[#0B1E33] text-[10px] font-bold py-1.5 rounded transition">
-                        Pay Now →
-                      </button>
+                      {isVerifying ? (
+                        <div className="w-full bg-amber-100 text-amber-800 text-[10px] font-bold py-1.5 rounded-lg text-center flex items-center justify-center gap-1.5 border border-amber-200">
+                          <Clock className="w-3 h-3" /> Verifying Slip
+                        </div>
+                      ) : (
+                        <button 
+                          onClick={() => onOpenPayment(bill)} 
+                          className="w-full bg-kmc-gold hover:bg-yellow-500 text-[#0B1E33] text-[10px] font-bold py-1.5 rounded-lg transition shadow-xs flex items-center justify-center gap-1 font-semibold"
+                        >
+                          Pay {Number(bill.amountPaid || 0) > 0 ? 'Remaining' : 'Now'} →
+                        </button>
+                      )}
                     </div>
                   );
                 })

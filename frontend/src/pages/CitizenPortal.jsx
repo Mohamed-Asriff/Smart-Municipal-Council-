@@ -75,8 +75,9 @@ export default function CitizenPortal({ onBackToPublic }) {
   }).length;
   
   const pendingBillsCount = payments.filter(p => {
-    const remaining = Number(p.amount || 0) - Number(p.amountPaid || 0);
-    return remaining > 0 && p.status !== 'PENDING_VERIFICATION';
+    if ((p.status || '').toUpperCase() === 'PAID') return false;
+    const remaining = Math.max(0, Number(p.amount || 0) - Number(p.amountPaid || 0));
+    return remaining > 0 && (p.status || '').toUpperCase() !== 'PENDING_VERIFICATION';
   }).length;
 
   const navItems = [

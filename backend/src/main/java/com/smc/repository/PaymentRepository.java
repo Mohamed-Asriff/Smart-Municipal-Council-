@@ -14,7 +14,7 @@ public interface PaymentRepository extends JpaRepository<Payment, Long> {
 
     // Citizen portal: find payments linked by user_id OR by matching assessmentNo
     @Query("SELECT p FROM Payment p WHERE p.user.id = :userId OR " +
-           "(p.user IS NULL AND :assessmentNo IS NOT NULL AND p.assessmentNo = :assessmentNo) " +
+           "(:assessmentNo IS NOT NULL AND TRIM(:assessmentNo) <> '' AND LOWER(p.assessmentNo) = LOWER(TRIM(:assessmentNo))) " +
            "ORDER BY p.dueDate DESC")
     List<Payment> findForCitizen(@Param("userId") Long userId, @Param("assessmentNo") String assessmentNo);
 
@@ -24,14 +24,24 @@ public interface PaymentRepository extends JpaRepository<Payment, Long> {
 
     java.util.Optional<Payment> findByBillCode(String billCode);
 
-    // Admin KPI queries (from pay branch)
-    @Query("SELECT COALESCE(SUM(p.amount), 0) FROM Payment p WHERE p.status = 'Paid'")
+    // Admin KPI queries (including partially paid bills)
+    @Query("SELECT COALESCE(SUM(" +
+           "CASE " +
+           "  WHEN UPPER(p.status) = 'PAID' THEN " +
+           "    CASE WHEN p.amountPaid IS NOT NULL AND p.amountPaid > 0 THEN p.amountPaid ELSE p.amount END " +
+           "  WHEN UPPER(p.status) = 'PARTIALLY PAID' THEN COALESCE(p.amountPaid, 0) " +
+           "  ELSE COALESCE(p.amountPaid, 0) " +
+           "END), 0) FROM Payment p WHERE UPPER(p.status) NOT IN ('CANCELLED', 'REFUNDED')")
     BigDecimal calculateTotalRevenue();
 
-    @Query("SELECT COALESCE(SUM(p.amount), 0) FROM Payment p WHERE p.status = 'Pending'")
+    @Query("SELECT COALESCE(SUM(" +
+           "CASE " +
+           "  WHEN UPPER(p.status) IN ('PAID', 'CANCELLED', 'REFUNDED') THEN 0 " +
+           "  ELSE CASE WHEN (p.amount - COALESCE(p.amountPaid, 0)) > 0 THEN (p.amount - COALESCE(p.amountPaid, 0)) ELSE 0 END " +
+           "END), 0) FROM Payment p")
     BigDecimal calculatePendingCollections();
 
-    @Query("SELECT COUNT(p) FROM Payment p WHERE p.status = 'Paid'")
+    @Query("SELECT COUNT(p) FROM Payment p WHERE UPPER(p.status) = 'PAID' OR UPPER(p.status) = 'PARTIALLY PAID' OR (p.amountPaid IS NOT NULL AND p.amountPaid > 0)")
     long countSuccessfulTransactions();
 
     long countByStatus(String status);
